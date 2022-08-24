@@ -48,7 +48,7 @@ This chat integration is only supported by cloud-connected DataMiner systems.
 * Open the Automation module (via apps > Automation) and click on the "automation scripts" tab and double click the "Create Team" automation script. Fill in the fields for creating a new Team, **the fields are case sensitive.**
 * When pressing the "execute now" button, a Team is created in Microsoft Teams with the Dataminer bot.
 
-![Items](https://user-images.githubusercontent.com/109528797/186440501-4850222e-c503-40fc-8f9a-003e8c7d5a30.png)
+<img src="https://user-images.githubusercontent.com/109528797/186440501-4850222e-c503-40fc-8f9a-003e8c7d5a30.png" width="684" height="757">
 
 
 ## Help
