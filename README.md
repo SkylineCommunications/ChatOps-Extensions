@@ -1,31 +1,27 @@
 <a name="readme-top"></a>
-# Microsoft Teams Integration / Dataminer Bot
+# Chat Integration / Dataminer Bot
 
-This guideline is about how to integrate Dataminer into Microsoft Teams with automation scripts.
+This guideline is about how to integrate Dataminer into business communication platforms with automation scripts.
 
 ## Overview
 
-There are two main parts in this guideline:
- * Adding the automation scripts & memory files to your Dataminer system.
+There are two main parts to the Chat Integration for Teams:
+ * Adding the automation scripts & memory files to your Dataminer System.
  * Granting admin consent in the DCP admin app.
 
 ## Getting Started
 
-### Limitations
-
-This chat integration is only supported by cloud-connected DataMiner systems.
-
 ### Prerequisites
 
-* [DataMiner](https://community.dataminer.services/dataminer-client-requirements/) installed.
-* The [CloudGateway DxM](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Managing_cloud-connected_nodes.html) must be atleast version 2.9.0.
-* The Dataminer App must be allowed in the Team.
+* The DataMiner System that integrates with chats must be connected to the DataMiner Cloud Platform ([DCP](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Managing_cloud-connected_nodes.html)).
+* The [CloudGateway DxM](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Managing_cloud-connected_nodes.html) on your Dataminer System must be atleast version 2.9.0.
+* The Dataminer App must be allowed in your [Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-apps).
 
 ### Installing
 
-* Deploy the [DMAPP]() to your Dataminer system. Double-click to install, this will add the automation scripts to your system.
+* Deploy the [DMAPP]() to your Dataminer system. Double-click to install, this will add the automation scripts in the Automation module.
 
-* Access [DataMiner](https://docs.dataminer.services/user-guide/Getting_started/Accessing_DataMiner/Accessing_DataMiner.html) and open the Automation module (via apps > Automation).
+* Access the [DataMiner](https://docs.dataminer.services/user-guide/Getting_started/Accessing_DataMiner/Accessing_DataMiner.html) System and open the Automation module (via apps > Automation).
 
 ![Items](https://user-images.githubusercontent.com/109528797/186420636-61efa334-6041-44df-9056-11e6cf44da78.png)
 
@@ -37,7 +33,7 @@ This chat integration is only supported by cloud-connected DataMiner systems.
 
 ![Items](https://user-images.githubusercontent.com/109528797/186423143-bab59820-8e45-4315-a192-24b34398b502.png)
 
-* Connect your dataminer system to the cloud if it is not yet [Cloud Connected](https://docs.dataminer.services/user-guide/Cloud_Platform/AboutCloudPlatform/Connecting_your_DataMiner_System_to_the_cloud.html).
+* Connect your DataMiner System to the cloud if it is not yet [Cloud Connected](https://docs.dataminer.services/user-guide/Cloud_Platform/AboutCloudPlatform/Connecting_your_DataMiner_System_to_the_cloud.html).
 
 * Grant access with [Admin Consent](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Granting_admin_consent.html).
 
@@ -65,7 +61,7 @@ Project Link: [chat-integration](https://github.com/SkylineCommunications/chat-i
 ## Version History
 
 * 0.2
-   * optimizations
+   * Refactoring
    * See [commit change]() or See [release history]()
 * 1.0
    * Initial Release
