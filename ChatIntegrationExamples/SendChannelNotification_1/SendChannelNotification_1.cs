@@ -64,7 +64,7 @@ public class Script
 	/// The Script entry point.
 	/// </summary>
 	/// <param name="engine">Link with SLAutomation process.</param>
-	public async Task RunAsync(Engine engine, CancellationToken cancellationToken)
+	public void Run(Engine engine)
 	{
 		ChatIntegrationHelper chatIntegrationHelper = null;
 		try
@@ -91,12 +91,12 @@ public class Script
 			}
 
 			var factory = new ChatIntegrationHelperFactory();
-			chatIntegrationHelper = await factory.CreateAsync(
+			chatIntegrationHelper = factory.Create(
 				log => engine.Log(log, LogType.Debug, 1),
 				log => engine.Log(log, LogType.Information, 1),
 				log => engine.Log(log, LogType.Error, 1));
 
-			var response = await chatIntegrationHelper.Teams.TrySendChannelNotificationAsync(teamIdParam.Value, channelIdParam.Value, notificationParam.Value, cancellationToken);
+			var response = chatIntegrationHelper.Teams.TrySendChannelNotification(teamIdParam.Value, channelIdParam.Value, notificationParam.Value);
 			if (response.Error)
 			{
 				engine.ExitFail($"Couldn't send the notification to the channel with id {channelIdParam.Value} with error {response.ErrorMessage}.");

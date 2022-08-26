@@ -64,7 +64,7 @@ public class Script
 	/// The Script entry point.
 	/// </summary>
 	/// <param name="engine">Link with SLAutomation process.</param>
-	public async Task RunAsync(Engine engine, CancellationToken cancellationToken)
+	public void Run(Engine engine)
 	{
 		ChatIntegrationHelper chatIntegrationHelper = null;
 		try
@@ -91,12 +91,12 @@ public class Script
 			}
 
 			var factory = new ChatIntegrationHelperFactory();
-			chatIntegrationHelper = await factory.CreateAsync(
+			chatIntegrationHelper = factory.Create(
 				log => engine.Log(log, LogType.Debug, 1),
 				log => engine.Log(log, LogType.Information, 1),
 				log => engine.Log(log, LogType.Error, 1));
 
-			var response = await chatIntegrationHelper.Teams.TryCreateTeamAsync(teamNameParam.Value, ownerEmailParam.Value, cancellationToken);
+			var response = chatIntegrationHelper.Teams.TryCreateTeam(teamNameParam.Value, ownerEmailParam.Value);
 			if (response.Error)
 			{
 				engine.ExitFail($"Couldn't create the team with error {response.ErrorMessage}.");
