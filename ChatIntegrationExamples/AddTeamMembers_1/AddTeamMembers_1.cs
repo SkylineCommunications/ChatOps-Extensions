@@ -51,8 +51,10 @@ DATE		VERSION		AUTHOR			COMMENTS
 
 using System;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using DcpChatIntegrationHelper;
 using Skyline.DataMiner.Automation;
-using SLChatIntegrationHelper;
 
 /// <summary>
 /// DataMiner Script Class.
@@ -63,8 +65,9 @@ public class Script
 	/// The Script entry point.
 	/// </summary>
 	/// <param name="engine">Link with SLAutomation process.</param>
-	public void Run(Engine engine)
+	public async Task RunAsync(Engine engine, CancellationToken cancellationToken)
 	{
+		ChatIntegrationHelper chatIntegrationHelper = null;
 		try
 		{
 			var teamIdParam = engine.GetScriptParam("Team Id");
@@ -96,13 +99,22 @@ public class Script
 				return;
 			}
 
-			if (!ChatIntegrationHelper.Teams.TryAddTeamMember(engine.Log, teamIdParam.Value, teamMembersToAdd))
+			var factory = new ChatIntegrationHelperFactory();
+			chatIntegrationHelper = await factory.CreateAsync(
+				log => engine.Log(log, LogType.Debug, 1),
+				log => engine.Log(log, LogType.Information, 1),
+				log => engine.Log(log, LogType.Error, 1));
+
+			var response = await chatIntegrationHelper.Teams.TryAddTeamMembersAsync(teamIdParam.Value, teamMembersToAdd, cancellationToken);
+			if (response.Error)
 			{
-				engine.ExitFail($"Couldn't add the members [{string.Join(", ", teamMembersToAdd)}] to the team with id {teamIdParam.Value}.");
+				engine.ExitFail(
+					$"Couldn't add the members [{string.Join(", ", teamMembersToAdd)}] to the team with id {teamIdParam.Value} with error {response.ErrorMessage}.");
 				return;
 			}
 
-			engine.ExitSuccess($"The members [{string.Join(", ", teamMembersToAdd)}] are added to the team with id {teamIdParam.Value}!");
+			engine.ExitSuccess(
+				$"The members [{string.Join(", ", teamMembersToAdd)}] are added to the team with id {teamIdParam.Value}!");
 		}
 		catch (ScriptAbortException)
 		{
@@ -112,6 +124,10 @@ public class Script
 		catch (Exception e)
 		{
 			engine.ExitFail($"An exception occurred with the following message: {e.Message}");
+		}
+		finally
+		{
+			chatIntegrationHelper?.Dispose();
 		}
 	}
 }

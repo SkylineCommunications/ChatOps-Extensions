@@ -50,11 +50,10 @@ DATE		VERSION		AUTHOR			COMMENTS
 */
 
 using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using DcpChatIntegrationHelper;
 using Skyline.DataMiner.Automation;
-using SLChatIntegrationHelper;
 
 /// <summary>
 /// DataMiner Script Class.
@@ -65,8 +64,9 @@ public class Script
 	/// The Script entry point.
 	/// </summary>
 	/// <param name="engine">Link with SLAutomation process.</param>
-	public void Run(Engine engine)
+	public async Task RunAsync(Engine engine, CancellationToken cancellationToken)
 	{
+		ChatIntegrationHelper chatIntegrationHelper = null;
 		try
 		{
 			var chatIdParam = engine.GetScriptParam("Chat Id");
@@ -83,9 +83,16 @@ public class Script
 				return;
 			}
 
-			if (!ChatIntegrationHelper.Teams.TrySendChatNotification(engine.Log, chatIdParam.Value, notificationParam.Value))
+			var factory = new ChatIntegrationHelperFactory();
+			chatIntegrationHelper = await factory.CreateAsync(
+				log => engine.Log(log, LogType.Debug, 1),
+				log => engine.Log(log, LogType.Information, 1),
+				log => engine.Log(log, LogType.Error, 1));
+
+			var response = await chatIntegrationHelper.Teams.TrySendChatNotificationAsync(chatIdParam.Value, notificationParam.Value, cancellationToken);
+			if (response.Error)
 			{
-				engine.ExitFail($"Couldn't send the notification to the chat with id {chatIdParam.Value}.");
+				engine.ExitFail($"Couldn't send the notification to the chat with id {chatIdParam.Value} with error {response.ErrorMessage}.");
 				return;
 			}
 
@@ -99,6 +106,10 @@ public class Script
 		catch (Exception e)
 		{
 			engine.ExitFail($"An exception occurred with the following message: {e.Message}");
+		}
+		finally
+		{
+			chatIntegrationHelper?.Dispose();
 		}
 	}
 }
