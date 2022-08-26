@@ -43,9 +43,6 @@
     <Reference Include="DataMinerMessageBroker.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9789b1eac4cb1b12, processorArchitecture=MSIL">
       <HintPath>..\packages\DataMinerMessageBroker.API.1.3.0\lib\netstandard2.0\DataMinerMessageBroker.API.dll</HintPath>
     </Reference>
-    <Reference Include="DcpChatIntegrationHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DcpChatIntegrationHelper.1.0.0\lib\netstandard2.0\DcpChatIntegrationHelper.dll</HintPath>
-    </Reference>
     <Reference Include="Google.Protobuf, Version=3.21.5.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.21.5\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
@@ -61,6 +58,9 @@
     </Reference>
     <Reference Include="protobuf-net.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
       <HintPath>..\packages\protobuf-net.Core.3.1.17\lib\net461\protobuf-net.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Skyline.DataMiner.DcpChatIntegrationHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Skyline.DataMiner.DcpChatIntegrationHelper.1.10325.3-1.0.0.X.3\lib\netstandard2.0\Skyline.DataMiner.DcpChatIntegrationHelper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="SLManagedAutomation">
@@ -142,7 +142,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties DisLinkedXmlFile="..\AddTeamMembers.xml" DisProjectType="automationScriptProject" DisLinkId="1" />
+      <UserProperties DisLinkId="1" DisProjectType="automationScriptProject" DisLinkedXmlFile="..\AddTeamMembers.xml" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
