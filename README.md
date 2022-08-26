@@ -40,7 +40,7 @@ This guideline is about how to integrate DataMiner into business communication p
 
 </details>
 
-- Open the "memory files" tab and create memory files named *Teams, Channels and Chats*. The purpose of these files is to persist the created Teams, Channels and Chats.<details><summary>...</summary>
+- Open the "memory files" tab and create memory files named '*Teams*', '*Channels*' and '*Chats*'. The purpose of these files is to persist the created Teams, Channels and Chats.<details><summary>...</summary>
 ![Gif-MemFiles](https://user-images.githubusercontent.com/109528797/186685736-dacafe23-53be-4165-8982-eb2113549d78.gif)
 
 </details>
