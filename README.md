@@ -51,7 +51,7 @@ This guideline is about how to integrate DataMiner into business communication p
 
 - [Deploy the DMAPP]() to your DataMiner System. Installing this package, will add the automation scripts for Microsoft Teams in the Automation module.
 
-- [Access the DataMiner System](https://docs.dataminer.services/user-guide/Getting_started/Accessing_DataMiner/Accessing_DataMiner.html) and open the Automation module (via apps > Automation).<details><summary>`show demo`</summary>
+- [Access the DataMiner System](https://docs.dataminer.services/user-guide/Getting_started/Accessing_DataMiner/Accessing_DataMiner.html) and open the Automation module (via apps > Automation). The added automation scripts are shown here.<details><summary>`show demo`</summary>
 ![Gif-Automation](https://user-images.githubusercontent.com/109528797/186685478-9eac1cbf-f2d9-4c9a-8a6a-a2f499dbdcd9.gif)
 
 </details>
@@ -61,7 +61,7 @@ This guideline is about how to integrate DataMiner into business communication p
 
 </details>
 
-- Also create a memory file named YesOrNo with the following entries: *{postion:0, value:1, description:yes ; postion:1, value:0, description:no}*<details><summary>`show demo`</summary>
+- Also create a memory file named YesOrNo with the following entries: *{postion:0, value:1, description:yes ; postion:1, value:0, description:no}*.<details><summary>`show demo`</summary>
 ![Gif-MemFilesYesorNo](https://user-images.githubusercontent.com/109528797/186685771-9d9c4155-1f58-4700-98aa-90ebd19c329e.gif)
 
 </details>
