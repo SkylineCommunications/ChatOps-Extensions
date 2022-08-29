@@ -43,7 +43,7 @@ This guideline is about how to integrate DataMiner into business communication p
 
 ### General
 
-- The code for these automation scripts can be found under [this folder](ChatIntegrationExamples) in the repository.
+- The code for these automation scripts can be found under [this folder](ChatIntegrationExamples).
 
 ### Microsoft Teams
 
@@ -87,7 +87,7 @@ This guideline is about how to integrate DataMiner into business communication p
 
 - To send a notification in a Channel, click the '*Send Channel Notification*' automation script and choose the desired Channel for this notification.
 
-- When pressing the '*execute now*' button, a Channel is created in Microsoft Teams with the Dataminer bot.<details><summary>`show demo`</summary>![Gif-SendNotification](https://user-images.githubusercontent.com/109528797/187139103-4728e148-204d-447f-9674-8d74f4e373d1.gif)</details>
+- When pressing the '*execute now*' button, a notification is sent in Microsoft Teams.<details><summary>`show demo`</summary>![Gif-SendNotification](https://user-images.githubusercontent.com/109528797/187139103-4728e148-204d-447f-9674-8d74f4e373d1.gif)</details>
 
 ## Help
 
