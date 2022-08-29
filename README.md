@@ -14,9 +14,10 @@ This guideline is about how to integrate DataMiner into business communication p
 - [Examples](#examples)
   - [Microsoft Teams](#create-team) 
     * [Create Team](#create-team)
-    * [Create Channel](#create-team)
-    * [Add Member](#create-team)
-    * [Create Team](#create-team)
+    * [Create Channel](#create-channel)
+    * [Add Members](#add-team-members)
+    * [Add Owner](#add-team-owner)
+    * [Send Channel Notification](#send-channel-notification)
 - [Help](#help)
 - [Contact](#contact)
 - [Version History](#version-history)
@@ -26,7 +27,7 @@ This guideline is about how to integrate DataMiner into business communication p
 
 ### General
 
-- The DataMiner System must be cloud-connected, i.e. [connecting it to the DataMiner Cloud Platform]((https://docs.dataminer.services/user-guide/Cloud_Platform/AboutCloudPlatform/Connecting_your_DataMiner_System_to_the_cloud.html)).
+- The DataMiner System must be cloud-connected, i.e. [connecting it to the DataMiner Cloud Platform](https://docs.dataminer.services/user-guide/Cloud_Platform/AboutCloudPlatform/Connecting_your_DataMiner_System_to_the_cloud.html).
 
 - The CloudGateway Module must be updated to at least version 2.9.0, i.e. [upgrading the installed DxM versions on your DataMiner System](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Managing_cloud-connected_nodes.html).
 
@@ -59,6 +60,8 @@ This guideline is about how to integrate DataMiner into business communication p
 
 </details>
 
+- Other automation scripts can be created here.
+
 
 ### Slack
 - 
@@ -69,6 +72,8 @@ This guideline is about how to integrate DataMiner into business communication p
 ## Examples
 
 ### Microsoft Teams
+
+ - The code for these automation scripts can be found under [this folder](ChatIntegrationExamples) in the repository.
 
 #### Create Team
 
@@ -93,9 +98,9 @@ This guideline is about how to integrate DataMiner into business communication p
 
 #### Add Team Members
 
-- To add a new member to a Team, click the '*Add Team Members*' automation script and select the desired Team.
+- To add a new member or members to a Team, click the '*Add Team Members*' automation script and select the desired Team.
 
-- When pressing the '*execute now*' button, a member is added to a Team in Microsoft Teams.<details><summary>...</summary>
+- When pressing the '*execute now*' button, the members are added to a Team in Microsoft Teams.<details><summary>...</summary>
 ![Gif-AddTeamMember](https://user-images.githubusercontent.com/109528797/186880110-4fb9a616-b647-4919-9556-4a057a65be2b.gif)
 
 
