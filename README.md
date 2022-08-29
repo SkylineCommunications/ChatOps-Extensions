@@ -5,7 +5,18 @@ This guideline is about how to integrate DataMiner into business communication p
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
+  - [General](#general)
+  - [Microsoft Teams](#microsoft-teams)
+  - [Slack](#slack) 
+- [Getting Started](#getting-started)
+  - [Microsoft Teams](#microsoft-teams) 
+  - [Slack](#slack) 
 - [Examples](#examples)
+  - [Microsoft Teams](#create-team) 
+    * [Create Team](#create-team)
+    * [Create Channel](#create-team)
+    * [Add Member](#create-team)
+    * [Create Team](#create-team)
 - [Help](#help)
 - [Contact](#contact)
 - [Version History](#version-history)
@@ -15,23 +26,21 @@ This guideline is about how to integrate DataMiner into business communication p
 
 ### General
 
-- The DataMiner System must be connected to the DataMiner Cloud Platform ([DCP](https://docs.dataminer.services/user-guide/Cloud_Platform/AboutCloudPlatform/Connecting_your_DataMiner_System_to_the_cloud.html)).
+- The DataMiner System must be cloud-connected, i.e. [connecting it to the DataMiner Cloud Platform]((https://docs.dataminer.services/user-guide/Cloud_Platform/AboutCloudPlatform/Connecting_your_DataMiner_System_to_the_cloud.html)).
 
-- The CloudGateway Module ([DxM](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Managing_cloud-connected_nodes.html)) on your cloud-connected DataMiner System must be atleast version 2.9.0.
+- The CloudGateway Module must be updated to at least version 2.9.0, i.e. [upgrading the installed DxM versions on your DataMiner System](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Managing_cloud-connected_nodes.html).
 
 
 ### Microsoft Teams
 
 - The DataMiner App must be allowed in your Team on [Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-apps).
 
-- [Admin Consent](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Granting_admin_consent.html) must be granted in the DCP admin app.
+- Admin Consent must be granted in the [DCP Admin app](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Granting_admin_consent.html).
 
 
-## Examples
+## Getting Started
 
 ### Microsoft Teams
-
-#### Installation
 
 - [Deploy the DMAPP]() to your DataMiner System. Installing this package, will add the automation scripts for Microsoft Teams in the Automation module.
 
@@ -40,7 +49,7 @@ This guideline is about how to integrate DataMiner into business communication p
 
 </details>
 
-- Open the "memory files" tab and create memory files named '*Teams*', '*Channels*' and '*Chats*'. The purpose of these files is to persist the created Teams, Channels and Chats.<details><summary>...</summary>
+- Open the '*memory files*' tab and create memory files named '*Teams*', '*Channels*' and '*Chats*'. The purpose of these files is to persist the created Teams, Channels and Chats.<details><summary>...</summary>
 ![Gif-MemFiles](https://user-images.githubusercontent.com/109528797/186685736-dacafe23-53be-4165-8982-eb2113549d78.gif)
 
 </details>
@@ -51,11 +60,64 @@ This guideline is about how to integrate DataMiner into business communication p
 </details>
 
 
-#### Usage
+### Slack
+- 
+- 
 
-- Open the Automation module (via apps > Automation) and click on the "automation scripts" tab and double click the "Create Team" automation script. Fill in the fields for creating a new Team, **the fields are case sensitive.**
-- When pressing the "execute now" button, a Team is created in Microsoft Teams with the Dataminer bot.<details><summary>...</summary>
+
+
+## Examples
+
+### Microsoft Teams
+
+#### Create Team
+
+- Open the Automation module (via apps > Automation) and click on the '*automation scripts*' tab. To create a new Team, click the '*Create Team*' automation script and fill in the desired fields, **the fields are case sensitive.**
+
+- When pressing the '*execute now*' button, a Team (with a general Channel) is created in Microsoft Teams with the Dataminer bot.<details><summary>...</summary>
 ![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)
+
+</details>
+
+#### Create Channel
+
+- As a Channel exists in a Team, a Team must first be created *(see previous example)*.
+
+- To create a new Channel, click the '*Create Channel*' automation script and choose the desired Team for this Channel.
+
+- When pressing the '*execute now*' button, a Channel is created in Microsoft Teams with the Dataminer bot.<details><summary>...</summary>
+![Gif-CreateChannel](https://user-images.githubusercontent.com/109528797/186855003-c4002e8e-c9cf-42fd-91bd-b389d4bab908.gif)
+
+
+</details>
+
+#### Add Team Members
+
+- To add a new member to a Team, click the '*Add Team Members*' automation script and select the desired Team.
+
+- When pressing the '*execute now*' button, a member is added to a Team in Microsoft Teams.<details><summary>...</summary>
+![Gif-AddTeamMember](https://user-images.githubusercontent.com/109528797/186880110-4fb9a616-b647-4919-9556-4a057a65be2b.gif)
+
+
+</details>
+
+#### Add Team Owner
+
+- To add a new owner to a Team, click the '*Add Team Owners*' automation script and select the desired Team.
+
+- When pressing the '*execute now*' button, a owner is added to a Team in Microsoft Teams.<details><summary>...</summary>
+![Gif-AddTeamOwner](https://user-images.githubusercontent.com/109528797/187139084-f2991b40-cbe2-46fe-aec9-c804b9852e62.gif)
+
+
+</details>
+
+#### Send Channel Notification
+
+- To send a notification in a Channel, click the '*Send Channel Notification*' automation script and choose the desired Channel for this notification.
+
+- When pressing the '*execute now*' button, a Channel is created in Microsoft Teams with the Dataminer bot.<details><summary>...</summary>
+![Gif-SendNotification](https://user-images.githubusercontent.com/109528797/187139103-4728e148-204d-447f-9674-8d74f4e373d1.gif)
+
 
 </details>
 
@@ -72,9 +134,6 @@ Project Link: [Chat-integration](https://github.com/SkylineCommunications/chat-i
 
 ## Version History
 
-- 0.2
-  - Refactoring
-  - Generalizations
 - 1.0
   - Initial Release
 
