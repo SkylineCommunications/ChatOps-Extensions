@@ -119,19 +119,16 @@ This guideline is about how to integrate DataMiner into business communication p
 
 ## Help
 
-Any advise for common problems or issues.
+[Support](https://skyline.be/contact/tech-support) 
 
 ## Contact
 
-[@Jordy Ampe](https://github.com/JordyGit)  
-[@RobbertVH](https://github.com/RobbertVH)
+[Skyline Communications](https://skyline.be/contact) 
 
-Project Link: [Chat-integration](https://github.com/SkylineCommunications/chat-integration)
 
 ## Version History
 
-- 1.0
-  - Initial Release
+[Releases](https://github.com/SkylineCommunications/chat-integration/releases)
 
 ## License
 
