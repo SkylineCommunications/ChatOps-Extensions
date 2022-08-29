@@ -9,10 +9,10 @@ This guideline is about how to integrate DataMiner into business communication p
   - [Microsoft Teams](#microsoft-teams)
   - [Slack](#slack) 
 - [Getting Started](#getting-started)
-  - [Microsoft Teams](#microsoft-teams) 
-  - [Slack](#slack) 
+  - [Microsoft Teams](#getting-started) 
+  - [Slack](#getting-started) 
 - [Examples](#examples)
-  - [Microsoft Teams](#create-team) 
+  - [Microsoft Teams](#examples) 
     * [Create Team](#create-team)
     * [Create Channel](#create-channel)
     * [Add Members](#add-team-members)
@@ -45,7 +45,7 @@ This guideline is about how to integrate DataMiner into business communication p
 
 - [Deploy the DMAPP]() to your DataMiner System. Installing this package, will add the automation scripts for Microsoft Teams in the Automation module.
 
-- [Access the DataMiner System](https://docs.dataminer.services/user-guide/Getting_started/Accessing_DataMiner/Accessing_DataMiner.html) and open the Automation module (via apps > Automation). <details><summary>...</summary>
+- [Access the DataMiner System](https://docs.dataminer.services/user-guide/Getting_started/Accessing_DataMiner/Accessing_DataMiner.html) and open the Automation module (via apps > Automation).<details><summary>...</summary>
 ![Gif-Automation](https://user-images.githubusercontent.com/109528797/186685478-9eac1cbf-f2d9-4c9a-8a6a-a2f499dbdcd9.gif)
 
 </details>
