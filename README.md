@@ -119,11 +119,11 @@ This guideline is about how to integrate DataMiner into business communication p
 
 ## Help
 
-[Support](https://skyline.be/contact/tech-support) 
+[Skyline Communications: Support](https://skyline.be/contact/tech-support) 
 
 ## Contact
 
-[Skyline Communications](https://skyline.be/contact) 
+[Skyline Communications: Contact](https://skyline.be/contact) 
 
 
 ## Version History
