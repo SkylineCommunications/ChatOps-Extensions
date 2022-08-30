@@ -5,10 +5,10 @@ This guideline is about how to integrate DataMiner into business communication p
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
-  - Development
-    - [DataMiner Integration Studio](#DataMiner Integration Studio)
-    - [Skyline.DataMiner.DcpChatIntegrationHelper NuGet package](#Skyline.DataMiner.DcpChatIntegrationHelper NuGet package)
-  - Usage
+  - [Development](#Development)
+    - [DataMiner Integration Studio](#dataminer-integration-studio)
+    - [Skyline.DataMiner.DcpChatIntegrationHelper NuGet package](#skyline.dataminer.dcpchatintegrationhelper-nuget-package)
+  - [Usage](#Usage)
     - [General](#general)
     - [Microsoft Teams](#microsoft-teams)
 - [Examples](#examples)
