@@ -6,8 +6,8 @@ This guideline is about how to integrate DataMiner into business communication p
 
 - [Prerequisites](#prerequisites)
   - [Development](#Development)
-    - [DataMiner Integration Studio](#dataminer-integration-studio)
-    - [Skyline.DataMiner.DcpChatIntegrationHelper NuGet package](#skyline.dataminer.dcpchatintegrationhelper-nuget-package)
+    - [DataMiner Integration Studio Visual Studio Extension](#dataminer-integration-studio-visual-studio-extension)
+    - [Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package](#skyline.dataminer.dcpchatintegrationhelper-nuget-package)
   - [Usage](#Usage)
     - [General](#general)
     - [Microsoft Teams](#microsoft-teams)
@@ -29,7 +29,7 @@ This guideline is about how to integrate DataMiner into business communication p
 
 ### Development
 
-#### DataMiner Integration Studio
+#### DataMiner Integration Studio Visual Studio Extension
 
 The DataMiner Integration Studio (also refered to as DIS) Visual Studio extension is required for development of Automation scripts using the DcpChatIntegrationHelper.
 
