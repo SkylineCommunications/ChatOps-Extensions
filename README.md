@@ -5,8 +5,12 @@ This guideline is about how to integrate DataMiner into business communication p
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
-  - [General](#general)
-  - [Microsoft Teams](#microsoft-teams)
+  - Development
+    - [DIS](#DIS)
+    - [DcpChatIntegrationHelper](#DcpChatIntegrationHelper)
+  - Usage
+    - [General](#general)
+    - [Microsoft Teams](#microsoft-teams)
 - [Examples](#examples)
   - [General](#general-1)
   - [Microsoft Teams](#microsoft-teams-1) 
@@ -23,21 +27,37 @@ This guideline is about how to integrate DataMiner into business communication p
 
 ## Prerequisites
 
-### General
+### Development
+
+#### DIS
+
+The DIS ("DataMiner Integration Studio") Visual Studio extension is required for development of Automation scripts using the DcpChatIntegrationHelper.
+
+See [Installing DataMiner Integration Studio](https://aka.dataminer.services/DisInstallation).
+
+> [!NOTE]
+> We recommend that you always use the latest version of DIS.
+
+#### DcpChatIntegrationHelper
+
+The Skyline.DataMiner.DcpChatIntegrationHelper is a nuget package that can be found on [nuget.org](nuget.org). This nuget package allows to easily integrate with business communication platforms from a DataMiner Automation script.
+
+> [!NOTE]
+> We recommend that you always use the latest version of DcpChatIntegrationHelper.
+
+### Usage
+
+#### General
 
 - The DataMiner System must be cloud-connected, i.e. [connecting it to the DataMiner Cloud Platform](https://docs.dataminer.services/user-guide/Cloud_Platform/AboutCloudPlatform/Connecting_your_DataMiner_System_to_the_cloud.html).
 
 - The CloudGateway Module must be updated to at least version 2.9.0, i.e. [upgrading the installed DxM versions on your DataMiner System](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Managing_cloud-connected_nodes.html).
 
-
-### Microsoft Teams
+#### Microsoft Teams
 
 - The DataMiner App must be allowed in your Team on [Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-apps).
 
 - Admin Consent must be granted in the [DCP Admin app](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Granting_admin_consent.html).
-
-
-
 
 ## Examples
 
@@ -96,7 +116,6 @@ This guideline is about how to integrate DataMiner into business communication p
 ## Contact
 
 [Skyline Communications: Contact](https://skyline.be/contact) 
-
 
 ## Version History
 
