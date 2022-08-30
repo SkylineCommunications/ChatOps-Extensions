@@ -50,8 +50,10 @@ DATE		VERSION		AUTHOR			COMMENTS
 */
 
 using System;
+using System.Threading;
+using System.Threading.Tasks;
+using DcpChatIntegrationHelper;
 using Skyline.DataMiner.Automation;
-using SLChatIntegrationHelper;
 
 /// <summary>
 /// DataMiner Script Class.
@@ -64,6 +66,7 @@ public class Script
 	/// <param name="engine">Link with SLAutomation process.</param>
 	public void Run(Engine engine)
 	{
+		ChatIntegrationHelper chatIntegrationHelper = null;
 		try
 		{
 			var ownerEmailParam = engine.GetScriptParam("Team Owner Email");
@@ -87,15 +90,22 @@ public class Script
 				return;
 			}
 
-			if (!ChatIntegrationHelper.Teams.TryCreateTeam(engine.Log, teamNameParam.Value, ownerEmailParam.Value, out var teamId))
+			var factory = new ChatIntegrationHelperFactory();
+			chatIntegrationHelper = factory.Create(
+				log => engine.Log(log, LogType.Debug, 1),
+				log => engine.Log(log, LogType.Information, 1),
+				log => engine.Log(log, LogType.Error, 1));
+
+			var response = chatIntegrationHelper.Teams.TryCreateTeam(teamNameParam.Value, ownerEmailParam.Value);
+			if (response.Error)
 			{
-				engine.ExitFail("Couldn't create team.");
+				engine.ExitFail($"Couldn't create the team with error {response.ErrorMessage}.");
 				return;
 			}
 
-			teamsMemoryFile.Set($"{teamNameParam.Value} ({teamId})", teamId);
+			teamsMemoryFile.Set($"{teamNameParam.Value} ({response.Team.TeamId})", response.Team.TeamId);
 
-			engine.ExitSuccess($"The team with id {teamId} should be created soon!");
+			engine.ExitSuccess($"The team with id {response.Team.TeamId} should be created soon!");
 		}
 		catch (ScriptAbortException)
 		{
@@ -105,6 +115,10 @@ public class Script
 		catch (Exception e)
 		{
 			engine.ExitFail($"An exception occurred with the following message: {e.Message}");
+		}
+		finally
+		{
+			chatIntegrationHelper?.Dispose();
 		}
 	}
 }
