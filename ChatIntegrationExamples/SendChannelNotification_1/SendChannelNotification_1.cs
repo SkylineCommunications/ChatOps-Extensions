@@ -50,8 +50,10 @@ DATE		VERSION		AUTHOR			COMMENTS
 */
 
 using System;
+using System.Threading;
+using System.Threading.Tasks;
+using DcpChatIntegrationHelper;
 using Skyline.DataMiner.Automation;
-using SLChatIntegrationHelper;
 
 /// <summary>
 /// DataMiner Script Class.
@@ -64,6 +66,7 @@ public class Script
 	/// <param name="engine">Link with SLAutomation process.</param>
 	public void Run(Engine engine)
 	{
+		ChatIntegrationHelper chatIntegrationHelper = null;
 		try
 		{
 			var teamIdParam = engine.GetScriptParam("Team Id");
@@ -87,8 +90,16 @@ public class Script
 				return;
 			}
 
-			if (!ChatIntegrationHelper.Teams.TrySendChannelNotification(engine.Log, teamIdParam.Value, channelIdParam.Value, notificationParam.Value)) {
-				engine.ExitFail($"Couldn't send the notification to the channel with id {channelIdParam.Value}.");
+			var factory = new ChatIntegrationHelperFactory();
+			chatIntegrationHelper = factory.Create(
+				log => engine.Log(log, LogType.Debug, 1),
+				log => engine.Log(log, LogType.Information, 1),
+				log => engine.Log(log, LogType.Error, 1));
+
+			var response = chatIntegrationHelper.Teams.TrySendChannelNotification(teamIdParam.Value, channelIdParam.Value, notificationParam.Value);
+			if (response.Error)
+			{
+				engine.ExitFail($"Couldn't send the notification to the channel with id {channelIdParam.Value} with error {response.ErrorMessage}.");
 				return;
 			}
 
@@ -102,6 +113,10 @@ public class Script
 		catch (Exception e)
 		{
 			engine.ExitFail($"An exception occurred with the following message: {e.Message}");
+		}
+		finally
+		{
+			chatIntegrationHelper?.Dispose();
 		}
 	}
 }

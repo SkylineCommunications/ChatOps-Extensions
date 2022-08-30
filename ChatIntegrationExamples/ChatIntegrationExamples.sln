@@ -5,12 +5,6 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{8B32CE97-7FCE-45C0-BB81-FF31F4A23730}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dlls", "Dlls", "{2C168C57-95DD-4C61-B249-74A32391FD2D}"
-	ProjectSection(SolutionItems) = preProject
-		Dlls\readme.txt = Dlls\readme.txt
-		Dlls\SLChatIntegrationHelper.dll = Dlls\SLChatIntegrationHelper.dll
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreateTeam", "CreateTeam", "{ACDA5228-C28B-4080-9A9E-1C142BE23A4B}"
 	ProjectSection(SolutionItems) = preProject
 		CreateTeam.xml = CreateTeam.xml
