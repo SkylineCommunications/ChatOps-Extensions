@@ -6,8 +6,8 @@ This guideline is about how to integrate DataMiner into business communication p
 
 - [Prerequisites](#prerequisites)
   - Development
-    - [DIS](#DIS)
-    - [DcpChatIntegrationHelper](#DcpChatIntegrationHelper)
+    - [DataMiner Integration Studio](#DataMiner Integration Studio)
+    - [Skyline.DataMiner.DcpChatIntegrationHelper NuGet package](#Skyline.DataMiner.DcpChatIntegrationHelper NuGet package)
   - Usage
     - [General](#general)
     - [Microsoft Teams](#microsoft-teams)
@@ -29,21 +29,21 @@ This guideline is about how to integrate DataMiner into business communication p
 
 ### Development
 
-#### DIS
+#### DataMiner Integration Studio
 
-The DIS ("DataMiner Integration Studio") Visual Studio extension is required for development of Automation scripts using the DcpChatIntegrationHelper.
+The DataMiner Integration Studio (also refered to as DIS) Visual Studio extension is required for development of Automation scripts using the DcpChatIntegrationHelper.
 
 See [Installing DataMiner Integration Studio](https://aka.dataminer.services/DisInstallation).
 
 > [!NOTE]
-> We recommend that you always use the latest version of DIS.
+> We recommend that you always use the latest version of the DataMiner Integration Studio Visual Studio extension.
 
-#### DcpChatIntegrationHelper
+#### Skyline.DataMiner.DcpChatIntegrationHelper NuGet package
 
-The Skyline.DataMiner.DcpChatIntegrationHelper is a nuget package that can be found on [nuget.org](nuget.org). This nuget package allows to easily integrate with business communication platforms from a DataMiner Automation script.
+The Skyline.DataMiner.DcpChatIntegrationHelper NuGet package can be found on [nuget.org](https://nuget.org). This nuget package allows to easily integrate with business communication platforms from a DataMiner Automation script.
 
 > [!NOTE]
-> We recommend that you always use the latest version of DcpChatIntegrationHelper.
+> We recommend that you always use the latest version of the Skyline.DataMiner.DcpChatIntegrationHelper NuGet package.
 
 ### Usage
 
