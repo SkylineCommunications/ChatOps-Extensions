@@ -15,11 +15,11 @@ This readme details how to integrate DataMiner into business communication platf
   - [General](#general-1)
   - [Microsoft Teams](#microsoft-teams-1) 
     * [Getting Started](#getting-started)
-    * [Creating a Team](#create-team)
-    * [Creating a Channel](#create-channel)
-    * [Adding Team Members](#add-team-members)
-    * [Adding a Team Owner](#add-team-owner)
-    * [Sending a Channel Notification](#send-channel-notification)
+    * [Creating a Team](#creating-a-team)
+    * [Creating a Channel](#creating-a-channel)
+    * [Adding Team Members](#adding-team-members)
+    * [Adding Team Owners](#adding-team-owners)
+    * [Sending a Channel Notification](#sending-a-channel-notification)
 - [Help](#help)
 - [Contact](#contact)
 - [Version History](#version-history)
@@ -109,9 +109,9 @@ To add a new member or members to a team:
 
 3. Click the '*execute now*' button. The members will be added to a team in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-AddTeamMember](https://user-images.githubusercontent.com/109528797/186880110-4fb9a616-b647-4919-9556-4a057a65be2b.gif)</details>
 
-#### Adding a Team Owner
+#### Adding Team Owners
 
-To add a new owner to a team:
+To add a new owner or owners to a team:
 
 1. In the Automation module in DataMiner Cube, click the '*Add Team Owners*' Automation script and click the '*Execute*' button.
 
