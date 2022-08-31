@@ -1,6 +1,6 @@
 # Chat Integration
 
-This guideline is about how to integrate DataMiner into business communication platforms with automation scripts.
+This readme details how to integrate DataMiner into business communication platforms with Automation scripts.
 
 ## Table of Contents
 
@@ -15,11 +15,11 @@ This guideline is about how to integrate DataMiner into business communication p
   - [General](#general-1)
   - [Microsoft Teams](#microsoft-teams-1) 
     * [Getting Started](#getting-started)
-    * [Create Team](#create-team)
-    * [Create Channel](#create-channel)
-    * [Add Members](#add-team-members)
-    * [Add Owner](#add-team-owner)
-    * [Send Channel Notification](#send-channel-notification)
+    * [Creating a Team](#create-team)
+    * [Creating a Channel](#create-channel)
+    * [Adding Team Members](#add-team-members)
+    * [Adding a Team Owner](#add-team-owner)
+    * [Sending a Channel Notification](#send-channel-notification)
 - [Help](#help)
 - [Contact](#contact)
 - [Version History](#version-history)
@@ -31,14 +31,14 @@ This guideline is about how to integrate DataMiner into business communication p
 
 #### Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package
 
-The Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package can be found on [nuget.org](https://nuget.org). This nuget package allows to easily integrate with business communication platforms from a DataMiner Automation script.
+The Skyline.DataMiner.DcpChatIntegrationHelper NuGet package can be found on [nuget.org](https://nuget.org). This Nuget package allows easy integration with business communication platforms from a DataMiner Automation script.
 
 > ℹ️
-> We recommend that you always use the latest version of the Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package.
+> We recommend that you always use the latest version of the Skyline.DataMiner.DcpChatIntegrationHelper NuGet package.
 
 #### DataMiner Integration Studio Visual Studio Extension
 
-The DataMiner Integration Studio Visual Studio extension (also refered to as DIS) is required for development of Automation scripts using the [Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package](#skyline.dataminer.dcpchatintegrationhelper-nuget-package). DIS can also be used to deploy automation scripts directly from your development environment to your DataMiner Systems.
+The DataMiner Integration Studio Visual Studio extension (also referred to as DIS) is required for development of Automation scripts using the [Skyline.DataMiner.DcpChatIntegrationHelper NuGet package](#skyline.dataminer.dcpchatintegrationhelper-nuget-package). You can also use DIS to deploy Automation scripts directly from your development environment to your DataMiner Systems.
 
 See [Installing DataMiner Integration Studio](https://aka.dataminer.services/DisInstallation).
 
@@ -49,69 +49,100 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### General
 
-- The DataMiner System must be cloud-connected, i.e. [connecting it to the DataMiner Cloud Platform](https://docs.dataminer.services/user-guide/Cloud_Platform/AboutCloudPlatform/Connecting_your_DataMiner_System_to_the_cloud.html).
+- The DataMiner System must be cloud-connected. See [Connecting your DataMiner System to the cloud](https://docs.dataminer.services/user-guide/Cloud_Platform/AboutCloudPlatform/Connecting_your_DataMiner_System_to_the_cloud.html).
 
-- The CloudGateway Module must be updated to at least version 2.9.0, i.e. [upgrading the installed DxM versions on your DataMiner System](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Managing_cloud-connected_nodes.html).
+- The CloudGateway module must be updated to at least version 2.9.0. See [Upgrading nodes to the latest DxM versions](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Managing_cloud-connected_nodes.html).
 
 #### Microsoft Teams
 
-- The DataMiner App must be allowed in your Team on [Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-apps).
+- The DataMiner app must be allowed in your team on [Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-apps).
 
-- Admin Consent must be granted in the [DCP Admin app](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Granting_admin_consent.html).
+- Admin consent must be granted in the [DCP Admin app](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Granting_admin_consent.html).
 
 ## Examples
 
 ### General
 
-- The code for these automation scripts can be found under [this folder](ChatIntegrationExamples).
+- The code for these Automation scripts can be found in [the ChatIntegrationExamples folder](ChatIntegrationExamples).
 
 ### Microsoft Teams
 
 #### Getting Started
 
-- [Deploy the DMAPP]() to your DataMiner System. Installing this package, will add the automation scripts for Microsoft Teams in the Automation module and some memory files which will be used by the automation scripts to save the IDs of the created resources.
+1. [Deploy the DMAPP]() to your DataMiner System. Installing this package will add the Automation scripts for Microsoft Teams in the Automation module along with some memory files that will be used by the Automation scripts to save the IDs of the created resources.
 
-- [Access the DataMiner System](https://docs.dataminer.services/user-guide/Getting_started/Accessing_DataMiner/Accessing_DataMiner.html) and open the Automation module (via apps > Automation). The added automation scripts are shown here. <details><summary>`show demo`</summary>![Gif-Automation](https://user-images.githubusercontent.com/109528797/186685478-9eac1cbf-f2d9-4c9a-8a6a-a2f499dbdcd9.gif)</details>
+2. [Open DataMiner Cube](https://docs.dataminer.services/user-guide/Getting_started/Accessing_DataMiner/Accessing_DataMiner_Cube.html) and open the Automation module (via apps > Automation). The added Automation scripts will be shown there. <details><summary>`show demo`</summary>![Gif-Automation](https://user-images.githubusercontent.com/109528797/186685478-9eac1cbf-f2d9-4c9a-8a6a-a2f499dbdcd9.gif)</details>
 
-#### Create Team
+#### Creating a Team
 
-- Open the Automation module (via apps > Automation) and click on the '*automation scripts*' tab. To create a new Team, click the '*Create Team*' automation script and fill in the desired fields, **the fields are case sensitive.**
+1. Open the Automation module (via apps > Automation) and go to the '*automation scripts*' tab.
 
-- When pressing the '*execute now*' button, a Team (with a general Channel) is created in Microsoft Teams with the Dataminer bot. <details><summary>`show demo`</summary>![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)</details>
+2. Click the '*Create Team*' Automation script and fill in the desired fields. **The fields are case sensitive.**
 
-#### Create Channel
+3. Click the '*execute now*' button.  A team (with a General channel) will be created in Microsoft Teams with the DataMiner bot. <details><summary>`show demo`</summary>![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)</details>
 
-- As a Channel exists in a Team, a Team must first be created *(see previous example)*.
+#### Creating a Channel
 
-- To create a new Channel, click the '*Create Channel*' automation script and choose the desired Team for this Channel.
+1. First make sure a team is created as detailed above, as a channel can only exist within a team.
 
-- When pressing the '*execute now*' button, a Channel is created in Microsoft Teams with the Dataminer bot. <details><summary>`show demo`</summary>![Gif-CreateChannel](https://user-images.githubusercontent.com/109528797/186855003-c4002e8e-c9cf-42fd-91bd-b389d4bab908.gif)</details>
+2. In the Automation module in DataMiner Cube, click the '*Create Channel*' Automation script and click the '*Execute*' button.
 
-#### Add Team Members
+3. Fill in the necessary information:
 
-- To add a new member or members to a Team, click the '*Add Team Members*' automation script and select the desired Team.
+   - *Team ID*: The ID of the team that should contain the channel.
+   - *Channel Name*: The name of the channel you are creating.
+   - *Channel Description*: The description of the channel you are creating.
+   - *Channels*: Select the memory file the script should use to save the ID.
 
-- When pressing the '*execute now*' button, the members are added to a Team in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-AddTeamMember](https://user-images.githubusercontent.com/109528797/186880110-4fb9a616-b647-4919-9556-4a057a65be2b.gif)</details>
+4. Click the '*execute now*' button. A channel will be created in Microsoft Teams with the DataMiner bot. <details><summary>`show demo`</summary>![Gif-CreateChannel](https://user-images.githubusercontent.com/109528797/186855003-c4002e8e-c9cf-42fd-91bd-b389d4bab908.gif)</details>
 
-#### Add Team Owner
+#### Adding Team Members
 
-- To add a new owner to a Team, click the '*Add Team Owners*' automation script and select the desired Team.
+To add a new member or members to a team:
 
-- When pressing the '*execute now*' button, a owner is added to a Team in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-AddTeamOwner](https://user-images.githubusercontent.com/109528797/187139084-f2991b40-cbe2-46fe-aec9-c804b9852e62.gif)</details>
+1. In the Automation module in DataMiner Cube, click the '*Add Team Members*' Automation script and click the '*Execute*' button.
 
-#### Send Channel Notification
+2. Fill in the necessary information:
 
-- To send a notification in a Channel, click the '*Send Channel Notification*' automation script and choose the desired Channel for this notification.
+   - *Team ID*: The ID of the team where you want to add one or more new members.
+   - *Team Members to Add*: The email addresses of the members, separated by semicolons (";").
 
-- When pressing the '*execute now*' button, a notification is sent in Microsoft Teams.<details><summary>`show demo`</summary>![Gif-SendNotification](https://user-images.githubusercontent.com/109528797/187139103-4728e148-204d-447f-9674-8d74f4e373d1.gif)</details>
+3. Click the '*execute now*' button. The members will be added to a team in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-AddTeamMember](https://user-images.githubusercontent.com/109528797/186880110-4fb9a616-b647-4919-9556-4a057a65be2b.gif)</details>
+
+#### Adding a Team Owner
+
+To add a new owner to a team:
+
+1. In the Automation module in DataMiner Cube, click the '*Add Team Owners*' Automation script and click the '*Execute*' button.
+
+2. Fill in the necessary information:
+
+   - *Team ID*: The ID of the team where you want to add one or more new owners.
+   - *Team Owners to Add*: The email addresses of the new owners, separated by semicolons (";").
+
+3. Click the '*execute now*' button. An owner will be added to the team in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-AddTeamOwner](https://user-images.githubusercontent.com/109528797/187139084-f2991b40-cbe2-46fe-aec9-c804b9852e62.gif)</details>
+
+#### Sending a Channel Notification
+
+To send a notification in a channel:
+
+1. In the Automation module in DataMiner Cube, click the '*Send Channel Notification*' Automation script and click the '*Execute*' button.
+
+2. Fill in the necessary information:
+
+   - *Team ID*: The ID of the team where you want to send a notification.
+   - *Channel ID*: The ID of the channel where you want to send a notification.
+   - *Notification*: The text of the notification.
+
+3. Click the '*execute now*' button. A notification will be sent in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendNotification](https://user-images.githubusercontent.com/109528797/187139103-4728e148-204d-447f-9674-8d74f4e373d1.gif)</details>
 
 ## Help
 
-[Skyline Communications: Support](https://skyline.be/contact/tech-support) 
+[Skyline Communications: Support](https://skyline.be/contact/tech-support)
 
 ## Contact
 
-[Skyline Communications: Contact](https://skyline.be/contact) 
+[Skyline Communications: Contact](https://skyline.be/contact)
 
 ## Version History
 
@@ -119,4 +150,4 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/SkylineCommunications/chat-integration/blob/main/LICENSE) - see the file for details
+This project is licensed under the [MIT License](https://github.com/SkylineCommunications/chat-integration/blob/main/LICENSE) – see the file for details.
