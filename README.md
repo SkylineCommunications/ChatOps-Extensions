@@ -55,7 +55,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Microsoft Teams
 
-- The DataMiner app must be allowed in your team on [Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-apps).
+- The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) must be allowed in your [Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-apps).
 
 - Admin consent must be granted in the [DCP Admin app](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Granting_admin_consent.html).
 
@@ -85,7 +85,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
    - *Team Name*: The name of the team you are creating.
    - *Teams*: Select the memory file the script should use to save the ID of the team you are creating.
 
-4. Click the '*execute now*' button.  A team (with a General channel) will be created in Microsoft Teams with the [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) already added to it. <details><summary>`show demo`</summary>![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)</details>
+4. Click the '*execute now*' button.  A team (with a General channel) will be created in Microsoft Teams with the [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) already installed. <details><summary>`show demo`</summary>![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)</details>
 
 #### Creating a Channel
 
