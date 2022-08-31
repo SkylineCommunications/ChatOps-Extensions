@@ -12,12 +12,12 @@
 
 	<Memory>
 		<File id="1" volatile="false">
-			<Description>Channels</Description>
+			<Description>ChannelsExample</Description>
 		</File>
 	</Memory>
 
 	<Parameters>
-		<ScriptParameter id="2" type="string" values="Teams">
+		<ScriptParameter id="2" type="string" values="TeamsExample">
 			<Description>Team Id</Description>
 		</ScriptParameter>
 		<ScriptParameter id="3" type="string" values="">
@@ -26,7 +26,7 @@
 		<ScriptParameter id="4" type="string" values="">
 			<Description>Channel Description</Description>
 		</ScriptParameter>
-		<ScriptParameter id="5" type="string" values="YesOrNo">
+		<ScriptParameter id="5" type="string" values="YesOrNoExample">
 			<Description>Channel Is Favorite</Description>
 		</ScriptParameter>
 	</Parameters>

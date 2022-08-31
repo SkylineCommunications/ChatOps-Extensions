@@ -14,7 +14,7 @@
 	</Memory>
 
 	<Parameters>
-		<ScriptParameter id="1" type="string" values="Teams">
+		<ScriptParameter id="1" type="string" values="TeamsExample">
 			<Description>Team Id</Description>
 		</ScriptParameter>
 		<ScriptParameter id="2" type="string" values="">

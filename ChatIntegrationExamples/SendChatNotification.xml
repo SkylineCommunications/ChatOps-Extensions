@@ -14,7 +14,7 @@
 	</Memory>
 
 	<Parameters>
-		<ScriptParameter id="1" type="string" values="Chats">
+		<ScriptParameter id="1" type="string" values="ChatsExample">
 			<Description>Chat Id</Description>
 		</ScriptParameter>
 		<ScriptParameter id="2" type="string" values="">
