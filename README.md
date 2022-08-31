@@ -38,7 +38,7 @@ The Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package can be found on [nu
 
 #### DataMiner Integration Studio Visual Studio Extension
 
-The DataMiner Integration Studio Visual Studio extension (also refered to as DIS) is required for development of Automation scripts using the [Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package](#skyline.dataminer.dcpchatintegrationhelper-nuget-package).
+The DataMiner Integration Studio Visual Studio extension (also refered to as DIS) is required for development of Automation scripts using the [Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package](#skyline.dataminer.dcpchatintegrationhelper-nuget-package). DIS can also be used to deploy automation scripts directly from your development environment to your DataMiner Systems.
 
 See [Installing DataMiner Integration Studio](https://aka.dataminer.services/DisInstallation).
 
@@ -69,13 +69,9 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Getting Started
 
-- [Deploy the DMAPP]() to your DataMiner System. Installing this package, will add the automation scripts for Microsoft Teams in the Automation module.
+- [Deploy the DMAPP]() to your DataMiner System. Installing this package, will add the automation scripts for Microsoft Teams in the Automation module and some memory files which will be used by the automation scripts to save the IDs of the created resources.
 
 - [Access the DataMiner System](https://docs.dataminer.services/user-guide/Getting_started/Accessing_DataMiner/Accessing_DataMiner.html) and open the Automation module (via apps > Automation). The added automation scripts are shown here. <details><summary>`show demo`</summary>![Gif-Automation](https://user-images.githubusercontent.com/109528797/186685478-9eac1cbf-f2d9-4c9a-8a6a-a2f499dbdcd9.gif)</details>
-
-- Open the '*memory files*' tab and create memory files named '*Teams*', '*Channels*' and '*Chats*'. The purpose of these files is to persist the created Teams, Channels and Chats. <details><summary>`show demo`</summary>![Gif-MemFiles](https://user-images.githubusercontent.com/109528797/186685736-dacafe23-53be-4165-8982-eb2113549d78.gif)</details>
-
-- Also create a memory file named YesOrNo with the following entries: *{postion:0, value:1, description:yes ; postion:1, value:0, description:no}*. <details><summary>`show demo`</summary>![Gif-MemFilesYesorNo](https://user-images.githubusercontent.com/109528797/186685771-9d9c4155-1f58-4700-98aa-90ebd19c329e.gif)</details>
 
 #### Create Team
 
