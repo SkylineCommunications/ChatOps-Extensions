@@ -38,7 +38,7 @@ The Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package can be found on [nu
 
 #### DataMiner Integration Studio Visual Studio Extension
 
-The DataMiner Integration Studio Visual Studio extension (also refered to as DIS) is required for development of Automation scripts using the [Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package](#skyline.dataminer.dcpchatintegrationhelper-nuget-package).
+The DataMiner Integration Studio Visual Studio extension (also refered to as DIS) is required for development of Automation scripts using the [Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package](#skyline.dataminer.dcpchatintegrationhelper-nuget-package). DIS can also be used to deploy your code directly to your DataMiner Systems.
 
 See [Installing DataMiner Integration Studio](https://aka.dataminer.services/DisInstallation).
 
