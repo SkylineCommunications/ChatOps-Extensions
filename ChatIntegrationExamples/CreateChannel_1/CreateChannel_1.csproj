@@ -59,8 +59,8 @@
     <Reference Include="protobuf-net.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
       <HintPath>..\packages\protobuf-net.Core.3.1.17\lib\net461\protobuf-net.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Skyline.DataMiner.DcpChatIntegrationHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Skyline.DataMiner.DcpChatIntegrationHelper.1.10325.13-1.0.0.X.13\lib\netstandard2.0\Skyline.DataMiner.DcpChatIntegrationHelper.dll</HintPath>
+    <Reference Include="Skyline.DataMiner.DcpChatIntegrationHelper, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Skyline.DataMiner.DcpChatIntegrationHelper.1.33564.1-1.0.1.X.1\lib\netstandard2.0\Skyline.DataMiner.DcpChatIntegrationHelper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="SLManagedAutomation">
@@ -142,7 +142,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties DisLinkedXmlFile="..\CreateChannel.xml" DisProjectType="automationScriptProject" DisLinkId="1" />
+      <UserProperties DisLinkId="1" DisProjectType="automationScriptProject" DisLinkedXmlFile="..\CreateChannel.xml" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

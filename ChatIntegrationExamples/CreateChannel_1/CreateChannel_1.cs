@@ -31,18 +31,6 @@ public class Script
 				return;
 			}
 
-			var channelIsFavoriteParam = engine.GetScriptParam("Channel Is Favorite");
-			if (string.IsNullOrWhiteSpace(channelIsFavoriteParam?.Value))
-			{
-				engine.ExitFail("'Channel Is Favorite' parameter is required.");
-				return;
-			}
-
-			// If "1", "true" or "yes" is the value it's true, otherwise false
-			var channelIsFavorite = channelIsFavoriteParam.Value == "1" ||
-			                        string.Equals(channelIsFavoriteParam.Value, "true", StringComparison.InvariantCultureIgnoreCase) ||
-			                        string.Equals(channelIsFavoriteParam.Value, "yes", StringComparison.InvariantCultureIgnoreCase);
-
 			var channelMemoryFile = engine.GetMemory("Channels");
 			if (channelMemoryFile == null)
 			{
@@ -54,7 +42,7 @@ public class Script
 
 			try
 			{
-				channel = chatIntegrationHelper.Teams.TryCreateChannel(teamIdParam.Value, channelNameParam.Value, channelDescriptionParam.Value, channelIsFavorite);
+				channel = chatIntegrationHelper.Teams.TryCreateChannel(teamIdParam.Value, channelNameParam.Value, channelDescriptionParam.Value);
 			}
 			catch (TeamsChatIntegrationException e)
 			{
