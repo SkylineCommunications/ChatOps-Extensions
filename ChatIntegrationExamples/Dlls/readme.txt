@@ -1,2 +1,0 @@
-This folder contains DLL files that should be placed under the ProtocolScripts folder to make the Automation Scripts in this solution function correctly.
-The Automation Scripts should/will reference them, which can be seen in the Advanced section in DataMiner Cube
