@@ -83,7 +83,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Creating a Channel
 
-1. First make sure a team is created as detailed above, as a channel can only exist within a team.
+1. First make sure [a team is created as detailed above](#creating-a-team), as a channel can only exist within a team.
 
 2. In the Automation module in DataMiner Cube, click the '*Create Channel*' Automation script and click the '*Execute*' button.
 
@@ -100,41 +100,47 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 To add a new member or members to a team:
 
-1. In the Automation module in DataMiner Cube, click the '*Add Team Members*' Automation script and click the '*Execute*' button.
+1. First make sure [a team is created as detailed above](#creating-a-team), as members can only exist within a team.
 
-2. Fill in the necessary information:
+2. In the Automation module in DataMiner Cube, click the '*Add Team Members*' Automation script and click the '*Execute*' button.
+
+3. Fill in the necessary information:
 
    - *Team ID*: The ID of the team where you want to add one or more new members.
    - *Team Members to Add*: The email addresses of the members, separated by semicolons (";").
 
-3. Click the '*execute now*' button. The members will be added to a team in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-AddTeamMember](https://user-images.githubusercontent.com/109528797/186880110-4fb9a616-b647-4919-9556-4a057a65be2b.gif)</details>
+4. Click the '*execute now*' button. The members will be added to a team in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-AddTeamMember](https://user-images.githubusercontent.com/109528797/186880110-4fb9a616-b647-4919-9556-4a057a65be2b.gif)</details>
 
 #### Adding Team Owners
 
 To add a new owner or owners to a team:
 
-1. In the Automation module in DataMiner Cube, click the '*Add Team Owners*' Automation script and click the '*Execute*' button.
+1. First make sure [a team is created as detailed above](#creating-a-team), as owners can only exist within a team.
 
-2. Fill in the necessary information:
+2. In the Automation module in DataMiner Cube, click the '*Add Team Owners*' Automation script and click the '*Execute*' button.
+
+3. Fill in the necessary information:
 
    - *Team ID*: The ID of the team where you want to add one or more new owners.
    - *Team Owners to Add*: The email addresses of the new owners, separated by semicolons (";").
 
-3. Click the '*execute now*' button. An owner will be added to the team in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-AddTeamOwner](https://user-images.githubusercontent.com/109528797/187139084-f2991b40-cbe2-46fe-aec9-c804b9852e62.gif)</details>
+4. Click the '*execute now*' button. An owner will be added to the team in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-AddTeamOwner](https://user-images.githubusercontent.com/109528797/187139084-f2991b40-cbe2-46fe-aec9-c804b9852e62.gif)</details>
 
 #### Sending a Channel Notification
 
 To send a notification in a channel:
 
-1. In the Automation module in DataMiner Cube, click the '*Send Channel Notification*' Automation script and click the '*Execute*' button.
+1. First make sure [a channel is created as detailed above](#creating-a-channel), as notifications can only be posted within a channel.
 
-2. Fill in the necessary information:
+2. In the Automation module in DataMiner Cube, click the '*Send Channel Notification*' Automation script and click the '*Execute*' button.
+
+3. Fill in the necessary information:
 
    - *Team ID*: The ID of the team where you want to send a notification.
    - *Channel ID*: The ID of the channel where you want to send a notification.
    - *Notification*: The text of the notification.
 
-3. Click the '*execute now*' button. A notification will be sent in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendNotification](https://user-images.githubusercontent.com/109528797/187139103-4728e148-204d-447f-9674-8d74f4e373d1.gif)</details>
+4. Click the '*execute now*' button. A notification will be sent in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendNotification](https://user-images.githubusercontent.com/109528797/187139103-4728e148-204d-447f-9674-8d74f4e373d1.gif)</details>
 
 ## Help
 
