@@ -79,7 +79,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 2. Click the '*Create Team*' Automation script and fill in the desired fields. **The fields are case sensitive.**
 
-3. Click the '*execute now*' button.  A team (with a General channel) will be created in Microsoft Teams with the DataMiner bot. <details><summary>`show demo`</summary>![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)</details>
+3. Click the '*execute now*' button.  A team (with a General channel) will be created in Microsoft Teams with the [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) already added to it. <details><summary>`show demo`</summary>![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)</details>
 
 #### Creating a Channel
 
@@ -94,7 +94,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
    - *Channel Description*: The description of the channel you are creating.
    - *Channels*: Select the memory file the script should use to save the ID.
 
-4. Click the '*execute now*' button. A channel will be created in Microsoft Teams with the DataMiner bot. <details><summary>`show demo`</summary>![Gif-CreateChannel](https://user-images.githubusercontent.com/109528797/186855003-c4002e8e-c9cf-42fd-91bd-b389d4bab908.gif)</details>
+4. Click the '*execute now*' button. A channel will be created in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-CreateChannel](https://user-images.githubusercontent.com/109528797/186855003-c4002e8e-c9cf-42fd-91bd-b389d4bab908.gif)</details>
 
 #### Adding Team Members
 
