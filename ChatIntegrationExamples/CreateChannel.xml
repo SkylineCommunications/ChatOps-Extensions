@@ -26,13 +26,10 @@
 		<ScriptParameter id="4" type="string" values="">
 			<Description>Channel Description</Description>
 		</ScriptParameter>
-		<ScriptParameter id="5" type="string" values="YesOrNoExample">
-			<Description>Channel Is Favorite</Description>
-		</ScriptParameter>
 	</Parameters>
 
 	<Script>
-		<Exe id="6" type="csharp">
+		<Exe id="5" type="csharp">
 			<Value><![CDATA[[Project:CreateChannel_1]]]></Value>
 			<!--<Param type="debug">true</Param>-->
 			<Message></Message>
