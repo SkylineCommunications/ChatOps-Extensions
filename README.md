@@ -79,13 +79,13 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 1. In the Automation module in DataMiner Cube, click the '*Create Team*' Automation script and click the '*Execute*' button.
 
-2. Fill in the necessary information. Note that the **the fields are case sensitive**.
+2. Fill in the necessary information. Note that the **fields are case sensitive**.
 
    - *Team Owner Email*: The email address of the owner of the team you are creating.
    - *Team Name*: The name of the team you are creating.
    - *Teams*: Select the memory file the script should use to save the ID of the team you are creating.
 
-3. Click the '*execute now*' button.  A team (with a General channel) will be created in Microsoft Teams, if the [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) is installed. <details><summary>`show demo`</summary>![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)</details>
+3. Click the '*execute now*' button.  A team (with a General channel) will be created in Microsoft Teams. The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) will also be installed. <details><summary>`show demo`</summary>![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)</details>
 
 #### Creating a Channel
 
@@ -93,7 +93,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 2. In the Automation module in DataMiner Cube, click the '*Create Channel*' Automation script and click the '*Execute*' button.
 
-3. Fill in the necessary information. Note that the **the fields are case sensitive**.
+3. Fill in the necessary information. Note that the **fields are case sensitive**.
 
    - *Team ID*: The ID of the team that should contain the channel.
    - *Channel Name*: The name of the channel you are creating.
@@ -110,7 +110,7 @@ To add a new member or members to a team:
 
 2. In the Automation module in DataMiner Cube, click the '*Add Team Members*' Automation script and click the '*Execute*' button.
 
-3. Fill in the necessary information. Note that the **the fields are case sensitive**.
+3. Fill in the necessary information. Note that the **fields are case sensitive**.
 
    - *Team ID*: The ID of the team where you want to add one or more new members.
    - *Team Members to Add*: The email addresses of the members, separated by semicolons (";").
@@ -125,7 +125,7 @@ To add a new owner or owners to a team:
 
 2. In the Automation module in DataMiner Cube, click the '*Add Team Owners*' Automation script and click the '*Execute*' button.
 
-3. Fill in the necessary information. Note that the **the fields are case sensitive**.
+3. Fill in the necessary information. Note that the **fields are case sensitive**.
 
    - *Team ID*: The ID of the team where you want to add one or more new owners.
    - *Team Owners to Add*: The email addresses of the new owners, separated by semicolons (";").
@@ -140,7 +140,7 @@ To send a notification in a channel:
 
 2. In the Automation module in DataMiner Cube, click the '*Send Channel Notification*' Automation script and click the '*Execute*' button.
 
-3. Fill in the necessary information. Note that the **the fields are case sensitive**.
+3. Fill in the necessary information. Note that the **fields are case sensitive**.
 
    - *Team ID*: The ID of the team where you want to send a notification.
    - *Channel ID*: The ID of the channel where you want to send a notification. Note that this must be a channel of the specified team.
