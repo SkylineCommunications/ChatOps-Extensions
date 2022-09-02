@@ -57,7 +57,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 - The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) must be allowed in your [Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-apps).
 
-- Admin consent must be granted in the [DCP Admin app](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Granting_admin_consent.html).
+- [Admin consent must be granted](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Granting_admin_consent.html) in the [DCP Admin app](https://admin.dataminer.services).
 
 ## Examples
 
