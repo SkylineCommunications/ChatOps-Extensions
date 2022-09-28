@@ -53,7 +53,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 - [Start a conversation with the DataMiner bot](https://docs.dataminer.services/user-guide/Cloud_Platform/TeamsBot/DataMiner_Teams_bot.html#starting-a-conversation-with-the-teams-bot) by logging in and setting your active DataMiner System. When you execute your first (custom) command to the active DMS, the DataMiner bot might ask you to link your DCP account to your DataMiner account if this wasn't the case yet. 
 
-- Only Automation scripts that are present in a (sub)folder called '*bot*' will be recognized as custom commands by the DataMiner bot. The examples below are automatically placed in such a subfolder.
+- Only Automation scripts that are present in a (sub)folder called '*bot*' will be recognized as custom commands by the DataMiner bot. The examples below are automatically placed in such a folder.
 
 ## Examples
 
