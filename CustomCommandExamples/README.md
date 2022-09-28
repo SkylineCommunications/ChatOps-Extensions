@@ -59,7 +59,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 ### General
 
-- The code for these Automation scripts can be found in [the CustomCommandExamples folder](CustomCommandExamples).
+- The code for these Automation scripts can be found in [the CustomCommandExamples folder]().
 
 ### Microsoft Teams
 
