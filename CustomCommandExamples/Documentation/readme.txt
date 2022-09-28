@@ -1,1 +1,0 @@
-This folder can be used to add documentation related to this solution.

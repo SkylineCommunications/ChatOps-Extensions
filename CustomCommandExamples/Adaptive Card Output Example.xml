@@ -5,7 +5,7 @@
 	<Type>Automation</Type>
 	<Author>SKYLINE2\JordyAM</Author>
 	<CheckSets>FALSE</CheckSets>
-	<Folder>Examples\ChatOps\Teams\CustomCommands\bot</Folder>
+	<Folder>Examples/ChatOps/Teams/CustomCommands/bot</Folder>
 
 	<Protocols>
 	</Protocols>
