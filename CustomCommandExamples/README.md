@@ -59,7 +59,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 ### General
 
-- The code for these Automation scripts can be found in [the CustomCommandExamples folder]().
+- The code for these Automation scripts can be found in [the CustomCommandExamples folder](). Note that these examples are kept very simple, without user input, and only demonstrate how to form different types of outputs to be displayed by the DataMiner Bot. For more information about what Automation scripts can do, see [Automation](https://docs.dataminer.services/user-guide/Advanced_Modules/Automation/automation.html).
 
 ### Microsoft Teams
 
