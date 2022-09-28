@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <DMSScript options="272" xmlns="http://www.skyline.be/automation">
-	<Name>Create Team</Name>
+	<Name>Create Team Example</Name>
 	<Description>Creates a new team in Microsoft Teams. Make sure to have a tenant set for your organization in the DCP Admin App (https://admin.dataminer.services).</Description>
 	<Type>Automation</Type>
 	<Author>SKYLINE2\JordyAM</Author>
 	<CheckSets>FALSE</CheckSets>
-	<Folder></Folder>
+	<Folder>Examples/ChatOps/Teams/Integration</Folder>
 
 	<Protocols>
 	</Protocols>
