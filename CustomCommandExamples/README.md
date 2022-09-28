@@ -68,7 +68,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 1. [Download this DMAPP]() and [deploy it to your DataMiner System](https://docs.dataminer.services/develop/TOOLS/TOOApplicationPackages/Installing_an_app_package.html). Installing this package will add the custom command Automation scripts for Microsoft Teams in the Automation module.
 
    > :warning:
-   > Note that reinstalling this DMAPP will overwrite any Automation scripts with identical names.
+   > Note that installing this DMAPP will overwrite any Automation scripts with identical names.
 
 #### Output an Adaptive Card
 
