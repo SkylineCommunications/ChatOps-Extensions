@@ -1,0 +1,76 @@
+﻿{
+  // ACTION REQUIRED: This file was automatically added to your project, but it
+  // will not take effect until additional steps are taken to enable it. See the
+  // following page for additional information:
+  //
+  // https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/EnableConfiguration.md
+
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "settings": {
+	"namingRules": {
+		"allowCommonHungarianPrefixes": false,
+        "allowedHungarianPrefixes": [
+            "ab",
+            "ac",
+            "ad",
+            "af",
+            "ai",
+            "al",
+            "ao",
+            "as",
+            "ax",
+            "b",
+            "by",
+            "c",
+            "d",
+            "dt",
+            "e",
+            "f",
+            "hs",
+            "i",
+            "ip",
+            "is",
+            "l",
+            "lb",
+            "lc",
+            "ld",
+            "lf",
+            "li",
+            "ll",
+            "lo",
+            "ls",
+            "lx",
+            "my",
+            "no",
+            "o",
+            "qb",
+            "qc",
+            "qd",
+            "qf",
+            "qi",
+            "ql",
+            "qo",
+            "qs",
+            "qx",
+            "rx",
+            "s",
+            "sb",
+            "sc",
+            "sd",
+            "sf",
+            "sh",
+            "si",
+            "sl",
+            "so",
+            "ss",
+            "sx",
+            "to",
+            "ts",
+            "tx",
+            "ui",
+            "ul",
+            "x"
+        ]
+	}
+  }
+}
