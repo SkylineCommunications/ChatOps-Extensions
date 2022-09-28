@@ -65,7 +65,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Getting Started
 
-1. [Download this DMAPP]() and [deploy it to your DataMiner System](https://docs.dataminer.services/develop/TOOLS/TOOApplicationPackages/Installing_an_app_package.html). Installing this package will add the custom command Automation scripts for Microsoft Teams in the Automation module.
+1. [Download this DMAPP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/9666590/DcpCustomCommandExamples.1.0.0.X_B4.zip) and [deploy it to your DataMiner System](https://docs.dataminer.services/develop/TOOLS/TOOApplicationPackages/Installing_an_app_package.html) after unzipping it. Installing this package will add the custom command Automation scripts for Microsoft Teams in the Automation module.
 
    > :warning:
    > Note that installing this DMAPP will overwrite any Automation scripts with identical names.
