@@ -14,7 +14,9 @@ This readme details how to create custom DataMiner bot commands using Automation
   - [General](#general-1)
   - [Microsoft Teams](#microsoft-teams-1) 
     * [Getting Started](#getting-started)
-    * [Creating a Team](#creating-a-team)
+    * [Output an Adaptive Card](#output-an-adaptive-card)
+    * [Output Key-Values](#output-key-values)
+    * [Output Json](#output-json)
 - [Help](#help)
 - [Contact](#contact)
 - [Version History](#version-history)
@@ -47,7 +49,11 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 - The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) must be allowed in your [Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-apps).
 
-- [Admin consent must be granted](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Granting_admin_consent.html) in the [DCP Admin app](https://admin.dataminer.services).
+- The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) must be installed in your Team or Chat. See [Installing the DataMiner Teams bot](https://docs.dataminer.services/user-guide/Cloud_Platform/TeamsBot/DataMiner_Teams_bot.html#dataminer-teams-bot-installation).
+
+- [Start a conversation with the DataMiner bot](https://docs.dataminer.services/user-guide/Cloud_Platform/TeamsBot/DataMiner_Teams_bot.html#starting-a-conversation-with-the-teams-bot) by logging in and setting your active DataMiner System. When you execute your first (custom) command to the active DMS, the DataMiner bot might ask you to link your DCP account to your DataMiner account if this wasn't the case yet. 
+
+- Only Automation scripts that are present in a (sub)folder called '*bot*' will be recognized as custom commands by the DataMiner bot. The examples below are automatically placed in such a subfolder.
 
 ## Examples
 
@@ -62,21 +68,25 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 1. [Download this DMAPP]() and [deploy it to your DataMiner System](https://docs.dataminer.services/develop/TOOLS/TOOApplicationPackages/Installing_an_app_package.html). Installing this package will add the custom command Automation scripts for Microsoft Teams in the Automation module.
 
    > :warning:
-   > Note that reinstalling this DMAPP will overwrite any Automation scripts and memory files with identical names.
+   > Note that reinstalling this DMAPP will overwrite any Automation scripts with identical names.
 
-2. [Open DataMiner Cube](https://docs.dataminer.services/user-guide/Getting_started/Accessing_DataMiner/Accessing_DataMiner_Cube.html) and open the Automation module (via apps > Automation). The added Automation scripts will be shown there. <details><summary>`show demo`</summary>![Gif-Automation](https://user-images.githubusercontent.com/109528797/186685478-9eac1cbf-f2d9-4c9a-8a6a-a2f499dbdcd9.gif)</details>
+#### Output an Adaptive Card
 
-#### Creating a Team
+1. In teams execute the command '*run Adaptive Card Output Example*' and click on the '*Run*' button in the response.
 
-1. In the Automation module in DataMiner Cube, click the '*Create Team Example*' Automation script and click the '*Execute*' button.
+2. The custom command will be executed and the Adaptive Card example should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputAnAdaptiveCard](https://user-images.githubusercontent.com/33500507/192817296-cd05a0cb-2267-4639-8d21-32b54bb347cd.gif)</details>
 
-2. Fill in the necessary information. Note that the **fields are case sensitive**.
+#### Output Key-Values
 
-   - *Team Owner Email*: The email address of the owner of the team you are creating.
-   - *Team Name*: The name of the team you are creating.
-   - *Teams*: Select the memory file the script should use to save the ID of the team you are creating.
+1. In teams execute the command '*run Key Value Output Example*' and click on the '*Run*' button in the response.
 
-3. Click the '*execute now*' button.  A team (with a General channel) will be created in Microsoft Teams. The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) will also be installed. <details><summary>`show demo`</summary>![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)</details>
+2. The custom command will be executed and the Key-Value examples should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputKeyValues](https://user-images.githubusercontent.com/33500507/192817311-75f6e7c0-0c91-45e1-9f58-30783fb67ddf.gif)</details>
+
+#### Output Json
+
+1. In teams execute the command '*run Json Output Example*' and click on the '*Run*' button in the response.
+
+2. The custom command will be executed and the Json example should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputJson](https://user-images.githubusercontent.com/33500507/192817316-fc4de34d-a34e-42cd-a5fa-e8e99b363c2d.gif)</details>
 
 ## Help
 
