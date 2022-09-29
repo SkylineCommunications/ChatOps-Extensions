@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Internal", "Internal", "{3712C4A3-9A5D-4B64-96E5-215DB5E9F44D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{CA5F9E76-F858-442E-8159-EE929D110706}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Analysis", "Code Analysis", "{69BB3F22-33D5-4EA7-AAD5-8B67D6F7A1F9}"
+	ProjectSection(SolutionItems) = preProject
+		Internal\Code Analysis\qaction-debug.ruleset = Internal\Code Analysis\qaction-debug.ruleset
+		Internal\Code Analysis\qaction-release.ruleset = Internal\Code Analysis\qaction-release.ruleset
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adaptive Card Output Example", "Adaptive Card Output Example", "{D7D5C1F3-0424-485B-9BE8-B29E1DF22B85}"
+	ProjectSection(SolutionItems) = preProject
+		Adaptive Card Output Example.xml = Adaptive Card Output Example.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{B77B5BEE-801E-4D1D-9708-9999CFABA7E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adaptive Card Output Example_1", "Adaptive Card Example_1\Adaptive Card Output Example_1.csproj", "{A61380BF-207A-46E8-A197-DB01CB777448}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Json Output Example", "Json Output Example", "{183F5C56-9523-4399-9816-BB2DF80D20E6}"
+	ProjectSection(SolutionItems) = preProject
+		Json Output Example.xml = Json Output Example.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{72210749-72A8-4FD0-AE7A-0CA0146A6A9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json Output Example_1", "Json Output Example_1\Json Output Example_1.csproj", "{D2DB9192-B608-44A3-AD7B-982A4D897229}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Key Value Output Example", "Key Value Output Example", "{3C595897-01E9-4F29-896E-8EDA8986E2C1}"
+	ProjectSection(SolutionItems) = preProject
+		Key Value Output Example.xml = Key Value Output Example.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{70673C17-C78F-44AD-A2C3-918A3DB3A2E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Key Value Output Example_1", "Key Value Output Example_1\Key Value Output Example_1.csproj", "{F0C99EA3-919F-4188-8066-AFA2E249A31C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A61380BF-207A-46E8-A197-DB01CB777448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A61380BF-207A-46E8-A197-DB01CB777448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A61380BF-207A-46E8-A197-DB01CB777448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A61380BF-207A-46E8-A197-DB01CB777448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2DB9192-B608-44A3-AD7B-982A4D897229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2DB9192-B608-44A3-AD7B-982A4D897229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2DB9192-B608-44A3-AD7B-982A4D897229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2DB9192-B608-44A3-AD7B-982A4D897229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0C99EA3-919F-4188-8066-AFA2E249A31C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0C99EA3-919F-4188-8066-AFA2E249A31C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0C99EA3-919F-4188-8066-AFA2E249A31C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0C99EA3-919F-4188-8066-AFA2E249A31C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{69BB3F22-33D5-4EA7-AAD5-8B67D6F7A1F9} = {3712C4A3-9A5D-4B64-96E5-215DB5E9F44D}
+		{D7D5C1F3-0424-485B-9BE8-B29E1DF22B85} = {CA5F9E76-F858-442E-8159-EE929D110706}
+		{B77B5BEE-801E-4D1D-9708-9999CFABA7E9} = {D7D5C1F3-0424-485B-9BE8-B29E1DF22B85}
+		{A61380BF-207A-46E8-A197-DB01CB777448} = {B77B5BEE-801E-4D1D-9708-9999CFABA7E9}
+		{183F5C56-9523-4399-9816-BB2DF80D20E6} = {CA5F9E76-F858-442E-8159-EE929D110706}
+		{72210749-72A8-4FD0-AE7A-0CA0146A6A9B} = {183F5C56-9523-4399-9816-BB2DF80D20E6}
+		{D2DB9192-B608-44A3-AD7B-982A4D897229} = {72210749-72A8-4FD0-AE7A-0CA0146A6A9B}
+		{3C595897-01E9-4F29-896E-8EDA8986E2C1} = {CA5F9E76-F858-442E-8159-EE929D110706}
+		{70673C17-C78F-44AD-A2C3-918A3DB3A2E3} = {3C595897-01E9-4F29-896E-8EDA8986E2C1}
+		{F0C99EA3-919F-4188-8066-AFA2E249A31C} = {70673C17-C78F-44AD-A2C3-918A3DB3A2E3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CA20FFD9-95DA-4429-A175-E65A66B665F9}
+	EndGlobalSection
+EndGlobal
