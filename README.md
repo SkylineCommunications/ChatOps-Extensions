@@ -4,7 +4,7 @@ This readme gives an overview of what this repository contains and refers to the
 
 ## Table of Contents
 
-- [Custom Command Examples](https://github.com/SkylineCommunications/ChatOps-Extensions/blob/main/CustomCommandExamples/Readme.md)
+- [Custom Command Examples](https://github.com/SkylineCommunications/ChatOps-Extensions/blob/main/CustomCommandExamples/README.md)
   - Create custom DataMiner bot commands using Automation scripts
 
 ## Help
