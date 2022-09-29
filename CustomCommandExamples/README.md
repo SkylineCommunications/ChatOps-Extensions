@@ -16,7 +16,7 @@ This readme details how to create custom DataMiner bot commands using Automation
     * [Getting Started](#getting-started)
     * [Output an Adaptive Card](#output-an-adaptive-card)
     * [Output Key-Values](#output-key-values)
-    * [Output Json](#output-json)
+    * [Output JSON](#output-json)
 - [Help](#help)
 - [Contact](#contact)
 - [Version History](#version-history)
@@ -82,11 +82,11 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 2. The custom command will be executed and the Key-Value examples should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputKeyValues](https://user-images.githubusercontent.com/33500507/192817311-75f6e7c0-0c91-45e1-9f58-30783fb67ddf.gif)</details>
 
-#### Output Json
+#### Output JSON
 
-1. In teams execute the command '*run Json Output Example*' and click on the '*Run*' button in the response.
+1. In teams execute the command '*run JSON Output Example*' and click on the '*Run*' button in the response.
 
-2. The custom command will be executed and the Json example should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputJson](https://user-images.githubusercontent.com/33500507/192817316-fc4de34d-a34e-42cd-a5fa-e8e99b363c2d.gif)</details>
+2. The custom command will be executed and the JSON example should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputJson](https://user-images.githubusercontent.com/33500507/192817316-fc4de34d-a34e-42cd-a5fa-e8e99b363c2d.gif)</details>
 
 ## Help
 
