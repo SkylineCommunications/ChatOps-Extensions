@@ -69,10 +69,10 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Getting Started
 
-1. [Download this DMAPP]() and [deploy it to your DataMiner System](https://docs.dataminer.services/develop/TOOLS/TOOApplicationPackages/Installing_an_app_package.html) after unzipping it. Installing this package will add the Automation scripts for Microsoft Teams in the Automation module along with some memory files that will be used by the Automation scripts to save the IDs of the created resources.
+1. [Download this DMAPP](), unzip it, and [deploy it to your DataMiner System](https://docs.dataminer.services/develop/TOOLS/TOOApplicationPackages/Installing_an_app_package.html). Installing this package will add the Automation scripts for Microsoft Teams in the Automation module along with some memory files that will be used by the Automation scripts to save the IDs of the created resources.
 
    > :warning:
-   > Note that installing this DMAPP will overwrite any Automation scripts and memory files with identical names.
+   > Installing this DMAPP will overwrite any Automation scripts and memory files with identical names.
 
 2. [Open DataMiner Cube](https://docs.dataminer.services/user-guide/Getting_started/Accessing_DataMiner/Accessing_DataMiner_Cube.html) and open the Automation module (via apps > Automation). The added Automation scripts will be shown there. <details><summary>`show demo`</summary>![Gif-Automation](https://user-images.githubusercontent.com/109528797/186685478-9eac1cbf-f2d9-4c9a-8a6a-a2f499dbdcd9.gif)</details>
 
@@ -86,7 +86,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
    - *Team Name*: The name of the team you are creating.
    - *Teams*: Select the memory file the script should use to save the ID of the team you are creating.
 
-3. Click the '*execute now*' button.  A team (with a General channel) will be created in Microsoft Teams. The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) will also be installed. <details><summary>`show demo`</summary>![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)</details>
+3. Click the '*execute now*' button. A team (with a General channel) will be created in Microsoft Teams. The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) will also be installed. <details><summary>`show demo`</summary>![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)</details>
 
 #### Creating a Channel
 

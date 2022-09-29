@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <DMSScript options="272" xmlns="http://www.skyline.be/automation">
 	<Name>Json Output Example</Name>
-	<Description>Outputs an example of a Json output</Description>
+	<Description>Outputs an example of JSON output</Description>
 	<Type>Automation</Type>
 	<Author>SKYLINE2\JordyAM</Author>
 	<CheckSets>FALSE</CheckSets>
