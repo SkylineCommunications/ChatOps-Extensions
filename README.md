@@ -1,6 +1,6 @@
 # Chat Ops Extensions
 
-This readme gives an overview of what this repository contains of and reffers to the actual readmes of each topic or feature.
+This readme gives an overview of what this repository contains and refers to the readme files of each topic or feature.
 
 ## Table of Contents
 

@@ -12,7 +12,7 @@ This readme details how to create custom DataMiner bot commands using Automation
     - [Microsoft Teams](#microsoft-teams)
 - [Examples](#examples)
   - [General](#general-1)
-  - [Microsoft Teams](#microsoft-teams-1) 
+  - [Microsoft Teams](#microsoft-teams-1)
     * [Getting Started](#getting-started)
     * [Output an Adaptive Card](#output-an-adaptive-card)
     * [Output Key-Values](#output-key-values)
@@ -49,42 +49,42 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 - The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) must be allowed in your [Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-apps).
 
-- The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) must be installed in your Team or Chat. See [Installing the DataMiner Teams bot](https://docs.dataminer.services/user-guide/Cloud_Platform/TeamsBot/DataMiner_Teams_bot.html#dataminer-teams-bot-installation).
+- The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) must be installed in your team or chat. See [Installing the DataMiner Teams bot](https://docs.dataminer.services/user-guide/Cloud_Platform/TeamsBot/DataMiner_Teams_bot.html#dataminer-teams-bot-installation).
 
-- [Start a conversation with the DataMiner bot](https://docs.dataminer.services/user-guide/Cloud_Platform/TeamsBot/DataMiner_Teams_bot.html#starting-a-conversation-with-the-teams-bot) by logging in and setting your active DataMiner System. When you execute your first (custom) command to the active DMS, the DataMiner bot might ask you to link your DCP account to your DataMiner account if this wasn't the case yet. 
+- [Start a conversation with the DataMiner bot](https://docs.dataminer.services/user-guide/Cloud_Platform/TeamsBot/DataMiner_Teams_bot.html#starting-a-conversation-with-the-teams-bot) by logging in and setting your active DataMiner System. When you execute your first (custom) command to the active DMS, the DataMiner bot will ask you to link your DCP account to your DataMiner account if this has not been done yet.
 
-- Only Automation scripts that are present in a (sub)folder called '*bot*' will be recognized as custom commands by the DataMiner bot. The examples below are automatically placed in such a folder.
+- Only Automation scripts that are present in a (sub)folder with the name '*bot*' will be recognized as custom commands by the DataMiner bot. The examples below are automatically placed in such a folder.
 
 ## Examples
 
 ### General
 
-- The code for these Automation scripts can be found in [the CustomCommandExamples folder](). Note that these examples are kept very simple, without user input, and only demonstrate how to form different types of outputs to be displayed by the DataMiner Bot. For more information about what Automation scripts can do, see [Automation](https://docs.dataminer.services/user-guide/Advanced_Modules/Automation/automation.html).
+- The code for these Automation scripts can be found in [the CustomCommandExamples folder](). Note that these examples are kept very simple, without user input, and they only demonstrate how to form different types of output to be displayed by the DataMiner bot. For more information about what Automation scripts can do, see [Automation](https://docs.dataminer.services/user-guide/Advanced_Modules/Automation/automation.html).
 
 ### Microsoft Teams
 
 #### Getting Started
 
-1. [Download this DMAPP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/9666590/DcpCustomCommandExamples.1.0.0.X_B4.zip) and [deploy it to your DataMiner System](https://docs.dataminer.services/develop/TOOLS/TOOApplicationPackages/Installing_an_app_package.html) after unzipping it. Installing this package will add the custom command Automation scripts for Microsoft Teams in the Automation module.
+1. [Download this DMAPP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/9666590/DcpCustomCommandExamples.1.0.0.X_B4.zip), unzip it, and [deploy it to your DataMiner System](https://docs.dataminer.services/develop/TOOLS/TOOApplicationPackages/Installing_an_app_package.html). Installing this package will add the custom command Automation scripts for Microsoft Teams in the Automation module.
 
    > :warning:
-   > Note that installing this DMAPP will overwrite any Automation scripts with identical names.
+   > Installing this DMAPP will overwrite any Automation scripts with identical names.
 
 #### Output an Adaptive Card
 
-1. In teams execute the command '*run Adaptive Card Output Example*' and click on the '*Run*' button in the response.
+1. In Teams, execute the command '*run Adaptive Card Output Example*' and click the '*Run*' button in the response.
 
 2. The custom command will be executed and the Adaptive Card example should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputAnAdaptiveCard](https://user-images.githubusercontent.com/33500507/192817296-cd05a0cb-2267-4639-8d21-32b54bb347cd.gif)</details>
 
 #### Output Key-Values
 
-1. In teams execute the command '*run Key Value Output Example*' and click on the '*Run*' button in the response.
+1. In Teams, execute the command '*run Key Value Output Example*' and click the '*Run*' button in the response.
 
-2. The custom command will be executed and the Key-Value examples should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputKeyValues](https://user-images.githubusercontent.com/33500507/192817311-75f6e7c0-0c91-45e1-9f58-30783fb67ddf.gif)</details>
+2. The custom command will be executed and the Key Value examples should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputKeyValues](https://user-images.githubusercontent.com/33500507/192817311-75f6e7c0-0c91-45e1-9f58-30783fb67ddf.gif)</details>
 
 #### Output JSON
 
-1. In teams execute the command '*run JSON Output Example*' and click on the '*Run*' button in the response.
+1. In Teams, execute the command '*run JSON Output Example*' and click the '*Run*' button in the response.
 
 2. The custom command will be executed and the JSON example should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputJson](https://user-images.githubusercontent.com/33500507/192817316-fc4de34d-a34e-42cd-a5fa-e8e99b363c2d.gif)</details>
 

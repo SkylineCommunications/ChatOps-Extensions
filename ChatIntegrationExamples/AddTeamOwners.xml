@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <DMSScript options="272" xmlns="http://www.skyline.be/automation">
 	<Name>Add Team Owners Example</Name>
-	<Description>Adds owners in a given team in Microsoft Teams. Make sure to have a tenant set for your organization in the DCP Admin App (https://admin.dataminer.services).</Description>
+	<Description>Adds owners in a given team in Microsoft Teams. Make sure to have a tenant set for your organization in the DCP Admin app (https://admin.dataminer.services).</Description>
 	<Type>Automation</Type>
 	<Author>SKYLINE2\JordyAM</Author>
 	<CheckSets>FALSE</CheckSets>
