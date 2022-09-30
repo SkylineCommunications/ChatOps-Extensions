@@ -28,7 +28,7 @@ This readme details how to create custom DataMiner bot commands using Automation
 
 #### DataMiner Integration Studio Visual Studio Extension
 
-The DataMiner Integration Studio Visual Studio extension (also referred to as DIS) is required for development of Automation scripts using the [Skyline.DataMiner.DcpChatIntegrationHelper NuGet package](#skylinedataminerdcpchatintegrationhelper-nuget-package). You can also use DIS to deploy Automation scripts directly from your development environment to your DataMiner Systems.
+The DataMiner Integration Studio Visual Studio extension (also referred to as DIS) can be used for development of Automation scripts. You can also use DIS to deploy Automation scripts directly from your development environment to your DataMiner Systems.
 
 See [Installing DataMiner Integration Studio](https://aka.dataminer.services/DisInstallation).
 
