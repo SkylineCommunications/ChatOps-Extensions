@@ -31,7 +31,7 @@ This readme details how to integrate DataMiner into business communication platf
 
 #### Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package
 
-The Skyline.DataMiner.DcpChatIntegrationHelper NuGet package can be found on [nuget.org](https://nuget.org). This Nuget package allows easy integration with business communication platforms from a DataMiner Automation script.
+The [Skyline.DataMiner.DcpChatIntegrationHelper NuGet package can be found on nuget.org](https://www.nuget.org/packages/Skyline.DataMiner.DcpChatIntegrationHelper). This NuGet package allows easy integration with business communication platforms from a DataMiner Automation script.
 
 > ℹ️
 > We recommend that you always use the latest version of the Skyline.DataMiner.DcpChatIntegrationHelper NuGet package.
