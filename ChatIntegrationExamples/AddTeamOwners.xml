@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DMSScript options="272" xmlns="http://www.skyline.be/automation">
+	<Name>Add Team Owners Example</Name>
+	<Description>Adds owners in a given team in Microsoft Teams. Make sure to have a tenant set for your organization in the DCP Admin app (https://admin.dataminer.services).</Description>
+	<Type>Automation</Type>
+	<Author>SKYLINE2\JordyAM</Author>
+	<CheckSets>FALSE</CheckSets>
+	<Folder>Examples/ChatOps/Teams/Integration</Folder>
+
+	<Protocols>
+	</Protocols>
+
+	<Memory>
+	</Memory>
+
+	<Parameters>
+		<ScriptParameter id="1" type="string" values="TeamsExample">
+			<Description>Team Id</Description>
+		</ScriptParameter>
+		<ScriptParameter id="2" type="string" values="">
+			<Description>Team Owners to Add (; separated)</Description>
+		</ScriptParameter>
+	</Parameters>
+
+	<Script>
+		<Exe id="3" type="csharp">
+			<Value><![CDATA[[Project:AddTeamOwners_1]]]></Value>
+			<!--<Param type="debug">true</Param>-->
+			<Message></Message>
+		</Exe>
+	</Script>
+</DMSScript>

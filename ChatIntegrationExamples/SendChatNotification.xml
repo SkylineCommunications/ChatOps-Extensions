@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DMSScript options="272" xmlns="http://www.skyline.be/automation">
+	<Name>Send Chat Notification Example</Name>
+	<Description>Sends a notification in a given groups chat or one-on-one chat in Microsoft Teams. Make sure to have a tenant set for your organization in the DCP Admin app (https://admin.dataminer.services).</Description>
+	<Type>Automation</Type>
+	<Author>SKYLINE2\JordyAM</Author>
+	<CheckSets>FALSE</CheckSets>
+	<Folder>Examples/ChatOps/Teams/Integration</Folder>
+
+	<Protocols>
+	</Protocols>
+
+	<Memory>
+	</Memory>
+
+	<Parameters>
+		<ScriptParameter id="1" type="string" values="ChatsExample">
+			<Description>Chat Id</Description>
+		</ScriptParameter>
+		<ScriptParameter id="2" type="string" values="">
+			<Description>Notification</Description>
+		</ScriptParameter>
+	</Parameters>
+
+	<Script>
+		<Exe id="3" type="csharp">
+			<Value><![CDATA[[Project:SendChatNotification_1]]]></Value>
+			<!--<Param type="debug">true</Param>-->
+			<Message></Message>
+		</Exe>
+	</Script>
+</DMSScript>
