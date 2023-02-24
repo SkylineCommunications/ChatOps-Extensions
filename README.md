@@ -4,7 +4,7 @@ This readme gives an overview of what this repository contains and refers to the
 
 ## Table of Contents
 
-- [Chat Integration Examples](https://github.com/SkylineCommunications/ChatOps-Extensions/blob/main/ChatIntegrationExamples/Readme.md)
+- [Chat Integration Examples](https://github.com/SkylineCommunications/ChatOps-Extensions/blob/main/ChatIntegrationExamples/README.md)
   - Integrate DataMiner into business communication platforms with Automation scripts
 - [Custom Command Examples](https://github.com/SkylineCommunications/ChatOps-Extensions/blob/main/CustomCommandExamples/README.md)
   - Create custom DataMiner bot commands using Automation scripts
