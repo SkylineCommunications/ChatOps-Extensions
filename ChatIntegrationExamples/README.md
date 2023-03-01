@@ -160,7 +160,7 @@ To send a notification in a channel:
 
    - *User Email*: The email address of the user of the private chat you are creating.
 
-3. Click the '*execute now*' button. A private chat between the given user and the DataMiner Teams Bot will be created in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-CreatePrivateChat](TODO GIF)</details>
+3. Click the '*execute now*' button. A private chat between the given user and the DataMiner Teams Bot will be created in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-CreatePrivateChat](https://user-images.githubusercontent.com/33500507/222172682-f285e5e2-2fb7-4559-8915-c884fe09c3ef.gif)</details>
 
 #### Fetching a Private Chat
 
@@ -173,7 +173,7 @@ To send a notification in a channel:
    - *Chats*: Select the memory file the script should use to save the ID of the private chat you are fetching.
    - *User Email*: The email address of the user of the private chat you are fetching.
 
-4. Click the '*execute now*' button. The private chat between the given user and the DataMiner Teams Bot will be fetched from Microsoft Teams and a reference will be saved in the *Chats* memory file. <details><summary>`show demo`</summary>![Gif-FetchPrivateChat](TODO GIF)</details>
+4. Click the '*execute now*' button. The private chat between the given user and the DataMiner Teams Bot will be fetched from Microsoft Teams and a reference will be saved in the *Chats* memory file. <details><summary>`show demo`</summary>![Gif-FetchPrivateChat](https://user-images.githubusercontent.com/33500507/222172678-87e1a487-68e9-4bb5-a419-800c48cb0ef5.gif)</details>
 
 #### Sending a Chat Notification
 
@@ -188,7 +188,7 @@ To send a notification in a chat:
    - *Chat ID*: The ID of the chat where you want to send a notification.
    - *Notification*: The text of the notification.
 
-4. Click the '*execute now*' button. A notification will be sent in the chat in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChatNotification](TODO GIF)</details>
+4. Click the '*execute now*' button. A notification will be sent in the chat in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChatNotification](https://user-images.githubusercontent.com/33500507/222172619-89273119-c88a-42ad-b035-916a2ef9b802.gif)</details>
 
 ## Help
 
