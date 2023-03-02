@@ -20,6 +20,9 @@ This readme details how to integrate DataMiner into business communication platf
     * [Adding Team Members](#adding-team-members)
     * [Adding Team Owners](#adding-team-owners)
     * [Sending a Channel Notification](#sending-a-channel-notification)
+    * [Creating a Private Chat](#creating-a-private-chat)
+    * [Fetching a Private Chat](#fetching-a-private-chat)
+    * [Sending a Chat Notification](#sending-a-chat-notification)
 - [Help](#help)
 - [Contact](#contact)
 - [Version History](#version-history)
@@ -69,7 +72,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Getting Started
 
-1. [Download the DcpChatIntgerationExamples DMAPP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/10823286/DcpChatIntegrationEx.1.0.1-CU1.zip), unzip it, and [deploy it to your DataMiner System](https://docs.dataminer.services/develop/TOOLS/TOOApplicationPackages/Installing_an_app_package.html). Installing this package will add the Automation scripts for Microsoft Teams in the Automation module along with some memory files that will be used by the Automation scripts to save the IDs of the created resources.
+1. [Download the DcpChatIntegrationExamples DMAPP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/10869593/DcpChatIntegrationExamples.1.0.1-CU3.zip), unzip it, and [deploy it to your DataMiner System](https://docs.dataminer.services/develop/TOOLS/TOOApplicationPackages/Installing_an_app_package.html). Installing this package will add the Automation scripts for Microsoft Teams in the Automation module along with some memory files that will be used by the Automation scripts to save the IDs of the created resources.
 
    > :warning:
    > Installing this DMAPP will overwrite any Automation scripts and memory files with identical names.
@@ -86,7 +89,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
    - *Team Name*: The name of the team you are creating.
    - *Teams*: Select the memory file the script should use to save the ID of the team you are creating.
 
-3. Click the '*execute now*' button. A team (with a General channel) will be created in Microsoft Teams. The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) will also be installed. <details><summary>`show demo`</summary>![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)</details>
+3. Click the '*execute now*' button. A team (with a General channel) will be created in Microsoft Teams and a reference will be saved in the *Teams* memory file. The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) will also be installed. <details><summary>`show demo`</summary>![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)</details>
 
 #### Creating a Channel
 
@@ -101,7 +104,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
    - *Channel Description*: The description of the channel you are creating.
    - *Channels*: Select the memory file the script should use to save the ID of the channel you are creating.
 
-4. Click the '*execute now*' button. A channel will be created in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-CreateChannel](https://user-images.githubusercontent.com/109528797/186855003-c4002e8e-c9cf-42fd-91bd-b389d4bab908.gif)</details>
+4. Click the '*execute now*' button. A channel will be created in Microsoft Teams and a reference will be saved in the *Channels* memory file. <details><summary>`show demo`</summary>![Gif-CreateChannel](https://user-images.githubusercontent.com/109528797/186855003-c4002e8e-c9cf-42fd-91bd-b389d4bab908.gif)</details>
 
 #### Adding Team Members
 
@@ -137,7 +140,7 @@ To add a new owner or owners to a team:
 
 To send a notification in a channel:
 
-1. First make sure [a channel is created as detailed above](#creating-a-channel), as notifications can only be posted within a channel.
+1. First make sure [a channel is created as detailed above](#creating-a-channel).
 
 2. In the Automation module in DataMiner Cube, click the '*Send Channel Notification Example*' Automation script and click the '*Execute*' button.
 
@@ -147,7 +150,45 @@ To send a notification in a channel:
    - *Channel ID*: The ID of the channel where you want to send a notification. Note that this must be a channel of the specified team.
    - *Notification*: The text of the notification.
 
-4. Click the '*execute now*' button. A notification will be sent in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendNotification](https://user-images.githubusercontent.com/109528797/187139103-4728e148-204d-447f-9674-8d74f4e373d1.gif)</details>
+4. Click the '*execute now*' button. A notification will be sent in the channel in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChannelNotification](https://user-images.githubusercontent.com/109528797/187139103-4728e148-204d-447f-9674-8d74f4e373d1.gif)</details>
+
+#### Creating a Private Chat
+
+1. In the Automation module in DataMiner Cube, click the '*Create Private Chat Example*' Automation script and click the '*Execute*' button.
+
+2. Fill in the necessary information.
+
+   - *User Email*: The email address of the user of the private chat you are creating.
+
+3. Click the '*execute now*' button. A private chat between the given user and the DataMiner Teams Bot will be created in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-CreatePrivateChat](https://user-images.githubusercontent.com/33500507/222172682-f285e5e2-2fb7-4559-8915-c884fe09c3ef.gif)</details>
+
+#### Fetching a Private Chat
+
+1. First make sure [a private chat is created as detailed above](#creating-a-private-chat).
+
+2. In the Automation module in DataMiner Cube, click the '*Fetch Private Chat Example*' Automation script and click the '*Execute*' button.
+
+3. Fill in the necessary information.
+
+   - *Chats*: Select the memory file the script should use to save the ID of the private chat you are fetching.
+   - *User Email*: The email address of the user of the private chat you are fetching.
+
+4. Click the '*execute now*' button. The private chat between the given user and the DataMiner Teams Bot will be fetched from Microsoft Teams and a reference will be saved in the *Chats* memory file. <details><summary>`show demo`</summary>![Gif-FetchPrivateChat](https://user-images.githubusercontent.com/33500507/222172678-87e1a487-68e9-4bb5-a419-800c48cb0ef5.gif)</details>
+
+#### Sending a Chat Notification
+
+To send a notification in a chat:
+
+1. First make sure [a private chat is fetched as detailed above](#fetching-a-private-chat).
+
+2. In the Automation module in DataMiner Cube, click the '*Send Chat Notification Example*' Automation script and click the '*Execute*' button.
+
+3. Fill in the necessary information. Note that the **fields are case sensitive**.
+
+   - *Chat ID*: The ID of the chat where you want to send a notification.
+   - *Notification*: The text of the notification.
+
+4. Click the '*execute now*' button. A notification will be sent in the chat in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChatNotification](https://user-images.githubusercontent.com/33500507/222172619-89273119-c88a-42ad-b035-916a2ef9b802.gif)</details>
 
 ## Help
 
