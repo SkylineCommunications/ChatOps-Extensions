@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <DMSScript options="272" xmlns="http://www.skyline.be/automation">
-	<Name>Create Private Chat</Name>
+	<Name>Create Private Chat Example</Name>
 	<Description>Creates a private chat for a given user and the DataMiner Teams Bot in Microsoft Teams. Make sure to have a tenant set for your organization in the Admin App (https://admin.dataminer.services).</Description>
 	<Type>Automation</Type>
 	<Author>SKYLINE2\JordyAM</Author>
