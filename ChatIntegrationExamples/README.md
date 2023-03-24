@@ -101,7 +101,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
    - *Teams*: Select the memory file the script should use to save the IDs of the teams you are fetching.
 
-3. Click the '*execute now*' button. All the teams will be fetched from Microsoft Teams and their reference will be saved in the *Teams* memory file. <details><summary>`show demo`</summary>![Gif-FetchAllTeams](TODO)</details>
+3. Click the '*execute now*' button. All the teams will be fetched from Microsoft Teams and their reference will be saved in the *Teams* memory file. <details><summary>`show demo`</summary>![Gif-FetchAllTeams](https://user-images.githubusercontent.com/33500507/227512024-c5e044ed-c2b2-4af2-8397-112c11d6d60e.gif)</details>
 
 #### Creating a Channel
 
@@ -127,7 +127,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
    - *Team ID*: The ID of the team where you want to fetch the channels from.
    - *Channels*: Select the memory file the script should use to save the IDs of the channels you are fetching.
 
-3. Click the '*execute now*' button. All the channels of the given team will be fetched from Microsoft Teams and their reference will be saved in the *Channels* memory file. <details><summary>`show demo`</summary>![Gif-FetchAllChannelsOfATeam](TODO)</details>
+3. Click the '*execute now*' button. All the channels of the given team will be fetched from Microsoft Teams and their reference will be saved in the *Channels* memory file. <details><summary>`show demo`</summary>![Gif-FetchAllChannelsOfATeam](https://user-images.githubusercontent.com/33500507/227512092-af755ec7-0641-4a90-b58e-f2c02a8a5d8d.gif)</details>
 
 #### Adding Team Members
 
