@@ -18,7 +18,7 @@ This readme details how to integrate DataMiner into business communication platf
     * [Creating a Team](#creating-a-team)
     * [Fetching all Teams](#fetching-all-teams)
     * [Creating a Channel](#creating-a-channel)
-    * [Fetching all Channels of a Team](#fetching all-channels-of-a-team)
+    * [Fetching all Channels of a Team](#fetching-all-channels-of-a-team)
     * [Adding Team Members](#adding-team-members)
     * [Adding Team Owners](#adding-team-owners)
     * [Sending a Channel Notification](#sending-a-channel-notification)
