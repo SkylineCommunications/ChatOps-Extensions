@@ -19,7 +19,7 @@ This readme gives an overview of what this repository contains and refers to the
 
 ## Version History
 
-[Releases](https://github.com/SkylineCommunications/ChatOpts-Extensions/releases)
+[Releases](https://github.com/SkylineCommunications/ChatOps-Extensions/releases)
 
 ## License
 
