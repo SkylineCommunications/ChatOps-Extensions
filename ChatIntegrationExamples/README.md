@@ -16,7 +16,9 @@ This readme details how to integrate DataMiner into business communication platf
   - [Microsoft Teams](#microsoft-teams-1) 
     * [Getting Started](#getting-started)
     * [Creating a Team](#creating-a-team)
+    * [Fetching all Teams](#fetching-all-teams)
     * [Creating a Channel](#creating-a-channel)
+    * [Fetching all Channels of a Team](#fetching all-channels-of-a-team)
     * [Adding Team Members](#adding-team-members)
     * [Adding Team Owners](#adding-team-owners)
     * [Sending a Channel Notification](#sending-a-channel-notification)
@@ -72,7 +74,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Getting Started
 
-1. [Download the DcpChatIntegrationExamples DMAPP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/10869593/DcpChatIntegrationExamples.1.0.1-CU3.zip), unzip it, and [deploy it to your DataMiner System](https://docs.dataminer.services/develop/TOOLS/TOOApplicationPackages/Installing_an_app_package.html). Installing this package will add the Automation scripts for Microsoft Teams in the Automation module along with some memory files that will be used by the Automation scripts to save the IDs of the created resources.
+1. [Deploy the latest version of the ChatIntegration Examples package via the Catalog](https://catalog.dataminer.services/catalog/3129) or [download the package as a ZIP](TODO), unzip it, and [deploy it to your DataMiner System locally](https://docs.dataminer.services/develop/TOOLS/TOOApplicationPackages/Installing_an_app_package.html). Installing this package will add the example Automation scripts for Microsoft Teams in the Automation module along with some memory files that will be used by the Automation scripts to save the IDs of the created and fetched resources.
 
    > :warning:
    > Installing this DMAPP will overwrite any Automation scripts and memory files with identical names.
@@ -91,6 +93,16 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 3. Click the '*execute now*' button. A team (with a General channel) will be created in Microsoft Teams and a reference will be saved in the *Teams* memory file. The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) will also be installed. <details><summary>`show demo`</summary>![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)</details>
 
+#### Fetching all Teams
+
+1. In the Automation module in DataMiner Cube, click the '*Fetch Teams Example*' Automation script and click the '*Execute*' button.
+
+2. Fill in the necessary information.
+
+   - *Teams*: Select the memory file the script should use to save the IDs of the teams you are fetching.
+
+3. Click the '*execute now*' button. All the teams will be fetched from Microsoft Teams and their reference will be saved in the *Teams* memory file. <details><summary>`show demo`</summary>![Gif-FetchAllTeams](TODO)</details>
+
 #### Creating a Channel
 
 1. First make sure [a team is created as detailed above](#creating-a-team), as a channel can only exist within a team.
@@ -105,6 +117,17 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
    - *Channels*: Select the memory file the script should use to save the ID of the channel you are creating.
 
 4. Click the '*execute now*' button. A channel will be created in Microsoft Teams and a reference will be saved in the *Channels* memory file. <details><summary>`show demo`</summary>![Gif-CreateChannel](https://user-images.githubusercontent.com/109528797/186855003-c4002e8e-c9cf-42fd-91bd-b389d4bab908.gif)</details>
+
+#### Fetching all Channels of a Team
+
+1. In the Automation module in DataMiner Cube, click the '*Fetch Channels Example*' Automation script and click the '*Execute*' button.
+
+2. Fill in the necessary information.
+
+   - *Team ID*: The ID of the team where you want to fetch the channels from.
+   - *Channels*: Select the memory file the script should use to save the IDs of the channels you are fetching.
+
+3. Click the '*execute now*' button. All the channels of the given team will be fetched from Microsoft Teams and their reference will be saved in the *Channels* memory file. <details><summary>`show demo`</summary>![Gif-FetchAllChannelsOfATeam](TODO)</details>
 
 #### Adding Team Members
 
