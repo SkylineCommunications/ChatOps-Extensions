@@ -124,7 +124,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 2. Fill in the necessary information.
 
-   - *Team ID*: The ID of the team where you want to fetch the channels from.
+   - *Team ID*: The ID of the team that you want to fetch the channels from.
    - *Channels*: Select the memory file the script should use to save the IDs of the channels you are fetching.
 
 3. Click the '*execute now*' button. All the channels of the given team will be fetched from Microsoft Teams and their reference will be saved in the *Channels* memory file. <details><summary>`show demo`</summary>![Gif-FetchAllChannelsOfATeam](https://user-images.githubusercontent.com/33500507/227512092-af755ec7-0641-4a90-b58e-f2c02a8a5d8d.gif)</details>
