@@ -17,10 +17,10 @@ public class Script
 				return;
 			}
 
-			var chatsMemoryFile = engine.GetMemory("ChatsExample");
+			var chatsMemoryFile = engine.GetMemory("Chats");
 			if (chatsMemoryFile == null)
 			{
-				engine.ExitFail("'ChatsExample' memory file is required.");
+				engine.ExitFail("'Chats' memory file is required.");
 				return;
 			}
 
@@ -37,7 +37,7 @@ public class Script
 
 			chatsMemoryFile.Set($"{chat.DisplayName} ({chat.Type} - {chat.ChatId})", chat.ChatId);
 
-			engine.ExitSuccess("The fetched private chat was saved in the 'ChatsExample' memory file!");
+			engine.ExitSuccess("The fetched private chat was saved in the 'Chats' memory file!");
 		}
 		catch (ScriptAbortException)
 		{
