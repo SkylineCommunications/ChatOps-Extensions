@@ -74,7 +74,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Getting Started
 
-1. [Deploy the latest version of the ChatIntegration Examples package via the Catalog](https://catalog.dataminer.services/catalog/3129) or [download the package as a ZIP](TODO), unzip it, and [deploy it to your DataMiner System locally](https://docs.dataminer.services/develop/TOOLS/TOOApplicationPackages/Installing_an_app_package.html). Installing this package will add the example Automation scripts for Microsoft Teams in the Automation module along with some memory files that will be used by the Automation scripts to save the IDs of the created and fetched resources.
+1. [Deploy the latest version of the ChatIntegration Examples package via the Catalog](https://catalog.dataminer.services/catalog/3129) or [download the package as a ZIP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/11136394/DcpChatIntegrationExamples.1.0.0-CU5.zip), unzip it, and [deploy it to your DataMiner System locally](https://docs.dataminer.services/develop/TOOLS/TOOApplicationPackages/Installing_an_app_package.html). Installing this package will add the example Automation scripts for Microsoft Teams in the Automation module along with some memory files that will be used by the Automation scripts to save the IDs of the created and fetched resources.
 
    > :warning:
    > Installing this DMAPP will overwrite any Automation scripts and memory files with identical names.
