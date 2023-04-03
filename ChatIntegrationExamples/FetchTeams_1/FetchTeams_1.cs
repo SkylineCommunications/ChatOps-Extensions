@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Skyline.DataMiner.Automation;
 using Skyline.DataMiner.DcpChatIntegrationHelper.Common;
 using Skyline.DataMiner.DcpChatIntegrationHelper.Teams;
@@ -10,20 +11,6 @@ public class Script
 		var chatIntegrationHelper = new ChatIntegrationHelperBuilder().Build();
 		try
 		{
-			var ownerEmailParam = engine.GetScriptParam("Team Owner Email");
-			if (string.IsNullOrWhiteSpace(ownerEmailParam?.Value))
-			{
-				engine.ExitFail("'Team Owner Email' parameter is required.");
-				return;
-			}
-
-			var teamNameParam = engine.GetScriptParam("Team Name");
-			if (string.IsNullOrWhiteSpace(teamNameParam?.Value))
-			{
-				engine.ExitFail("'Team Name' parameter is required.");
-				return;
-			}
-
 			var teamsMemoryFile = engine.GetMemory("Teams");
 			if (teamsMemoryFile == null)
 			{
@@ -31,20 +18,24 @@ public class Script
 				return;
 			}
 
-			ITeam team;
+			IEnumerable<ITeam> teams;
 			try
 			{
-				team = chatIntegrationHelper.Teams.TryCreateTeam(teamNameParam.Value, ownerEmailParam.Value);
+				teams = chatIntegrationHelper.Teams.TryGetTeams();
 			}
 			catch (TeamsChatIntegrationException e)
 			{
-				engine.ExitFail($"Couldn't create the team with error {e.Message}.");
+				engine.ExitFail($"Couldn't fetch the teams with error {e.Message}.");
 				return;
 			}
 
-			teamsMemoryFile.Set($"{team.DisplayName} ({team.TeamId})", team.TeamId);
+			teamsMemoryFile.Clear();
+			foreach (var team in teams)
+			{
+				teamsMemoryFile.Set($"{team.DisplayName} ({team.TeamId})", team.TeamId);
+			}
 
-			engine.ExitSuccess($"The team with id {team.TeamId} should be created soon!");
+			engine.ExitSuccess("The fetched teams were saved in the 'Teams' memory file!");
 		}
 		catch (ScriptAbortException)
 		{

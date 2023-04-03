@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Skyline.DataMiner.Automation;
 using Skyline.DataMiner.DcpChatIntegrationHelper.Common;
 using Skyline.DataMiner.DcpChatIntegrationHelper.Teams;
@@ -17,20 +18,6 @@ public class Script
 				return;
 			}
 
-			var channelNameParam = engine.GetScriptParam("Channel Name");
-			if (string.IsNullOrWhiteSpace(channelNameParam?.Value))
-			{
-				engine.ExitFail("'Channel Name' parameter is required.");
-				return;
-			}
-
-			var channelDescriptionParam = engine.GetScriptParam("Channel Description");
-			if (string.IsNullOrWhiteSpace(channelDescriptionParam?.Value))
-			{
-				engine.ExitFail("'Channel Description' parameter is required.");
-				return;
-			}
-
 			var channelMemoryFile = engine.GetMemory("Channels");
 			if (channelMemoryFile == null)
 			{
@@ -38,21 +25,23 @@ public class Script
 				return;
 			}
 
-			IChannel channel;
+			IEnumerable<IChannel> channels;
 			try
 			{
-				channel = chatIntegrationHelper.Teams.TryCreateChannel(teamIdParam.Value, channelNameParam.Value, channelDescriptionParam.Value);
+				channels = chatIntegrationHelper.Teams.TryGetChannels(teamIdParam.Value);
 			}
 			catch (TeamsChatIntegrationException e)
 			{
-				engine.ExitFail(
-					$"Couldn't create the channel in the team with id {teamIdParam.Value} with error {e.Message}.");
+				engine.ExitFail($"Couldn't fetch the channels with error {e.Message}.");
 				return;
 			}
 
-			channelMemoryFile.Set($"{channel.DisplayName} ({channel.ChannelId})", channel.ChannelId);
+			foreach (var channel in channels)
+			{
+				channelMemoryFile.Set($"{channel.DisplayName} ({channel.ChannelId})", channel.ChannelId);
+			}
 
-			engine.ExitSuccess($"The channel with id {channel.ChannelId} was created in the team with id {channel.TeamId}!");
+			engine.ExitSuccess("The fetched channels were saved in the 'Channels' memory file!");
 		}
 		catch (ScriptAbortException)
 		{

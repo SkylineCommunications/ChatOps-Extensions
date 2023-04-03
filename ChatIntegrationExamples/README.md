@@ -16,7 +16,9 @@ This readme details how to integrate DataMiner into business communication platf
   - [Microsoft Teams](#microsoft-teams-1) 
     * [Getting Started](#getting-started)
     * [Creating a Team](#creating-a-team)
+    * [Fetching all Teams](#fetching-all-teams)
     * [Creating a Channel](#creating-a-channel)
+    * [Fetching all Channels of a Team](#fetching-all-channels-of-a-team)
     * [Adding Team Members](#adding-team-members)
     * [Adding Team Owners](#adding-team-owners)
     * [Sending a Channel Notification](#sending-a-channel-notification)
@@ -52,15 +54,15 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### General
 
-- The DataMiner System must be cloud-connected. See [Connecting your DataMiner System to the cloud](https://docs.dataminer.services/user-guide/Cloud_Platform/AboutCloudPlatform/Connecting_your_DataMiner_System_to_the_cloud.html).
+- The DataMiner System must be cloud-connected. See [Connecting your DataMiner System to the cloud](https://aka.dataminer.services/connect-to-the-cloud).
 
-- The CloudGateway module must be updated to at least version 2.9.0. See [Upgrading nodes to the latest DxM versions](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Managing_cloud-connected_nodes.html).
+- The CloudGateway module must be updated to at least version 2.9.0. See [Upgrading nodes to the latest DxM versions](https://aka.dataminer.services/managing-cloud-connected-nodes).
 
 #### Microsoft Teams
 
 - The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) must be allowed in your [Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-apps).
 
-- [Admin consent must be granted](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Granting_admin_consent.html) in the [Admin app](https://admin.dataminer.services).
+- [Admin consent must be granted](https://aka.dataminer.services/chat-integration-admin-consent) in the [Admin app](https://admin.dataminer.services).
 
 ## Examples
 
@@ -72,12 +74,12 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Getting Started
 
-1. [Download the DcpChatIntegrationExamples DMAPP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/10869593/DcpChatIntegrationExamples.1.0.1-CU3.zip), unzip it, and [deploy it to your DataMiner System](https://docs.dataminer.services/develop/TOOLS/TOOApplicationPackages/Installing_an_app_package.html). Installing this package will add the Automation scripts for Microsoft Teams in the Automation module along with some memory files that will be used by the Automation scripts to save the IDs of the created resources.
+1. [Deploy the latest version of the ChatIntegration Examples package via the Catalog](https://catalog.dataminer.services/catalog/3129) or [download the package as a ZIP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/11136394/DcpChatIntegrationExamples.1.0.0-CU5.zip), unzip it, and [deploy it to your DataMiner System locally](https://aka.dataminer.services/installing-application-packages). Installing this package will add the example Automation scripts for Microsoft Teams in the Automation module along with some memory files that will be used by the Automation scripts to save the IDs of the created and fetched resources.
 
    > :warning:
    > Installing this DMAPP will overwrite any Automation scripts and memory files with identical names.
 
-2. [Open DataMiner Cube](https://docs.dataminer.services/user-guide/Getting_started/Accessing_DataMiner/Accessing_DataMiner_Cube.html) and open the Automation module (via apps > Automation). The added Automation scripts will be shown there. <details><summary>`show demo`</summary>![Gif-Automation](https://user-images.githubusercontent.com/109528797/186685478-9eac1cbf-f2d9-4c9a-8a6a-a2f499dbdcd9.gif)</details>
+2. [Open DataMiner Cube](https://aka.dataminer.services/accessing-cube) and open the Automation module (via apps > Automation). The added Automation scripts will be shown there. <details><summary>`show demo`</summary>![Gif-Automation](https://user-images.githubusercontent.com/109528797/186685478-9eac1cbf-f2d9-4c9a-8a6a-a2f499dbdcd9.gif)</details>
 
 #### Creating a Team
 
@@ -90,6 +92,16 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
    - *Teams*: Select the memory file the script should use to save the ID of the team you are creating.
 
 3. Click the '*execute now*' button. A team (with a General channel) will be created in Microsoft Teams and a reference will be saved in the *Teams* memory file. The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) will also be installed. <details><summary>`show demo`</summary>![Gif-CreateTeam](https://user-images.githubusercontent.com/109528797/186685886-ae5f1834-1c5c-438d-92e7-03740330e51d.gif)</details>
+
+#### Fetching all Teams
+
+1. In the Automation module in DataMiner Cube, click the '*Fetch Teams Example*' Automation script and click the '*Execute*' button.
+
+2. Fill in the necessary information.
+
+   - *Teams*: Select the memory file the script should use to save the IDs of the teams you are fetching.
+
+3. Click the '*execute now*' button. All the teams will be fetched from Microsoft Teams and their reference will be saved in the *Teams* memory file. <details><summary>`show demo`</summary>![Gif-FetchAllTeams](https://user-images.githubusercontent.com/33500507/227512024-c5e044ed-c2b2-4af2-8397-112c11d6d60e.gif)</details>
 
 #### Creating a Channel
 
@@ -105,6 +117,17 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
    - *Channels*: Select the memory file the script should use to save the ID of the channel you are creating.
 
 4. Click the '*execute now*' button. A channel will be created in Microsoft Teams and a reference will be saved in the *Channels* memory file. <details><summary>`show demo`</summary>![Gif-CreateChannel](https://user-images.githubusercontent.com/109528797/186855003-c4002e8e-c9cf-42fd-91bd-b389d4bab908.gif)</details>
+
+#### Fetching all Channels of a Team
+
+1. In the Automation module in DataMiner Cube, click the '*Fetch Channels Example*' Automation script and click the '*Execute*' button.
+
+2. Fill in the necessary information.
+
+   - *Team ID*: The ID of the team that you want to fetch the channels from.
+   - *Channels*: Select the memory file the script should use to save the IDs of the channels you are fetching.
+
+3. Click the '*execute now*' button. All the channels of the given team will be fetched from Microsoft Teams and their reference will be saved in the *Channels* memory file. <details><summary>`show demo`</summary>![Gif-FetchAllChannelsOfATeam](https://user-images.githubusercontent.com/33500507/227512092-af755ec7-0641-4a90-b58e-f2c02a8a5d8d.gif)</details>
 
 #### Adding Team Members
 
@@ -192,11 +215,11 @@ To send a notification in a chat:
 
 ## Help
 
-[Skyline Communications: Support](https://skyline.be/contact/tech-support)
+[Skyline Communications: Support](https://aka.dataminer.services/tech-support)
 
 ## Contact
 
-[Skyline Communications: Contact](https://skyline.be/contact)
+[Skyline Communications: Contact](https://aka.dataminer.services/contact)
 
 ## Version History
 

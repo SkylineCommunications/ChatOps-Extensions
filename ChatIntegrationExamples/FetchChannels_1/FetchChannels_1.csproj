@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A1F05110-7BED-4F2E-A8E1-E8615541234B}</ProjectGuid>
+    <ProjectGuid>{0F6CDAA4-3071-4303-B626-C9497F1BC5E3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AddTeamMembers_1</RootNamespace>
-    <AssemblyName>AddTeamMembers_1</AssemblyName>
+    <RootNamespace>FetchChannels_1</RootNamespace>
+    <AssemblyName>FetchChannels_1</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <LangVersion>
@@ -24,7 +24,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>..\Internal\Code Analysis\qaction-debug.ruleset</CodeAnalysisRuleSet>
-    <DocumentationFile>bin\Debug\AddTeamMembers_1.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\FetchChannels_1.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -34,7 +34,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>..\Internal\Code Analysis\qaction-release.ruleset</CodeAnalysisRuleSet>
-    <DocumentationFile>bin\Release\AddTeamMembers_1.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\FetchChannels_1.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
@@ -46,10 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AddTeamMembers_1.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
+    <Compile Include="FetchChannels_1.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Skyline.DataMiner.DcpChatIntegrationHelper">
@@ -67,7 +64,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties DisLinkId="1" DisProjectType="automationScriptProject" DisLinkedXmlFile="..\AddTeamMembers.xml" />
+      <UserProperties DisLinkedXmlFile="..\FetchChannels.xml" DisProjectType="automationScriptProject" DisLinkId="1" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
