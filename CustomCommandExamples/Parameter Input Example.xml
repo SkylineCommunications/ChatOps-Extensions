@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <DMSScript options="272" xmlns="http://www.skyline.be/automation">
 	<Name>Parameter Input Example</Name>
-	<Description></Description>
+	<Description>Outputs the parameter input as an example</Description>
 	<Type>Automation</Type>
 	<Author>SKYLINE2\JordyAM</Author>
 	<CheckSets>FALSE</CheckSets>
-	<Folder></Folder>
+	<Folder>Examples/ChatOps/Teams/CustomCommands/bot</Folder>
 
 	<Protocols>
 	</Protocols>
@@ -14,6 +14,9 @@
 	</Memory>
 
 	<Parameters>
+		<ScriptParameter id="2" type="string" values="">
+			<Description>Parameter Input</Description>
+		</ScriptParameter>
 	</Parameters>
 
 	<Script>

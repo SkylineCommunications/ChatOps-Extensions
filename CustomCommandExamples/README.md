@@ -17,6 +17,7 @@ This readme details how to create custom DataMiner bot commands using Automation
     * [Output an Adaptive Card](#output-an-adaptive-card)
     * [Output Key-Values](#output-key-values)
     * [Output JSON](#output-json)
+    * [Input Parameter](#input-parameter)
 - [Help](#help)
 - [Contact](#contact)
 - [Version History](#version-history)
@@ -87,6 +88,14 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 1. In Teams, execute the command '*run JSON Output Example*' and click the '*Run*' button in the response.
 
 2. The custom command will be executed and the JSON example should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputJson](https://user-images.githubusercontent.com/33500507/192817316-fc4de34d-a34e-42cd-a5fa-e8e99b363c2d.gif)</details>
+
+#### Input Parameter
+
+1. In Teams, execute the command '*run Input Parameter Example*'.
+
+2. When you are asked to provide the input configured in the Automation script, fill in any value and click the '*Run*' button.
+
+   The custom command will be executed, and the provided input value should be displayed as the response. <details><summary>`show demo`</summary>![Gif-InputParameter](https://user-images.githubusercontent.com/33500507/233356486-bc64d385-997e-4b1b-8466-e26c801a7e4d.gif)</details>
 
 ## Help
 
