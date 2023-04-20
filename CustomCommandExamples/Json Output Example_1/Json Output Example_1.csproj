@@ -41,39 +41,29 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="SLManagedAutomation">
-      <HintPath>C:\Skyline DataMiner\Files\SLManagedAutomation.dll</HintPath>
-    </Reference>
-    <Reference Include="SLNetTypes">
-      <HintPath>C:\Skyline DataMiner\ProtocolScripts\SLNetTypes.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Skyline.DataMiner.Storage.Types">
-      <HintPath>C:\Skyline DataMiner\Files\Skyline.DataMiner.Storage.Types.dll</HintPath>
-    </Reference>
-    <Reference Include="SLLoggerUtil">
-      <HintPath>C:\Skyline DataMiner\Files\SLLoggerUtil.dll</HintPath>
-    </Reference>
     <AdditionalFiles Include="stylecop.json" />
     <Content Include=".editorconfig" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Json Output Example_1.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
-    <Analyzer Include="..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+    <PackageReference Include="Skyline.DataMiner.Dev.Automation">
+      <Version>10.2.3</Version>
+    </PackageReference>
+    <PackageReference Include="StyleCop.Analyzers">
+      <Version>1.1.118</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties DisLinkedXmlFile="..\Json Output Example.xml" DisProjectType="automationScriptProject" DisLinkId="1" />
+      <UserProperties DisLinkId="1" DisProjectType="automationScriptProject" DisLinkedXmlFile="..\Json Output Example.xml" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
