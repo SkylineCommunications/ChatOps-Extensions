@@ -93,7 +93,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 1. In Teams, execute the command '*run Input Parameter Example*'.
 
-2. A prompt will request the input configured in the automation script. Fill in any value and click the '*Run*' button.
+2. When you are asked to provide the input configured in the Automation script, fill in any value and click the '*Run*' button.
 
    The custom command will be executed, and the provided input value should be displayed as the response. <details><summary>`show demo`</summary>![Gif-InputParameter](https://user-images.githubusercontent.com/33500507/233356486-bc64d385-997e-4b1b-8466-e26c801a7e4d.gif)</details>
 
