@@ -95,7 +95,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 2. A prompt will request the input configured in the automation script. Fill in any value and click the '*Run*' button.
 
-3. The custom command will be executed and the provided input value should be displayed as the response. <details><summary>`show demo`</summary>![Gif-InputParameter](https://user-images.githubusercontent.com/33500507/233356486-bc64d385-997e-4b1b-8466-e26c801a7e4d.gif)</details>
+   The custom command will be executed, and the provided input value should be displayed as the response. <details><summary>`show demo`</summary>![Gif-InputParameter](https://user-images.githubusercontent.com/33500507/233356486-bc64d385-997e-4b1b-8466-e26c801a7e4d.gif)</details>
 
 ## Help
 
