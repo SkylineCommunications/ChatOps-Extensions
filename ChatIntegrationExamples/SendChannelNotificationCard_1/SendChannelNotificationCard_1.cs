@@ -76,11 +76,11 @@ namespace SendChannelNotificationCard_1
 				}
 				catch (TeamsChatIntegrationException e)
 				{
-					engine.ExitFail($"Couldn't send the notification to the channel with id {channelIdParam.Value} with error {e.Message}.");
+					engine.ExitFail($"Couldn't send the notification card to the channel with id {channelIdParam.Value} with error {e.Message}.");
 					return;
 				}
 
-				engine.ExitSuccess($"The notification was sent to the channel with id {channelIdParam.Value}!");
+				engine.ExitSuccess($"The notification card was sent to the channel with id {channelIdParam.Value}!");
 			}
 			catch (ScriptAbortException)
 			{
