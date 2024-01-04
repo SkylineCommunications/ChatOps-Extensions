@@ -6,8 +6,8 @@ This readme details how to integrate DataMiner into business communication platf
 
 - [Prerequisites](#prerequisites)
   - [Development](#Development)
-    - [DataMiner Integration Studio Visual Studio Extension](#dataminer-integration-studio-visual-studio-extension)
     - [Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package](#skylinedataminerdcpchatintegrationhelper-nuget-package)
+    - [DataMiner Integration Studio Visual Studio Extension](#dataminer-integration-studio-visual-studio-extension)
   - [Usage](#Usage)
     - [General](#general)
     - [Microsoft Teams](#microsoft-teams)
@@ -36,6 +36,13 @@ This readme details how to integrate DataMiner into business communication platf
 
 ### Development
 
+#### Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package
+
+The [Skyline.DataMiner.DcpChatIntegrationHelper NuGet package can be found on nuget.org](https://www.nuget.org/packages/Skyline.DataMiner.DcpChatIntegrationHelper). This NuGet package allows easy integration with business communication platforms from a DataMiner Automation script.
+
+> ℹ️
+> We recommend that you always use the latest version of the Skyline.DataMiner.DcpChatIntegrationHelper NuGet package.
+
 #### DataMiner Integration Studio Visual Studio Extension
 
 The DataMiner Integration Studio Visual Studio extension (also referred to as DIS) is required for development of Automation scripts using the [Skyline.DataMiner.DcpChatIntegrationHelper NuGet package](#skylinedataminerdcpchatintegrationhelper-nuget-package). You can also use DIS to deploy Automation scripts directly from your development environment to your DataMiner Systems.
@@ -44,13 +51,6 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 > ℹ️
 > We recommend that you always use the latest version of the DataMiner Integration Studio Visual Studio extension.
-
-#### Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package
-
-The [Skyline.DataMiner.DcpChatIntegrationHelper NuGet package can be found on nuget.org](https://www.nuget.org/packages/Skyline.DataMiner.DcpChatIntegrationHelper). This NuGet package allows easy integration with business communication platforms from a DataMiner Automation script.
-
-> ℹ️
-> We recommend that you always use the latest version of the Skyline.DataMiner.DcpChatIntegrationHelper NuGet package.
 
 ### Usage
 
