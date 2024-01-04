@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using AdaptiveCards;
 using Newtonsoft.Json;
 using Skyline.DataMiner.Automation;
+using Skyline.DataMiner.DcpChatIntegrationHelper.Common;
 
 /// <summary>
 /// DataMiner Script Class.
@@ -39,6 +40,6 @@ public class Script
 			new AdaptiveImage("https://skyline.be/sites/default/files/inline-images/DataMinerbySLC_Q.png"),
 		};
 
-		engine.AddScriptOutput("AdaptiveCard", JsonConvert.SerializeObject(adaptiveCardBody));
+		engine.AddScriptOutput("AdaptiveCard", adaptiveCardBody.ToJson());
 	}
 }
