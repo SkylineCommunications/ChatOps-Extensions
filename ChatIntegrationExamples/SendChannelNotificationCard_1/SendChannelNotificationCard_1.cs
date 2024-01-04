@@ -22,17 +22,17 @@ namespace SendChannelNotificationCard_1
 			var chatIntegrationHelper = new ChatIntegrationHelperBuilder().Build();
 			try
 			{
-				var teamIdParam = engine.GetScriptParam("Team Id");
+				var teamIdParam = engine.GetScriptParam("Team ID");
 				if (string.IsNullOrWhiteSpace(teamIdParam?.Value))
 				{
-					engine.ExitFail("'Team Id' parameter is required.");
+					engine.ExitFail("'Team ID' parameter is required.");
 					return;
 				}
 
-				var channelIdParam = engine.GetScriptParam("Channel Id");
+				var channelIdParam = engine.GetScriptParam("Channel ID");
 				if (string.IsNullOrWhiteSpace(channelIdParam?.Value))
 				{
-					engine.ExitFail("'Channel Id' parameter is required.");
+					engine.ExitFail("'Channel ID' parameter is required.");
 					return;
 				}
 
@@ -76,11 +76,11 @@ namespace SendChannelNotificationCard_1
 				}
 				catch (TeamsChatIntegrationException e)
 				{
-					engine.ExitFail($"Couldn't send the notification card to the channel with id {channelIdParam.Value} with error {e.Message}.");
+					engine.ExitFail($"Couldn't send the notification card to the channel with ID {channelIdParam.Value} with error {e.Message}.");
 					return;
 				}
 
-				engine.ExitSuccess($"The notification card was sent to the channel with id {channelIdParam.Value}!");
+				engine.ExitSuccess($"The notification card was sent to the channel with ID {channelIdParam.Value}!");
 			}
 			catch (ScriptAbortException)
 			{

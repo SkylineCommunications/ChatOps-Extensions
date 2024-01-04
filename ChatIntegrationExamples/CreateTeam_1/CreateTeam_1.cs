@@ -44,7 +44,7 @@ public class Script
 
 			teamsMemoryFile.Set($"{team.DisplayName} ({team.TeamId})", team.TeamId);
 
-			engine.ExitSuccess($"The team with id {team.TeamId} should be created soon!");
+			engine.ExitSuccess($"The team with ID {team.TeamId} should be created soon!");
 		}
 		catch (ScriptAbortException)
 		{

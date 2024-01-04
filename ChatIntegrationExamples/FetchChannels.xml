@@ -18,7 +18,7 @@
 
 	<Parameters>
 		<ScriptParameter id="2" type="string" values="TeamsExample">
-			<Description>Team Id</Description>
+			<Description>Team ID</Description>
 		</ScriptParameter>
 	</Parameters>
 

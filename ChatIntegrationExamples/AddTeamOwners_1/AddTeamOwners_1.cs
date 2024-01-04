@@ -11,10 +11,10 @@ public class Script
 		var chatIntegrationHelper = new ChatIntegrationHelperBuilder().Build();
 		try
 		{
-			var teamIdParam = engine.GetScriptParam("Team Id");
+			var teamIdParam = engine.GetScriptParam("Team ID");
 			if (string.IsNullOrWhiteSpace(teamIdParam?.Value))
 			{
-				engine.ExitFail("'Team Id' parameter is required.");
+				engine.ExitFail("'Team ID' parameter is required.");
 				return;
 			}
 
@@ -47,11 +47,11 @@ public class Script
 			catch (TeamsChatIntegrationException e)
 			{
 				engine.ExitFail(
-					$"Couldn't add the owners [{string.Join(", ", teamOwnersToAdd)}] to the team with id {teamIdParam.Value} with error {e.Message}.");
+					$"Couldn't add the owners [{string.Join(", ", teamOwnersToAdd)}] to the team with ID {teamIdParam.Value} with error {e.Message}.");
 				return;
 			}
 
-			engine.ExitSuccess($"The owners [{string.Join(", ", teamOwnersToAdd)}] are added to the team with id {teamIdParam.Value}!");
+			engine.ExitSuccess($"The owners [{string.Join(", ", teamOwnersToAdd)}] are added to the team with ID {teamIdParam.Value}!");
 		}
 		catch (ScriptAbortException)
 		{
