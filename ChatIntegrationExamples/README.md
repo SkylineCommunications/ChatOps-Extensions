@@ -6,8 +6,8 @@ This readme details how to integrate DataMiner into business communication platf
 
 - [Prerequisites](#prerequisites)
   - [Development](#Development)
-    - [Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package](#skylinedataminerdcpchatintegrationhelper-nuget-package)
     - [DataMiner Integration Studio Visual Studio Extension](#dataminer-integration-studio-visual-studio-extension)
+    - [Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package](#skylinedataminerdcpchatintegrationhelper-nuget-package)
   - [Usage](#Usage)
     - [General](#general)
     - [Microsoft Teams](#microsoft-teams)
@@ -22,9 +22,11 @@ This readme details how to integrate DataMiner into business communication platf
     * [Adding Team Members](#adding-team-members)
     * [Adding Team Owners](#adding-team-owners)
     * [Sending a Channel Notification](#sending-a-channel-notification)
+    * [Sending a Channel Notification using an Adaptive Card](#sending-a-channel-notification-using-an-adaptive-card)
     * [Creating a Private Chat](#creating-a-private-chat)
     * [Fetching a Private Chat](#fetching-a-private-chat)
     * [Sending a Chat Notification](#sending-a-chat-notification)
+    * [Sending a Chat Notification using an Adaptive Card](#sending-a-chat-notification-using-an-adaptive-card)
 - [Help](#help)
 - [Contact](#contact)
 - [Version History](#version-history)
@@ -34,13 +36,6 @@ This readme details how to integrate DataMiner into business communication platf
 
 ### Development
 
-#### Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package
-
-The [Skyline.DataMiner.DcpChatIntegrationHelper NuGet package can be found on nuget.org](https://www.nuget.org/packages/Skyline.DataMiner.DcpChatIntegrationHelper). This NuGet package allows easy integration with business communication platforms from a DataMiner Automation script.
-
-> ℹ️
-> We recommend that you always use the latest version of the Skyline.DataMiner.DcpChatIntegrationHelper NuGet package.
-
 #### DataMiner Integration Studio Visual Studio Extension
 
 The DataMiner Integration Studio Visual Studio extension (also referred to as DIS) is required for development of Automation scripts using the [Skyline.DataMiner.DcpChatIntegrationHelper NuGet package](#skylinedataminerdcpchatintegrationhelper-nuget-package). You can also use DIS to deploy Automation scripts directly from your development environment to your DataMiner Systems.
@@ -49,6 +44,13 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 > ℹ️
 > We recommend that you always use the latest version of the DataMiner Integration Studio Visual Studio extension.
+
+#### Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package
+
+The [Skyline.DataMiner.DcpChatIntegrationHelper NuGet package can be found on nuget.org](https://www.nuget.org/packages/Skyline.DataMiner.DcpChatIntegrationHelper). This NuGet package allows easy integration with business communication platforms from a DataMiner Automation script.
+
+> ℹ️
+> We recommend that you always use the latest version of the Skyline.DataMiner.DcpChatIntegrationHelper NuGet package.
 
 ### Usage
 
@@ -175,6 +177,22 @@ To send a notification in a channel:
 
 4. Click the '*execute now*' button. A notification will be sent in the channel in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChannelNotification](https://user-images.githubusercontent.com/109528797/187139103-4728e148-204d-447f-9674-8d74f4e373d1.gif)</details>
 
+#### Sending a Channel Notification using an Adaptive Card
+
+To send a notification using an Adaptive Card in a channel:
+
+1. First make sure [a channel is created as detailed above](#creating-a-channel).
+
+2. In the Automation module in DataMiner Cube, click the '*Send Channel Notification Card Example*' Automation script and click the '*Execute*' button.
+
+3. Fill in the necessary information. Note that the **fields are case sensitive**.
+
+   - *Team ID*: The ID of the team where you want to send a notification.
+   - *Channel ID*: The ID of the channel where you want to send a notification. Note that this must be a channel of the specified team.
+   - *Notification*: The text of the notification.
+
+4. Click the '*execute now*' button. An Adaptive Card notification will be sent in the channel in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChannelNotificationCard](https://insert-image-here)</details>
+
 #### Creating a Private Chat
 
 1. In the Automation module in DataMiner Cube, click the '*Create Private Chat Example*' Automation script and click the '*Execute*' button.
@@ -212,6 +230,21 @@ To send a notification in a chat:
    - *Notification*: The text of the notification.
 
 4. Click the '*execute now*' button. A notification will be sent in the chat in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChatNotification](https://user-images.githubusercontent.com/33500507/222172619-89273119-c88a-42ad-b035-916a2ef9b802.gif)</details>
+
+#### Sending a Chat Notification using an Adaptive Card
+
+To send a notification using an Adaptive Card in a chat:
+
+1. First make sure [a private chat is fetched as detailed above](#fetching-a-private-chat).
+
+2. In the Automation module in DataMiner Cube, click the '*Send Chat Notification Card Example*' Automation script and click the '*Execute*' button.
+
+3. Fill in the necessary information. Note that the **fields are case sensitive**.
+
+   - *Chat ID*: The ID of the chat where you want to send a notification.
+   - *Notification*: The text of the notification.
+
+4. Click the '*execute now*' button. An Adaptive Card notification will be sent in the chat in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChatNotificationCard](https://insert-image-here)</details>
 
 ## Help
 
