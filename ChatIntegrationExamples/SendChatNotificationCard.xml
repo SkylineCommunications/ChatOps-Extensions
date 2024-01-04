@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <DMSScript options="272" xmlns="http://www.skyline.be/automation">
-	<Name>Fetch Private Chat Example</Name>
-	<Description>Fetches the private chat of a user and the DataMiner Teams Bot from Microsoft Teams. Make sure to have a tenant set for your organization in the Admin app (https://admin.dataminer.services).</Description>
+	<Name>Send Chat Notification Card Example</Name>
+	<Description>Sends a notification using an Adaptive Card in a given group chat or one-on-one chat in Microsoft Teams. Make sure to have a tenant set for your organization in the Admin app (https://admin.dataminer.services).</Description>
 	<Type>Automation</Type>
 	<Author>SKYLINE2\JordyAM</Author>
 	<CheckSets>FALSE</CheckSets>
@@ -11,20 +11,20 @@
 	</Protocols>
 
 	<Memory>
-		<File id="1" volatile="false">
-			<Description>Chats</Description>
-		</File>
 	</Memory>
 
 	<Parameters>
+		<ScriptParameter id="1" type="string" values="ChatsExample">
+			<Description>Chat ID</Description>
+		</ScriptParameter>
 		<ScriptParameter id="2" type="string" values="">
-			<Description>User Email</Description>
+			<Description>Notification</Description>
 		</ScriptParameter>
 	</Parameters>
 
 	<Script>
 		<Exe id="3" type="csharp">
-			<Value><![CDATA[[Project:FetchPrivateChat_1]]]></Value>
+			<Value><![CDATA[[Project:SendChatNotificationCard_1]]]></Value>
 			<!--<Param type="debug">true</Param>-->
 			<Message></Message>
 		</Exe>

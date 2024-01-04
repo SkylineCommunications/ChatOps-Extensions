@@ -22,9 +22,11 @@ This readme details how to integrate DataMiner into business communication platf
     * [Adding Team Members](#adding-team-members)
     * [Adding Team Owners](#adding-team-owners)
     * [Sending a Channel Notification](#sending-a-channel-notification)
+    * [Sending a Channel Notification using an Adaptive Card](#sending-a-channel-notification-using-an-adaptive-card)
     * [Creating a Private Chat](#creating-a-private-chat)
     * [Fetching a Private Chat](#fetching-a-private-chat)
     * [Sending a Chat Notification](#sending-a-chat-notification)
+    * [Sending a Chat Notification using an Adaptive Card](#sending-a-chat-notification-using-an-adaptive-card)
 - [Help](#help)
 - [Contact](#contact)
 - [Version History](#version-history)
@@ -74,7 +76,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Getting Started
 
-1. [Deploy the latest version of the ChatIntegration Examples package via the Catalog](https://catalog.dataminer.services/catalog/3129) or [download the package as a ZIP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/13318637/DcpChatIntegrationExamples.1.0.1-CU4.zip), unzip it, and [deploy it to your DataMiner System locally](https://aka.dataminer.services/installing-application-packages). Installing this package will add the example Automation scripts for Microsoft Teams in the Automation module along with some memory files that will be used by the Automation scripts to save the IDs of the created and fetched resources.
+1. [Deploy the latest version of the ChatIntegration Examples package via the Catalog](https://catalog.dataminer.services/catalog/3129) or [download the package as a ZIP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/13829829/DcpChatIntegrationExamples.1.1.0.zip), unzip it, and [deploy it to your DataMiner System locally](https://aka.dataminer.services/installing-application-packages). Installing this package will add the example Automation scripts for Microsoft Teams in the Automation module along with some memory files that will be used by the Automation scripts to save the IDs of the created and fetched resources.
 
    > :warning:
    > Installing this DMAPP will overwrite any Automation scripts and memory files with identical names.
@@ -175,6 +177,22 @@ To send a notification in a channel:
 
 4. Click the '*execute now*' button. A notification will be sent in the channel in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChannelNotification](https://user-images.githubusercontent.com/109528797/187139103-4728e148-204d-447f-9674-8d74f4e373d1.gif)</details>
 
+#### Sending a Channel Notification using an Adaptive Card
+
+To send a notification using an Adaptive Card in a channel:
+
+1. First make sure [a channel is created as detailed above](#creating-a-channel).
+
+2. In the Automation module in DataMiner Cube, click the '*Send Channel Notification Card Example*' Automation script and click the '*Execute*' button.
+
+3. Fill in the necessary information. Note that the **fields are case sensitive**.
+
+   - *Team ID*: The ID of the team where you want to send a notification.
+   - *Channel ID*: The ID of the channel where you want to send a notification. Note that this must be a channel of the specified team.
+   - *Notification*: The text of the notification.
+
+4. Click the '*execute now*' button. An Adaptive Card notification will be sent in the channel in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChannelNotificationCard](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/cd749909-770e-4152-bbb8-ed7855723058)</details>
+
 #### Creating a Private Chat
 
 1. In the Automation module in DataMiner Cube, click the '*Create Private Chat Example*' Automation script and click the '*Execute*' button.
@@ -212,6 +230,21 @@ To send a notification in a chat:
    - *Notification*: The text of the notification.
 
 4. Click the '*execute now*' button. A notification will be sent in the chat in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChatNotification](https://user-images.githubusercontent.com/33500507/222172619-89273119-c88a-42ad-b035-916a2ef9b802.gif)</details>
+
+#### Sending a Chat Notification using an Adaptive Card
+
+To send a notification using an Adaptive Card in a chat:
+
+1. First make sure [a private chat is fetched as detailed above](#fetching-a-private-chat).
+
+2. In the Automation module in DataMiner Cube, click the '*Send Chat Notification Card Example*' Automation script and click the '*Execute*' button.
+
+3. Fill in the necessary information. Note that the **fields are case sensitive**.
+
+   - *Chat ID*: The ID of the chat where you want to send a notification.
+   - *Notification*: The text of the notification.
+
+4. Click the '*execute now*' button. An Adaptive Card notification will be sent in the chat in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChatNotificationCard](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/4f9f6535-ce16-46de-8353-0737a2a1b701)</details>
 
 ## Help
 

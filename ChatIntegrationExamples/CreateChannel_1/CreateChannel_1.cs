@@ -10,10 +10,10 @@ public class Script
 		var chatIntegrationHelper = new ChatIntegrationHelperBuilder().Build();
 		try
 		{
-			var teamIdParam = engine.GetScriptParam("Team Id");
+			var teamIdParam = engine.GetScriptParam("Team ID");
 			if (string.IsNullOrWhiteSpace(teamIdParam?.Value))
 			{
-				engine.ExitFail("'Team Id' parameter is required.");
+				engine.ExitFail("'Team ID' parameter is required.");
 				return;
 			}
 
@@ -46,13 +46,13 @@ public class Script
 			catch (TeamsChatIntegrationException e)
 			{
 				engine.ExitFail(
-					$"Couldn't create the channel in the team with id {teamIdParam.Value} with error {e.Message}.");
+					$"Couldn't create the channel in the team with ID {teamIdParam.Value} with error {e.Message}.");
 				return;
 			}
 
 			channelMemoryFile.Set($"{channel.DisplayName} ({channel.ChannelId})", channel.ChannelId);
 
-			engine.ExitSuccess($"The channel with id {channel.ChannelId} was created in the team with id {channel.TeamId}!");
+			engine.ExitSuccess($"The channel with ID {channel.ChannelId} was created in the team with ID {channel.TeamId}!");
 		}
 		catch (ScriptAbortException)
 		{

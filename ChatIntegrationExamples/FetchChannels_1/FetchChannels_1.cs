@@ -11,10 +11,10 @@ public class Script
 		var chatIntegrationHelper = new ChatIntegrationHelperBuilder().Build();
 		try
 		{
-			var teamIdParam = engine.GetScriptParam("Team Id");
+			var teamIdParam = engine.GetScriptParam("Team ID");
 			if (string.IsNullOrWhiteSpace(teamIdParam?.Value))
 			{
-				engine.ExitFail("'Team Id' parameter is required.");
+				engine.ExitFail("'Team ID' parameter is required.");
 				return;
 			}
 

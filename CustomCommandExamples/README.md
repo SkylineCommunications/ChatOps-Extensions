@@ -6,6 +6,7 @@ This readme details how to create custom DataMiner bot commands using Automation
 
 - [Prerequisites](#prerequisites)
   - [Development](#Development)
+    - [Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package](#skylinedataminerdcpchatintegrationhelper-nuget-package)
     - [DataMiner Integration Studio Visual Studio Extension](#dataminer-integration-studio-visual-studio-extension)
   - [Usage](#Usage)
     - [General](#general)
@@ -26,6 +27,13 @@ This readme details how to create custom DataMiner bot commands using Automation
 ## Prerequisites
 
 ### Development
+
+#### Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package
+
+The [Skyline.DataMiner.DcpChatIntegrationHelper NuGet package can be found on nuget.org](https://www.nuget.org/packages/Skyline.DataMiner.DcpChatIntegrationHelper). This NuGet package allows easy integration with business communication platforms from a DataMiner Automation script.
+
+> ℹ️
+> We recommend that you always use the latest version of the Skyline.DataMiner.DcpChatIntegrationHelper NuGet package.
 
 #### DataMiner Integration Studio Visual Studio Extension
 
@@ -66,7 +74,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Getting Started
 
-1. [Deploy the latest version of the Custom Commands Examples package via the Catalog](https://catalog.dataminer.services/catalog/5212) or [download the package as a ZIP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/9673583/DcpCustomCommandExamples.1.0.0.X_B5.zip), unzip it, and [deploy it to your DataMiner System locally](https://aka.dataminer.services/installing-application-packages). Installing this package will add the custom command Automation scripts for Microsoft Teams in the Automation module.
+1. [Deploy the latest version of the Custom Commands Examples package via the Catalog](https://catalog.dataminer.services/catalog/5212) or [download the package as a ZIP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/13829836/DcpCustomCommandExamples.1.1.0.zip), unzip it, and [deploy it to your DataMiner System locally](https://aka.dataminer.services/installing-application-packages). Installing this package will add the custom command Automation scripts for Microsoft Teams in the Automation module.
 
    > :warning:
    > Installing this DMAPP will overwrite any Automation scripts with identical names.
