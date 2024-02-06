@@ -273,7 +273,7 @@ To send a notification using an Adaptive Card with buttons in a chat:
 
 2. Make sure [a private chat is fetched as detailed above](#fetching-a-private-chat).
 
-3. In the Automation module in DataMiner Cube, click the '*Send Chat Notification Card With Buttons Example*' Automation script and click the '*Execute*' button.
+3. In the Automation module in DataMiner Cube, select the '*Send Chat Notification Card With Buttons Example*' Automation script and click the '*Execute*' button.
 
 4. Fill in the necessary information. Note that the **fields are case sensitive**.
 
