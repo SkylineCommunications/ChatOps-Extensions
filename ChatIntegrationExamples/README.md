@@ -203,7 +203,7 @@ To send a notification using an Adaptive Card with buttons in a channel:
 
 2. Make sure [a channel is created as detailed above](#creating-a-channel).
 
-3. In the Automation module in DataMiner Cube, click the '*Send Channel Notification Card With Buttons Example*' Automation script and click the '*Execute*' button.
+3. In the Automation module in DataMiner Cube, select the '*Send Channel Notification Card With Buttons Example*' Automation script and click the '*Execute*' button.
 
 4. Fill in the necessary information. Note that the **fields are case sensitive**.
 
