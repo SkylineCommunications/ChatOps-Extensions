@@ -201,7 +201,7 @@ To send a notification using an Adaptive Card with buttons in a channel:
 
 1. First make sure that you fill in the organization ID and DMS ID in the Automation script named '*Send Channel Notification Card With Buttons Example*'. You can find these IDs in the URL by opening the DMS overview in the [Admin app](https://admin.dataminer.services). An example is provided in the Automation script.
 
-2. First make sure [a channel is created as detailed above](#creating-a-channel).
+2. Make sure [a channel is created as detailed above](#creating-a-channel).
 
 3. In the Automation module in DataMiner Cube, click the '*Send Channel Notification Card With Buttons Example*' Automation script and click the '*Execute*' button.
 
