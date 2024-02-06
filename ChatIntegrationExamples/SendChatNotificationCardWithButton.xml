@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DMSScript options="272" xmlns="http://www.skyline.be/automation">
+	<Name>Send Chat Notification Card With Buttons Example</Name>
+	<Description>Sends a notification using an Adaptive Card with buttons in a given group chat or one-on-one chat in Microsoft Teams. Make sure to have a tenant set for your organization in the Admin app (https://admin.dataminer.services).</Description>
+	<Type>Automation</Type>
+	<Author>SKYLINE2\JordyAM</Author>
+	<CheckSets>FALSE</CheckSets>
+	<Folder>Examples/ChatOps/Teams/Integration</Folder>
+
+	<Protocols>
+	</Protocols>
+
+	<Memory>
+	</Memory>
+
+	<Parameters>
+		<ScriptParameter id="1" type="string" values="ChatsExample">
+			<Description>Chat ID</Description>
+		</ScriptParameter>
+	</Parameters>
+
+	<Script>
+		<Exe id="2" type="csharp">
+			<Value><![CDATA[[Project:SendChatNotificationCardWithButton_1]]]></Value>
+			<!--<Param type="debug">true</Param>-->
+			<Message></Message>
+		</Exe>
+	</Script>
+</DMSScript>

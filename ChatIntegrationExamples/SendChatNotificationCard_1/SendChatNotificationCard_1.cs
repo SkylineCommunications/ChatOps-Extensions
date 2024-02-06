@@ -1,5 +1,4 @@
 using AdaptiveCards;
-using Newtonsoft.Json;
 using Skyline.DataMiner.DcpChatIntegrationHelper.Common;
 using Skyline.DataMiner.DcpChatIntegrationHelper.Teams;
 

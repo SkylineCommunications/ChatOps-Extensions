@@ -126,6 +126,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{2B99
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendChannelNotificationCard_1", "SendChannelNotificationCard_1\SendChannelNotificationCard_1.csproj", "{A32F4659-D589-426A-8EB6-58A507FD54C4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SendChannelNotificationCardWithButton", "SendChannelNotificationCardWithButton", "{4CE25D44-CE75-449B-85DC-6AE6304EC987}"
+	ProjectSection(SolutionItems) = preProject
+		SendChannelNotificationCardWithButton.xml = SendChannelNotificationCardWithButton.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{55B56BE2-58BB-41E1-B10B-BDB0B8E67EAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendChannelNotificationCardWithButton_1", "SendChannelNotificationCardWithButton_1\SendChannelNotificationCardWithButton_1.csproj", "{D8138C67-664D-4C29-8089-96463CED58CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SendChatNotificationCardWithButton", "SendChatNotificationCardWithButton", "{6784EDBE-623E-43DC-ADC1-C57B7ABA479B}"
+	ProjectSection(SolutionItems) = preProject
+		SendChatNotificationCardWithButton.xml = SendChatNotificationCardWithButton.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{867811ED-F4DB-48B7-9528-E5815E5E2945}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendChatNotificationCardWithButton_1", "SendChatNotificationCardWithButton_1\SendChatNotificationCardWithButton_1.csproj", "{6E77E3E1-04FD-4B9F-B493-103A31E51105}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -180,6 +198,14 @@ Global
 		{A32F4659-D589-426A-8EB6-58A507FD54C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A32F4659-D589-426A-8EB6-58A507FD54C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A32F4659-D589-426A-8EB6-58A507FD54C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8138C67-664D-4C29-8089-96463CED58CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8138C67-664D-4C29-8089-96463CED58CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8138C67-664D-4C29-8089-96463CED58CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8138C67-664D-4C29-8089-96463CED58CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E77E3E1-04FD-4B9F-B493-103A31E51105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E77E3E1-04FD-4B9F-B493-103A31E51105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E77E3E1-04FD-4B9F-B493-103A31E51105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E77E3E1-04FD-4B9F-B493-103A31E51105}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -222,6 +248,12 @@ Global
 		{05998E79-E005-43FC-9FA1-A3825074740C} = {8B32CE97-7FCE-45C0-BB81-FF31F4A23730}
 		{2B99C837-96E9-4D9D-B79B-8E6EBF4A9C5C} = {05998E79-E005-43FC-9FA1-A3825074740C}
 		{A32F4659-D589-426A-8EB6-58A507FD54C4} = {2B99C837-96E9-4D9D-B79B-8E6EBF4A9C5C}
+		{4CE25D44-CE75-449B-85DC-6AE6304EC987} = {8B32CE97-7FCE-45C0-BB81-FF31F4A23730}
+		{55B56BE2-58BB-41E1-B10B-BDB0B8E67EAC} = {4CE25D44-CE75-449B-85DC-6AE6304EC987}
+		{D8138C67-664D-4C29-8089-96463CED58CF} = {55B56BE2-58BB-41E1-B10B-BDB0B8E67EAC}
+		{6784EDBE-623E-43DC-ADC1-C57B7ABA479B} = {8B32CE97-7FCE-45C0-BB81-FF31F4A23730}
+		{867811ED-F4DB-48B7-9528-E5815E5E2945} = {6784EDBE-623E-43DC-ADC1-C57B7ABA479B}
+		{6E77E3E1-04FD-4B9F-B493-103A31E51105} = {867811ED-F4DB-48B7-9528-E5815E5E2945}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {87EE2F9E-F61F-46A9-A2F5-60F23E767BCC}
