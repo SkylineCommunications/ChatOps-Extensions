@@ -210,7 +210,7 @@ To send a notification using an Adaptive Card with buttons in a channel:
    - *Team ID*: The ID of the team where you want to send a notification.
    - *Channel ID*: The ID of the channel where you want to send a notification. Note that this must be a channel of the specified team.
 
-5. Click the '*execute now*' button. An Adaptive Card notification with buttons will be sent in the channel in Microsoft Teams. <details><summary>`show example`</summary>![SendChannelNotificationCardWithButtons](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/5f0289ba-b27c-446d-8fd2-ca8caab5ff9e)</details>
+5. Click the '*Execute now*' button. An Adaptive Card notification with buttons will be sent in the channel in Microsoft Teams. <details><summary>`show example`</summary>![SendChannelNotificationCardWithButtons](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/5f0289ba-b27c-446d-8fd2-ca8caab5ff9e)</details>
 
 #### Creating a Private Chat
 
