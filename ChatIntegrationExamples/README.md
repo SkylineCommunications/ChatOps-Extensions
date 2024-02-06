@@ -23,10 +23,12 @@ This readme details how to integrate DataMiner into business communication platf
     * [Adding Team Owners](#adding-team-owners)
     * [Sending a Channel Notification](#sending-a-channel-notification)
     * [Sending a Channel Notification using an Adaptive Card](#sending-a-channel-notification-using-an-adaptive-card)
+    * [Sending a Channel Notification using an Adaptive Card with buttons](#sending-a-channel-notification-using-an-adaptive-card-with-buttons)
     * [Creating a Private Chat](#creating-a-private-chat)
     * [Fetching a Private Chat](#fetching-a-private-chat)
     * [Sending a Chat Notification](#sending-a-chat-notification)
     * [Sending a Chat Notification using an Adaptive Card](#sending-a-chat-notification-using-an-adaptive-card)
+    * [Sending a Chat Notification using an Adaptive Card with buttons](#sending-a-chat-notification-using-an-adaptive-card-with-buttons)
 - [Help](#help)
 - [Contact](#contact)
 - [Version History](#version-history)
@@ -193,6 +195,23 @@ To send a notification using an Adaptive Card in a channel:
 
 4. Click the '*execute now*' button. An Adaptive Card notification will be sent in the channel in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChannelNotificationCard](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/cd749909-770e-4152-bbb8-ed7855723058)</details>
 
+#### Sending a Channel Notification using an Adaptive Card with buttons
+
+To send a notification using an Adaptive Card with buttons in a channel:
+
+1. First make sure that you fill in the organization ID and dms ID in the Automation script named '*Send Channel Notification Card with buttons Example*'. You can find these IDs in the URL by opening the DMS overview in the [Admin app](https://admin.dataminer.services). An example is provided in the Automation script.
+
+2. First make sure [a channel is created as detailed above](#creating-a-channel).
+
+3. In the Automation module in DataMiner Cube, click the '*Send Channel Notification Card with buttons Example*' Automation script and click the '*Execute*' button.
+
+4. Fill in the necessary information. Note that the **fields are case sensitive**.
+
+   - *Team ID*: The ID of the team where you want to send a notification.
+   - *Channel ID*: The ID of the channel where you want to send a notification. Note that this must be a channel of the specified team.
+
+5. Click the '*execute now*' button. An Adaptive Card notification with buttons will be sent in the channel in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChannelNotificationCardWithButtons](TODO)</details>
+
 #### Creating a Private Chat
 
 1. In the Automation module in DataMiner Cube, click the '*Create Private Chat Example*' Automation script and click the '*Execute*' button.
@@ -245,6 +264,22 @@ To send a notification using an Adaptive Card in a chat:
    - *Notification*: The text of the notification.
 
 4. Click the '*execute now*' button. An Adaptive Card notification will be sent in the chat in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChatNotificationCard](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/4f9f6535-ce16-46de-8353-0737a2a1b701)</details>
+
+#### Sending a Chat Notification using an Adaptive Card with buttons
+
+To send a notification using an Adaptive Card with buttons in a chat:
+
+1. First make sure that you fill in the organization ID and dms ID in the Automation script named '*Send Chat Notification Card with buttons Example*'. You can find these IDs in the URL by opening the DMS overview in the [Admin app](https://admin.dataminer.services). An example is provided in the Automation script.
+
+2. Then make sure [a private chat is fetched as detailed above](#fetching-a-private-chat).
+
+3. In the Automation module in DataMiner Cube, click the '*Send Chat Notification Card with buttons Example*' Automation script and click the '*Execute*' button.
+
+4. Fill in the necessary information. Note that the **fields are case sensitive**.
+
+   - *Chat ID*: The ID of the chat where you want to send a notification.
+
+5. Click the '*execute now*' button. An Adaptive Card notification with buttons will be sent in the chat in Microsoft Teams. <details><summary>`show demo`</summary>![Gif-SendChatNotificationCardWithButtons](TODO)</details>
 
 ## Help
 
