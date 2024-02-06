@@ -271,7 +271,7 @@ To send a notification using an Adaptive Card with buttons in a chat:
 
 1. First make sure that you fill in the organization ID and DMS ID in the Automation script named '*Send Chat Notification Card With Buttons Example*'. You can find these IDs in the URL by opening the DMS overview in the [Admin app](https://admin.dataminer.services). An example is provided in the Automation script.
 
-2. Then make sure [a private chat is fetched as detailed above](#fetching-a-private-chat).
+2. Make sure [a private chat is fetched as detailed above](#fetching-a-private-chat).
 
 3. In the Automation module in DataMiner Cube, click the '*Send Chat Notification Card With Buttons Example*' Automation script and click the '*Execute*' button.
 
