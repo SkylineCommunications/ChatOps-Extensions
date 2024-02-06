@@ -279,7 +279,7 @@ To send a notification using an Adaptive Card with buttons in a chat:
 
    - *Chat ID*: The ID of the chat where you want to send a notification.
 
-5. Click the '*execute now*' button. An Adaptive Card notification with buttons will be sent in the chat in Microsoft Teams. <details><summary>`show example`</summary>![SendChatNotificationCardWithButtons](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/abd1ba78-2beb-4558-b48d-ea6c5c7ee58a)</details>
+5. Click the '*Execute now*' button. An Adaptive Card notification with buttons will be sent in the chat in Microsoft Teams. <details><summary>`show example`</summary>![SendChatNotificationCardWithButtons](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/abd1ba78-2beb-4558-b48d-ea6c5c7ee58a)</details>
 
 ## Help
 
