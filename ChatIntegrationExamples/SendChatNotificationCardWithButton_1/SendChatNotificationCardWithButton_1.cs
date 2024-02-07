@@ -80,7 +80,7 @@ namespace SendChatNotificationCardWithButton_1
 								"Run Example Custom Command"),
 							AdaptiveCardHelper.Buttons.GetElement(1, dataminerInfo.ID, organizationId, dmsId, "Show element 1"),
 							AdaptiveCardHelper.Buttons.GetAlarmsForElement(1, dataminerInfo.ID, "Fill in element name here", organizationId, dmsId, "Show alarms for element 1"),
-							AdaptiveCardHelper.Buttons.GetAlarmsForView(1, "Fill in view name here", organizationId, dmsId, "Show view 1")
+							AdaptiveCardHelper.Buttons.GetAlarmsForView(1, "Fill in view name here", organizationId, dmsId, "Show alarms for view 1")
 						}
 					}
 				};
