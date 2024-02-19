@@ -11,6 +11,7 @@ public class Script
 	/// <param name="engine">Link with SLAutomation process.</param>
 	public void Run(Engine engine)
 	{
+		// This input will be asked from the user
 		var parameterInput = engine.GetScriptParam("Parameter Input");
 		if (string.IsNullOrWhiteSpace(parameterInput?.Value))
 		{
