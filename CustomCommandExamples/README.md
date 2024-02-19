@@ -19,6 +19,7 @@ This readme details how to create custom DataMiner bot commands using Automation
     * [Output Key-Values](#output-key-values)
     * [Output JSON](#output-json)
     * [Input Parameter](#input-parameter)
+    * [Executor Input](#executor-input)
 - [Help](#help)
 - [Contact](#contact)
 - [Version History](#version-history)
@@ -50,9 +51,9 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 - The DataMiner System must be cloud-connected. See [Connecting your DataMiner System to the cloud](https://docs.dataminer.services/user-guide/Cloud_Platform/AboutCloudPlatform/Connecting_your_DataMiner_System_to_the_cloud.html).
 
-- The CoreGateway module must be updated to at least version 2.11.0 (which is available since [Cloud Pack 2.8.0](https://community.dataminer.services/downloads/)). See [Upgrading nodes to the latest DxM versions](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Managing_cloud-connected_nodes.html).
+- The CoreGateway module must be updated to at least version 2.11.0 (which is available since [Cloud Pack 2.8.0](https://community.dataminer.services/dataminer-cloud-pack/)). See [Upgrading nodes to the latest DxM versions](https://aka.dataminer.services/managing-cloud-connected-nodes).
 
-- The FieldControl module must be updated to at least version 2.8.1 (which is available since [Cloud Pack 2.8.0](https://community.dataminer.services/downloads/)). See [Upgrading nodes to the latest DxM versions](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Managing_cloud-connected_nodes.html).
+- The FieldControl module must be updated to at least version 2.8.1 (which is available since [Cloud Pack 2.8.0](https://community.dataminer.services/dataminer-cloud-pack/)). See [Upgrading nodes to the latest DxM versions](https://aka.dataminer.services/managing-cloud-connected-nodes).
 
 #### Microsoft Teams
 
@@ -99,11 +100,19 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Input Parameter
 
-1. In Teams, execute the command '*run Input Parameter Example*'.
+1. In Teams, execute the command '*run Parameter Input Example*'.
 
 2. When you are asked to provide the input configured in the Automation script, fill in any value and click the '*Run*' button.
 
    The custom command will be executed, and the provided input value should be displayed as the response. <details><summary>`show demo`</summary>![Gif-InputParameter](https://user-images.githubusercontent.com/33500507/233356486-bc64d385-997e-4b1b-8466-e26c801a7e4d.gif)</details>
+
+#### Executor Input
+
+1. In Teams, execute the command '*run Executor Input Example*'.
+
+2. You won't be asked to provide the 'dataminer.services User Email' input configured in the Automation script, the DataMiner bot will provide this automatically when you click the '*Run*' button.
+
+   The custom command will be executed, and the executor's information should be displayed as the response. <details><summary>`show demo`</summary>![Gif-ExecutorInputParameter]()</details>
 
 ## Help
 
