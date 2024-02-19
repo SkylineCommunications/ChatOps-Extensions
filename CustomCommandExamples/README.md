@@ -75,7 +75,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Getting Started
 
-1. [Deploy the latest version of the Custom Commands Examples package via the Catalog](https://catalog.dataminer.services/details/package/5863) or [download the package as a ZIP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/13829836/DcpCustomCommandExamples.1.1.0.zip), unzip it, and [deploy it to your DataMiner System locally](https://aka.dataminer.services/installing-application-packages). Installing this package will add the custom command Automation scripts for Microsoft Teams in the Automation module.
+1. [Deploy the latest version of the Custom Commands Examples package via the Catalog](https://catalog.dataminer.services/details/package/5863) or [download the package as a ZIP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/14332588/Custom.Command.Examples.1.2.0.zip), unzip it, and [deploy it to your DataMiner System locally](https://aka.dataminer.services/installing-application-packages). Installing this package will add the custom command Automation scripts for Microsoft Teams in the Automation module.
 
    > :warning:
    > Installing this DMAPP will overwrite any Automation scripts with identical names.
@@ -112,7 +112,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 2. You won't be asked to provide the 'dataminer.services User Email' input configured in the Automation script, the DataMiner bot will provide this automatically when you click the '*Run*' button.
 
-   The custom command will be executed, and the executor's information should be displayed as the response. <details><summary>`show demo`</summary>![Gif-ExecutorInputParameter]()</details>
+   The custom command will be executed, and the executor's information should be displayed as the response. <details><summary>`show demo`</summary>![Gif-ExecutorInput](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/15646c6d-76ab-4008-86b8-ca0d199ea87f)</details>
 
 ## Help
 
