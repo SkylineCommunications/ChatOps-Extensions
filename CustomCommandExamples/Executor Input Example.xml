@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DMSScript options="272" xmlns="http://www.skyline.be/automation">
+	<Name>Executor Input Example</Name>
+	<Description>Demonstrates how to know the dataminer.services or DataMiner user executing this custom command</Description>
+	<Type>Automation</Type>
+	<Author>SKYLINE2\JordyAM</Author>
+	<CheckSets>FALSE</CheckSets>
+	<Folder>Examples/ChatOps/Teams/CustomCommands/bot</Folder>
+
+	<Protocols>
+	</Protocols>
+
+	<Memory>
+	</Memory>
+
+	<Parameters>
+		<ScriptParameter id="2" type="string" values="">
+			<Description>dataminer.services User Email</Description>
+		</ScriptParameter>
+	</Parameters>
+
+	<Script>
+		<Exe id="1" type="csharp">
+			<Value><![CDATA[[Project:Executor Input Example_1]]]></Value>
+			<!--<Param type="debug">true</Param>-->
+			<Message></Message>
+		</Exe>
+	</Script>
+</DMSScript>

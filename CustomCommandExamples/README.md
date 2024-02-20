@@ -16,9 +16,11 @@ This readme details how to create custom DataMiner bot commands using Automation
   - [Microsoft Teams](#microsoft-teams-1)
     * [Getting Started](#getting-started)
     * [Output an Adaptive Card](#output-an-adaptive-card)
+    * [Output an Adaptive Card with Buttons](#output-an-adaptive-card-with-buttons)
     * [Output Key-Values](#output-key-values)
     * [Output JSON](#output-json)
     * [Input Parameter](#input-parameter)
+    * [Executor Input](#executor-input)
 - [Help](#help)
 - [Contact](#contact)
 - [Version History](#version-history)
@@ -50,9 +52,9 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 - The DataMiner System must be cloud-connected. See [Connecting your DataMiner System to the cloud](https://docs.dataminer.services/user-guide/Cloud_Platform/AboutCloudPlatform/Connecting_your_DataMiner_System_to_the_cloud.html).
 
-- The CoreGateway module must be updated to at least version 2.11.0 (which is available since [Cloud Pack 2.8.0](https://community.dataminer.services/downloads/)). See [Upgrading nodes to the latest DxM versions](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Managing_cloud-connected_nodes.html).
+- The CoreGateway module must be updated to at least version 2.11.0 (which is available since [Cloud Pack 2.8.0](https://community.dataminer.services/dataminer-cloud-pack/)). See [Upgrading nodes to the latest DxM versions](https://aka.dataminer.services/managing-cloud-connected-nodes).
 
-- The FieldControl module must be updated to at least version 2.8.1 (which is available since [Cloud Pack 2.8.0](https://community.dataminer.services/downloads/)). See [Upgrading nodes to the latest DxM versions](https://docs.dataminer.services/user-guide/Cloud_Platform/CloudAdminApp/Managing_cloud-connected_nodes.html).
+- The FieldControl module must be updated to at least version 2.8.1 (which is available since [Cloud Pack 2.8.0](https://community.dataminer.services/dataminer-cloud-pack/)). See [Upgrading nodes to the latest DxM versions](https://aka.dataminer.services/managing-cloud-connected-nodes).
 
 #### Microsoft Teams
 
@@ -74,7 +76,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Getting Started
 
-1. [Deploy the latest version of the Custom Commands Examples package via the Catalog](https://catalog.dataminer.services/details/package/5863) or [download the package as a ZIP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/13829836/DcpCustomCommandExamples.1.1.0.zip), unzip it, and [deploy it to your DataMiner System locally](https://aka.dataminer.services/installing-application-packages). Installing this package will add the custom command Automation scripts for Microsoft Teams in the Automation module.
+1. [Deploy the latest version of the Custom Commands Examples package via the Catalog](https://catalog.dataminer.services/details/package/5863) or [download the package as a ZIP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/14334384/Custom.Command.Examples.1.3.0.zip), unzip it, and [deploy it to your DataMiner System locally](https://aka.dataminer.services/installing-application-packages). Installing this package will add the custom command Automation scripts for Microsoft Teams in the Automation module.
 
    > :warning:
    > Installing this DMAPP will overwrite any Automation scripts with identical names.
@@ -84,6 +86,14 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 1. In Teams, execute the command '*run Adaptive Card Output Example*' and click the '*Run*' button in the response.
 
 2. The custom command will be executed and the Adaptive Card example should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputAnAdaptiveCard](https://user-images.githubusercontent.com/33500507/192817296-cd05a0cb-2267-4639-8d21-32b54bb347cd.gif)</details>
+
+#### Output an Adaptive Card with Buttons
+
+1. Fill in the organization ID and DMS ID in the Automation script named '*Adaptive Card Output Example with buttons*'. You can find these IDs in the URL by opening the DMS overview in the [Admin app](https://admin.dataminer.services). An example is provided in the Automation script.
+   
+2. In Teams, execute the command '*run Adaptive Card Output Example with buttons*' and click the '*Run*' button in the response.
+
+3. The custom command will be executed and the Adaptive Card example with buttons should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputAnAdaptiveCardWithButtons](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/4a422789-f961-47c2-8164-c76ed117269a)</details>
 
 #### Output Key-Values
 
@@ -99,11 +109,21 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Input Parameter
 
-1. In Teams, execute the command '*run Input Parameter Example*'.
+1. In Teams, execute the command '*run Parameter Input Example*'.
 
 2. When you are asked to provide the input configured in the Automation script, fill in any value and click the '*Run*' button.
 
    The custom command will be executed, and the provided input value should be displayed as the response. <details><summary>`show demo`</summary>![Gif-InputParameter](https://user-images.githubusercontent.com/33500507/233356486-bc64d385-997e-4b1b-8466-e26c801a7e4d.gif)</details>
+
+#### Executor Input
+
+1. In Teams, execute the command '*run Executor Input Example*'.
+
+2.  Click the '*Run*' button.
+
+   You will not be asked to provide the 'dataminer.services User Email' input configured in the Automation script. The DataMiner bot will provide this automatically when you click the '*Run*' button.
+
+   The custom command will be executed, and the executor's information should be displayed as the response. <details><summary>`show demo`</summary>![Gif-ExecutorInput](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/15646c6d-76ab-4008-86b8-ca0d199ea87f)</details>
 
 ## Help
 
