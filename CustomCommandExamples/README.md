@@ -89,7 +89,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Output an Adaptive Card with Buttons
 
-1. First make sure that you fill in the organization ID and DMS ID in the Automation script named '*Adaptive Card Output Example with buttons*'. You can find these IDs in the URL by opening the DMS overview in the [Admin app](https://admin.dataminer.services). An example is provided in the Automation script.
+1. Fill in the organization ID and DMS ID in the Automation script named '*Adaptive Card Output Example with buttons*'. You can find these IDs in the URL by opening the DMS overview in the [Admin app](https://admin.dataminer.services). An example is provided in the Automation script.
    
 2. In Teams, execute the command '*run Adaptive Card Output Example with buttons*' and click the '*Run*' button in the response.
 
