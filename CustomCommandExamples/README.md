@@ -87,7 +87,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 2. The custom command will be executed and the Adaptive Card example should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputAnAdaptiveCard](https://user-images.githubusercontent.com/33500507/192817296-cd05a0cb-2267-4639-8d21-32b54bb347cd.gif)</details>
 
-#### Output an Adaptive Card with buttons
+#### Output an Adaptive Card with Buttons
 
 1. First make sure that you fill in the organization ID and DMS ID in the Automation script named '*Adaptive Card Output Example with buttons*'. You can find these IDs in the URL by opening the DMS overview in the [Admin app](https://admin.dataminer.services). An example is provided in the Automation script.
    
