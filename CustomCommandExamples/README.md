@@ -16,7 +16,7 @@ This readme details how to create custom DataMiner bot commands using Automation
   - [Microsoft Teams](#microsoft-teams-1)
     * [Getting Started](#getting-started)
     * [Output an Adaptive Card](#output-an-adaptive-card)
-    * [Output an Adaptive Card with buttons](#output-an-adaptive-card-with-buttons)
+    * [Output an Adaptive Card with Buttons](#output-an-adaptive-card-with-buttons)
     * [Output Key-Values](#output-key-values)
     * [Output JSON](#output-json)
     * [Input Parameter](#input-parameter)
