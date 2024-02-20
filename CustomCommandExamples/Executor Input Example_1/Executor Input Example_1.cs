@@ -22,7 +22,7 @@ public class Script
 			return;
 		}
 
-		// The DataMiner user executing an automation script is always available
+		// The DataMiner user executing an Automation script is always available
 		// Custom commands executed with the DataMiner bot will always be executed using the linked DataMiner account on dataminer.services
 		var dataminerAccountLoginName = engine.UserLoginName;
 		var dataminerAccountDisplayName = engine.UserDisplayName;
