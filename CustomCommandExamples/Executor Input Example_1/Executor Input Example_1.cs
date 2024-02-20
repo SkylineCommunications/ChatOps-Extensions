@@ -12,7 +12,7 @@ public class Script
 	public void Run(Engine engine)
 	{
 		// This input will not be asked from the user but will automatically be filled in by the DataMiner bot with the
-		// dataminer.services email address of the user executing this automation script using their linked DataMiner account
+		// dataminer.services email address of the user executing this Automation script using their linked DataMiner account
 		// Note that this needs to be defined as input on the automation script with the exact name "dataminer.services User Email",
 		// otherwise it will not be provided by the DataMiner bot
 		var userEmail = engine.GetScriptParam("dataminer.services User Email");
