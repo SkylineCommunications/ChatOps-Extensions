@@ -119,7 +119,9 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 1. In Teams, execute the command '*run Executor Input Example*'.
 
-2. You won't be asked to provide the 'dataminer.services User Email' input configured in the Automation script, the DataMiner bot will provide this automatically when you click the '*Run*' button.
+2.  Click the '*Run*' button.
+
+   You will not be asked to provide the 'dataminer.services User Email' input configured in the Automation script. The DataMiner bot will provide this automatically when you click the '*Run*' button.
 
    The custom command will be executed, and the executor's information should be displayed as the response. <details><summary>`show demo`</summary>![Gif-ExecutorInput](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/15646c6d-76ab-4008-86b8-ca0d199ea87f)</details>
 
