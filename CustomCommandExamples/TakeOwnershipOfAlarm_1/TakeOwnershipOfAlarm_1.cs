@@ -6,7 +6,6 @@ namespace TakeOwnershipOfAlarm_1
 	using System.Collections.Generic;
 	using Skyline.DataMiner.Automation;
 	using Skyline.DataMiner.DcpChatIntegrationHelper.Common;
-	using Skyline.DataMiner.DcpChatIntegrationHelper.Internal.Common;
 	using Skyline.DataMiner.DcpChatIntegrationHelper.Teams;
 
 	/// <summary>
@@ -68,26 +67,19 @@ namespace TakeOwnershipOfAlarm_1
 				engine.AddScriptOutput("StackTrace", e.ToString());
 			}
 
-			// Cloud identity
-			// You can find these IDs by opening the DMS overview page on admin.dataminer.services
-			// Example: https://admin.dataminer.services/5d8ce07f-5b73-4135-b5a2-2cf4129912c6/dms/311e8ee6-7f7e-4020-b9ae-e43356a18e28/overview
-			// var organizationId = Guid.Parse("5d8ce07f-5b73-4135-b5a2-2cf4129912c6");
-			// var dmsId = Guid.Parse("311e8ee6-7f7e-4020-b9ae-e43356a18e28");
-			var organizationId = Guid.Parse("");
-			var dmsId = Guid.Parse("");
-
 			var adaptiveCardBody = new List<AdaptiveElement>()
+			{
+				new AdaptiveTextBlock($"{engine.UserDisplayName} took ownership of the alarm."),
+				new AdaptiveFactSet()
 				{
-					new AdaptiveTextBlock($"{engine.UserDisplayName} took ownership of the alarm."),
-					new AdaptiveFactSet()
+					Facts = new List<AdaptiveFact>
 					{
-						Facts = new List<AdaptiveFact>
-						{
-							new AdaptiveFact("DataMiner login:", engine.UserLoginName),
-							new AdaptiveFact("dataminer.services login:", userEmail.Value),
-						},
-					}
-				};
+						new AdaptiveFact("DataMiner login:", engine.UserLoginName),
+						new AdaptiveFact("dataminer.services login:", userEmail.Value),
+					},
+				}
+			};
+
 			// Response for taking ownership
 			engine.AddScriptOutput("AdaptiveCard", adaptiveCardBody.ToJson());
 
