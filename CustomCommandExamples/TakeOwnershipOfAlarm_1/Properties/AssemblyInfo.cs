@@ -1,15 +1,16 @@
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Json Output Example_1")]
+[assembly: AssemblyTitle("TakeOwnershipOfAlarm_1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Skyline Communications")]
-[assembly: AssemblyProduct("Json Output Example_1")]
+[assembly: AssemblyProduct("TakeOwnershipOfAlarm_1")]
 [assembly: AssemblyCopyright("Copyright © Skyline Communications")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 [assembly: ComVisible(false)]
-[assembly: Guid("F96F2AE4-A977-4680-8602-8FAAA1CF66F3")]
+[assembly: Guid("717B02F6-B9A7-49E4-9582-39FA16CFFCA7")]
 [assembly: AssemblyVersion("1.0.0.0")]

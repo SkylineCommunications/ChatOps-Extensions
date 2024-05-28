@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using AdaptiveCards;
-using Newtonsoft.Json;
 using Skyline.DataMiner.Automation;
 using Skyline.DataMiner.DcpChatIntegrationHelper.Common;
 

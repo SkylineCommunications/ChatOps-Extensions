@@ -60,6 +60,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{F987
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Executor Input Example_1", "Executor Input Example_1\Executor Input Example_1.csproj", "{9DAAB007-74A7-4B82-99F4-38A79F0385ED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adaptive Card Output Example With Button", "Adaptive Card Output Example With Button", "{E4F88771-9F84-42BD-869A-4CDEE22B9EF6}"
+	ProjectSection(SolutionItems) = preProject
+		Adaptive Card Output Example With Button.xml = Adaptive Card Output Example With Button.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{C87CFFCD-57EC-424F-9866-7302A8D3B2C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adaptive Card Output Example With Button_1", "Adaptive Card Output Example With Button_1\Adaptive Card Output Example With Button_1.csproj", "{9A54001D-A00A-4A44-9027-532128C2C744}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TakeOwnershipOfAlarm", "TakeOwnershipOfAlarm", "{4A1E8E5B-D6A1-480C-B085-F486CBC7E220}"
+	ProjectSection(SolutionItems) = preProject
+		TakeOwnershipOfAlarm.xml = TakeOwnershipOfAlarm.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{6EE8BD4D-7461-427D-9C29-483108B35BB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeOwnershipOfAlarm_1", "TakeOwnershipOfAlarm_1\TakeOwnershipOfAlarm_1.csproj", "{55BE95EF-3278-4065-9EA0-DB4896985CFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +104,14 @@ Global
 		{9DAAB007-74A7-4B82-99F4-38A79F0385ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DAAB007-74A7-4B82-99F4-38A79F0385ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DAAB007-74A7-4B82-99F4-38A79F0385ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A54001D-A00A-4A44-9027-532128C2C744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A54001D-A00A-4A44-9027-532128C2C744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A54001D-A00A-4A44-9027-532128C2C744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A54001D-A00A-4A44-9027-532128C2C744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55BE95EF-3278-4065-9EA0-DB4896985CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55BE95EF-3278-4065-9EA0-DB4896985CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55BE95EF-3278-4065-9EA0-DB4896985CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55BE95EF-3278-4065-9EA0-DB4896985CFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +133,12 @@ Global
 		{AC132685-21E4-43AA-AAB2-C9BF56EBAD98} = {CA5F9E76-F858-442E-8159-EE929D110706}
 		{F98726FB-5166-44C8-8619-7193DD8A15BE} = {AC132685-21E4-43AA-AAB2-C9BF56EBAD98}
 		{9DAAB007-74A7-4B82-99F4-38A79F0385ED} = {F98726FB-5166-44C8-8619-7193DD8A15BE}
+		{E4F88771-9F84-42BD-869A-4CDEE22B9EF6} = {CA5F9E76-F858-442E-8159-EE929D110706}
+		{C87CFFCD-57EC-424F-9866-7302A8D3B2C7} = {E4F88771-9F84-42BD-869A-4CDEE22B9EF6}
+		{9A54001D-A00A-4A44-9027-532128C2C744} = {C87CFFCD-57EC-424F-9866-7302A8D3B2C7}
+		{4A1E8E5B-D6A1-480C-B085-F486CBC7E220} = {CA5F9E76-F858-442E-8159-EE929D110706}
+		{6EE8BD4D-7461-427D-9C29-483108B35BB8} = {4A1E8E5B-D6A1-480C-B085-F486CBC7E220}
+		{55BE95EF-3278-4065-9EA0-DB4896985CFA} = {6EE8BD4D-7461-427D-9C29-483108B35BB8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CA20FFD9-95DA-4429-A175-E65A66B665F9}

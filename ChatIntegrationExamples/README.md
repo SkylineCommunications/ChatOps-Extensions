@@ -24,6 +24,7 @@ This readme details how to integrate DataMiner into business communication platf
     * [Sending a Channel Notification](#sending-a-channel-notification)
     * [Sending a Channel Notification using an Adaptive Card](#sending-a-channel-notification-using-an-adaptive-card)
     * [Sending a Channel Notification using an Adaptive Card with buttons](#sending-a-channel-notification-using-an-adaptive-card-with-buttons)
+    * [Sending a Channel Notification Asking To Take Ownership of an Alarm from a Correlation Rule](#sending-a-channel-notification-asking-to-take-ownership-of-an-alarm-from-a-correlation-rule)
     * [Creating a Private Chat](#creating-a-private-chat)
     * [Fetching a Private Chat](#fetching-a-private-chat)
     * [Sending a Chat Notification](#sending-a-chat-notification)
@@ -78,7 +79,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### Getting Started
 
-1. [Deploy the latest version of the ChatIntegration Examples package via the Catalog](https://catalog.dataminer.services/details/package/5860) or [download the package as a ZIP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/14509467/Chat.Integration.Examples.1.1.1-CU1.zip), unzip it, and [deploy it to your DataMiner System locally](https://aka.dataminer.services/installing-application-packages). Installing this package will add the example Automation scripts for Microsoft Teams in the Automation module along with some memory files that will be used by the Automation scripts to save the IDs of the created and fetched resources.
+1. [Deploy the latest version of the ChatIntegration Examples package via the Catalog](https://catalog.dataminer.services/details/package/5860) or [download the package as a ZIP](https://github.com/SkylineCommunications/ChatOps-Extensions/files/15470698/Chat.Integration.Examples.1.1.3-CU1.zip), unzip it, and [deploy it to your DataMiner System locally](https://aka.dataminer.services/installing-application-packages). Installing this package will add the example Automation scripts for Microsoft Teams in the Automation module along with some memory files that will be used by the Automation scripts to save the IDs of the created and fetched resources.
 
    > :warning:
    > Installing this DMAPP will overwrite any Automation scripts and memory files with identical names.
@@ -211,6 +212,10 @@ To send a notification using an Adaptive Card with buttons in a channel:
    - *Channel ID*: The ID of the channel where you want to send a notification. Note that this must be a channel of the specified team.
 
 5. Click the '*Execute now*' button. An Adaptive Card notification with buttons will be sent in the channel in Microsoft Teams. <details><summary>`show example`</summary>![SendChannelNotificationCardWithButtons](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/5f0289ba-b27c-446d-8fd2-ca8caab5ff9e)</details>
+
+#### Sending a Channel Notification Asking To Take Ownership of an Alarm from a Correlation Rule
+
+See the following tutorial [Adaptive Card notifications with custom buttons](https://aka.dataminer.services/chatops-tutorial-kata-27) where this Automation script is used to send a channel notification asking to take ownership of an alarm, initiated by a correlation rule.
 
 #### Creating a Private Chat
 

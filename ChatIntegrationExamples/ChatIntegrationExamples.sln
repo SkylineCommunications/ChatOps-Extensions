@@ -144,6 +144,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{8678
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendChatNotificationCardWithButton_1", "SendChatNotificationCardWithButton_1\SendChatNotificationCardWithButton_1.csproj", "{6E77E3E1-04FD-4B9F-B493-103A31E51105}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AskToTakeOwnerShipForAlarmCorrelationRule", "AskToTakeOwnerShipForAlarmCorrelationRule", "{41422DDD-6427-4419-B368-32E908073F1B}"
+	ProjectSection(SolutionItems) = preProject
+		AskToTakeOwnerShipForAlarmCorrelationRule.xml = AskToTakeOwnerShipForAlarmCorrelationRule.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{065C9600-EA5C-44D2-81F8-4789FC7FCD9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AskToTakeOwnerShipForAlarmCorrelationRule_1", "AskToTakeOwnerShipForAlarmCorrelationRule_1\AskToTakeOwnerShipForAlarmCorrelationRule_1.csproj", "{DFAB847F-EE6C-48D5-A705-3298804A0274}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -206,6 +215,10 @@ Global
 		{6E77E3E1-04FD-4B9F-B493-103A31E51105}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E77E3E1-04FD-4B9F-B493-103A31E51105}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E77E3E1-04FD-4B9F-B493-103A31E51105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFAB847F-EE6C-48D5-A705-3298804A0274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFAB847F-EE6C-48D5-A705-3298804A0274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFAB847F-EE6C-48D5-A705-3298804A0274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFAB847F-EE6C-48D5-A705-3298804A0274}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -254,6 +267,9 @@ Global
 		{6784EDBE-623E-43DC-ADC1-C57B7ABA479B} = {8B32CE97-7FCE-45C0-BB81-FF31F4A23730}
 		{867811ED-F4DB-48B7-9528-E5815E5E2945} = {6784EDBE-623E-43DC-ADC1-C57B7ABA479B}
 		{6E77E3E1-04FD-4B9F-B493-103A31E51105} = {867811ED-F4DB-48B7-9528-E5815E5E2945}
+		{41422DDD-6427-4419-B368-32E908073F1B} = {8B32CE97-7FCE-45C0-BB81-FF31F4A23730}
+		{065C9600-EA5C-44D2-81F8-4789FC7FCD9D} = {41422DDD-6427-4419-B368-32E908073F1B}
+		{DFAB847F-EE6C-48D5-A705-3298804A0274} = {065C9600-EA5C-44D2-81F8-4789FC7FCD9D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {87EE2F9E-F61F-46A9-A2F5-60F23E767BCC}
