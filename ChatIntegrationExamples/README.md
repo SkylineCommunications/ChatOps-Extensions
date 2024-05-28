@@ -24,6 +24,7 @@ This readme details how to integrate DataMiner into business communication platf
     * [Sending a Channel Notification](#sending-a-channel-notification)
     * [Sending a Channel Notification using an Adaptive Card](#sending-a-channel-notification-using-an-adaptive-card)
     * [Sending a Channel Notification using an Adaptive Card with buttons](#sending-a-channel-notification-using-an-adaptive-card-with-buttons)
+    * [Sending a Channel Notification Asking To Take Ownership of an Alarm from a Correlation Rule](#sending-a-channel-notification-asking-to-take-ownership-of-an-alarm-from-a-correlation-rule)
     * [Creating a Private Chat](#creating-a-private-chat)
     * [Fetching a Private Chat](#fetching-a-private-chat)
     * [Sending a Chat Notification](#sending-a-chat-notification)
@@ -211,6 +212,10 @@ To send a notification using an Adaptive Card with buttons in a channel:
    - *Channel ID*: The ID of the channel where you want to send a notification. Note that this must be a channel of the specified team.
 
 5. Click the '*Execute now*' button. An Adaptive Card notification with buttons will be sent in the channel in Microsoft Teams. <details><summary>`show example`</summary>![SendChannelNotificationCardWithButtons](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/5f0289ba-b27c-446d-8fd2-ca8caab5ff9e)</details>
+
+#### Sending a Channel Notification Asking To Take Ownership of an Alarm from a Correlation Rule
+
+See the following tutorial [Adaptive Card notifications with custom buttons](https://aka.dataminer.services/chatops-tutorial-kata-27) where this Automation script is used to send a channel notification asking to take ownership of an alarm, initiated by a correlation rule.
 
 #### Creating a Private Chat
 

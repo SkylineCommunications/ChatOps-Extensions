@@ -21,6 +21,7 @@ This readme details how to create custom DataMiner bot commands using Automation
     * [Output JSON](#output-json)
     * [Input Parameter](#input-parameter)
     * [Executor Input](#executor-input)
+    * [Take Ownership of Alarm](#take-ownership-of-alarm)
 - [Help](#help)
 - [Contact](#contact)
 - [Version History](#version-history)
@@ -124,6 +125,10 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
    You will not be asked to provide the 'dataminer.services User Email' input configured in the Automation script. The DataMiner bot will provide this automatically when you click the '*Run*' button.
 
    The custom command will be executed, and the executor's information should be displayed as the response. <details><summary>`show demo`</summary>![Gif-ExecutorInput](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/15646c6d-76ab-4008-86b8-ca0d199ea87f)</details>
+
+#### Take Ownership of Alarm
+
+See the following tutorial [Adaptive Card notifications with custom buttons](https://aka.dataminer.services/chatops-tutorial-kata-27) where this custom command is used behind a button with all the inputs automatically predefined.
 
 ## Help
 
