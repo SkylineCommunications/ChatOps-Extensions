@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DMSScript options="272" xmlns="http://www.skyline.be/automation">
+	<Name>Send Channel Notification Asking To Take Ownership of an Alarm</Name>
+	<Description>Sends a notification using an Adaptive Card with a button to take ownership of the alarm in a given channel in Microsoft Teams. Make sure to have a tenant set for your organization in the Admin app (https://admin.dataminer.services).</Description>
+	<Type>Automation</Type>
+	<Author>SKYLINE2\JordyAM</Author>
+	<CheckSets>FALSE</CheckSets>
+	<Folder>Examples/ChatOps/Teams/Integration</Folder>
+
+	<Protocols>
+	</Protocols>
+
+	<Memory>
+	</Memory>
+
+	<Parameters>
+		<ScriptParameter id="1" type="string" values="TeamsExample">
+			<Description>Team ID</Description>
+		</ScriptParameter>
+		<ScriptParameter id="2" type="string" values="ChannelsExample">
+			<Description>Channel ID</Description>
+		</ScriptParameter>
+	</Parameters>
+
+	<Script>
+		<Exe id="3" type="csharp">
+			<Value><![CDATA[[Project:AskToTakeOwnerShipForAlarmCorrelationRule_1]]]></Value>
+			<!--<Param type="debug">true</Param>-->
+			<Message></Message>
+		</Exe>
+	</Script>
+</DMSScript>

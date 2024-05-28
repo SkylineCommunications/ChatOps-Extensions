@@ -77,7 +77,8 @@ namespace SendChatNotificationCardWithButton_1
 								{
 									new CustomCommandInput("Parameter Input", CustomCommandInputType.Parameter, "The overwriten default value"),
 								},
-								"Run Example Custom Command"),
+								"Run Example Custom Command",
+								skipConfirmation: false),
 							AdaptiveCardHelper.Buttons.GetElement(1, dataminerInfo.ID, organizationId, dmsId, "Show element 1"),
 							AdaptiveCardHelper.Buttons.GetAlarmsForElement(1, dataminerInfo.ID, "Fill in element name here", organizationId, dmsId, "Show alarms for element 1"),
 							AdaptiveCardHelper.Buttons.GetAlarmsForView(1, "Fill in view name here", organizationId, dmsId, "Show alarms for view 1")
