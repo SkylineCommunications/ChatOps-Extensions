@@ -75,7 +75,7 @@ namespace SendChatNotificationCardWithButton_1
 								dmsId,
 								new List<CustomCommandInput>()
 								{
-									new CustomCommandInput("Parameter Input", CustomCommandInputType.Parameter, "The overwriten default value"),
+									new CustomCommandInput("Parameter Input", CustomCommandInputType.Parameter, "The overwritten default value"),
 								},
 								"Run Example Custom Command",
 								skipConfirmation: false),
