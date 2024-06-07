@@ -89,12 +89,10 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 2. The custom command will be executed and the Adaptive Card example should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputAnAdaptiveCard](https://user-images.githubusercontent.com/33500507/192817296-cd05a0cb-2267-4639-8d21-32b54bb347cd.gif)</details>
 
 #### Output an Adaptive Card with Buttons
+  
+1. In Teams, execute the command '*run Adaptive Card Output Example with buttons*' and click the '*Run*' button in the response.
 
-1. Fill in the organization ID and DMS ID in the Automation script named '*Adaptive Card Output Example with buttons*'. You can find these IDs in the URL by opening the DMS overview in the [Admin app](https://admin.dataminer.services). An example is provided in the Automation script.
-   
-2. In Teams, execute the command '*run Adaptive Card Output Example with buttons*' and click the '*Run*' button in the response.
-
-3. The custom command will be executed and the Adaptive Card example with buttons should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputAnAdaptiveCardWithButtons](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/4a422789-f961-47c2-8164-c76ed117269a)</details>
+2. The custom command will be executed and the Adaptive Card example with buttons should be displayed as the response. <details><summary>`show demo`</summary>![Gif-OutputAnAdaptiveCardWithButtons](https://github.com/SkylineCommunications/ChatOps-Extensions/assets/33500507/4a422789-f961-47c2-8164-c76ed117269a)</details>
 
 #### Output Key-Values
 
