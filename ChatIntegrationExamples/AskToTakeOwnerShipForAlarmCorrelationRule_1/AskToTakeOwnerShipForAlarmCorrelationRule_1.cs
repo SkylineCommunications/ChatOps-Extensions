@@ -68,12 +68,7 @@ namespace AskToTakeOwnerShipForAlarmCorrelationRule_1
 				var parameterName = element.Protocol.GetParameterName(parameterId);
 
 				// Cloud identity
-				// You can find these IDs by opening the DMS overview page on admin.dataminer.services
-				// Example: https://admin.dataminer.services/5d8ce07f-5b73-4135-b5a2-2cf4129912c6/dms/311e8ee6-7f7e-4020-b9ae-e43356a18e28/overview
-				// var organizationId = Guid.Parse("5d8ce07f-5b73-4135-b5a2-2cf4129912c6");
-				// var dmsId = Guid.Parse("311e8ee6-7f7e-4020-b9ae-e43356a18e28");
-				var organizationId = Guid.Parse("");
-				var dmsId = Guid.Parse("");
+				var dmsIdentity = chatIntegrationHelper.GetDataMinerServicesDmsIdentity();
 
 				// Parse the name of the enum value name as display name
 				var typeDisplayName = string.Join(" ", Regex.Split(((SLEnumValues)type).ToString(), @"(?<!^)(?=[A-Z])"));
@@ -89,6 +84,32 @@ namespace AskToTakeOwnerShipForAlarmCorrelationRule_1
 					new AdaptiveFact("Owner:", owner),
 				};
 
+				// Buttons
+				var actions = new List<AdaptiveAction>();
+
+				// Only add the "Take ownership" button when the alarm wasn't cleared yet
+				if ((AlarmStatus)status != AlarmStatus.Cleared)
+				{
+					actions.Add(
+						// Example custom command from https://github.com/SkylineCommunications/ChatOps-Extensions/tree/main/CustomCommandExamples#input-parameter
+						AdaptiveCardHelper.Buttons.RunCustomCommand(
+							"Take Ownership of Alarm",
+							dmaId,
+							dmsIdentity.OrganizationId,
+							dmsIdentity.DmsId,
+							new List<CustomCommandInput>()
+							{
+								new CustomCommandInput("DataMiner ID", CustomCommandInputType.Parameter, dmaId.ToString()),
+								new CustomCommandInput("Element ID", CustomCommandInputType.Parameter, elementId.ToString()),
+								new CustomCommandInput("Alarm ID", CustomCommandInputType.Parameter, alarmId.ToString()),
+							},
+							"Take ownership",
+							skipConfirmation: true));
+				}
+
+				actions.Add(AdaptiveCardHelper.Buttons.GetElement(elementId, dmaId, dmsIdentity.OrganizationId, dmsIdentity.DmsId, $"Show {element.ElementName}"));
+				actions.Add(AdaptiveCardHelper.Buttons.GetAlarmsForElement(elementId, dmaId, element.ElementName, dmsIdentity.OrganizationId, dmsIdentity.DmsId, $"Show all alarms on {element.ElementName}"));
+
 				var adaptiveCardBody = new List<AdaptiveElement>()
 				{
 					new AdaptiveFactSet()
@@ -97,25 +118,7 @@ namespace AskToTakeOwnerShipForAlarmCorrelationRule_1
 					},
 					new AdaptiveActionSet()
 					{
-						Actions = new List<AdaptiveAction>()
-						{
-							// Example custom command from https://github.com/SkylineCommunications/ChatOps-Extensions/tree/main/CustomCommandExamples#input-parameter
-							AdaptiveCardHelper.Buttons.RunCustomCommand(
-								"Take Ownership of Alarm",
-								dmaId,
-								organizationId,
-								dmsId,
-								new List<CustomCommandInput>()
-								{
-									new CustomCommandInput("DataMiner ID", CustomCommandInputType.Parameter, dmaId.ToString()),
-									new CustomCommandInput("Element ID", CustomCommandInputType.Parameter, elementId.ToString()),
-									new CustomCommandInput("Alarm ID", CustomCommandInputType.Parameter, alarmId.ToString()),
-								},
-								"Take ownership",
-								skipConfirmation: true),
-							AdaptiveCardHelper.Buttons.GetElement(elementId, dmaId, organizationId, dmsId, $"Show {element.ElementName}"),
-							AdaptiveCardHelper.Buttons.GetAlarmsForElement(elementId, dmaId, element.ElementName, organizationId, dmsId, $"Show all alarms on {element.ElementName}"),
-						}
+						Actions = actions
 					}
 				};
 
