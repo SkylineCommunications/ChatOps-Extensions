@@ -124,7 +124,7 @@ namespace AskToTakeOwnerShipForAlarmCorrelationRule_1
 
 				try
 				{
-					chatIntegrationHelper.Teams.TrySendChannelNotification(teamIdParam.Value, channelIdParam.Value, adaptiveCardBody);
+					chatIntegrationHelper.Teams.TrySendChannelNotification(teamIdParam.Value, channelIdParam.Value, adaptiveCardBody, summary: "Alarm needs ownership");
 				}
 				catch (TeamsChatIntegrationException e)
 				{

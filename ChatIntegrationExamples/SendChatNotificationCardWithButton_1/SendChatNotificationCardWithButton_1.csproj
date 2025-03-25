@@ -10,10 +10,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SendChatNotificationCardWithButton_1</RootNamespace>
     <AssemblyName>SendChatNotificationCardWithButton_1</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <LangVersion>
     </LangVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Skyline.DataMiner.DcpChatIntegrationHelper">
-      <Version>1.2.4</Version>
+      <Version>1.2.8</Version>
     </PackageReference>
     <PackageReference Include="Skyline.DataMiner.Dev.Automation">
       <Version>10.1.0.6</Version>
