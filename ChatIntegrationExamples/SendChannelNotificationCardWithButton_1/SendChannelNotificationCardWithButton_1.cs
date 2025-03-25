@@ -103,7 +103,7 @@ namespace SendChannelNotificationCardWithButton_1
 
 				try
 				{
-					chatIntegrationHelper.Teams.TrySendChannelNotification(teamIdParam.Value, channelIdParam.Value, adaptiveCardBody);
+					chatIntegrationHelper.Teams.TrySendChannelNotification(teamIdParam.Value, channelIdParam.Value, adaptiveCardBody, summary: "Channel Ocho overview");
 				}
 				catch (TeamsChatIntegrationException e)
 				{

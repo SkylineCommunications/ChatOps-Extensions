@@ -77,7 +77,7 @@ namespace SendChatNotificationCard_1
 
 				try
 				{
-					chatIntegrationHelper.Teams.TrySendChatNotification(chatIdParam.Value, adaptiveCardBody);
+					chatIntegrationHelper.Teams.TrySendChatNotification(chatIdParam.Value, adaptiveCardBody, summary: "Channel Ocho overview");
 				}
 				catch (TeamsChatIntegrationException e)
 				{
