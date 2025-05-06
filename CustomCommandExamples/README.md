@@ -4,28 +4,30 @@ This readme details how to create custom DataMiner bot commands using Automation
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)
-  - [Development](#Development)
-    - [Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package](#skylinedataminerdcpchatintegrationhelper-nuget-package)
-    - [DataMiner Integration Studio Visual Studio Extension](#dataminer-integration-studio-visual-studio-extension)
-  - [Usage](#Usage)
-    - [General](#general)
-    - [Microsoft Teams](#microsoft-teams)
-- [Examples](#examples)
-  - [General](#general-1)
-  - [Microsoft Teams](#microsoft-teams-1)
-    * [Getting Started](#getting-started)
-    * [Output an Adaptive Card](#output-an-adaptive-card)
-    * [Output an Adaptive Card with Buttons](#output-an-adaptive-card-with-buttons)
-    * [Output Key-Values](#output-key-values)
-    * [Output JSON](#output-json)
-    * [Input Parameter](#input-parameter)
-    * [Executor Input](#executor-input)
-    * [Take Ownership of Alarm](#take-ownership-of-alarm)
-- [Help](#help)
-- [Contact](#contact)
-- [Version History](#version-history)
-- [License](#license)
+- [Custom Commands](#custom-commands)
+  - [Table of Contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+    - [Development](#development)
+      - [Skyline.DataMiner.DcpChatIntegrationHelper NuGet Package](#skylinedataminerdcpchatintegrationhelper-nuget-package)
+      - [DataMiner Integration Studio Visual Studio Extension](#dataminer-integration-studio-visual-studio-extension)
+    - [Usage](#usage)
+      - [General](#general)
+      - [Microsoft Teams](#microsoft-teams)
+  - [Examples](#examples)
+    - [General](#general-1)
+    - [Microsoft Teams](#microsoft-teams-1)
+      - [Getting Started](#getting-started)
+      - [Output an Adaptive Card](#output-an-adaptive-card)
+      - [Output an Adaptive Card with Buttons](#output-an-adaptive-card-with-buttons)
+      - [Output Key-Values](#output-key-values)
+      - [Output JSON](#output-json)
+      - [Input Parameter](#input-parameter)
+      - [Executor Input](#executor-input)
+      - [Take Ownership of Alarm](#take-ownership-of-alarm)
+  - [Help](#help)
+  - [Contact](#contact)
+  - [Version History](#version-history)
+  - [License](#license)
 
 ## Prerequisites
 
@@ -51,7 +53,7 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 #### General
 
-- The DataMiner System must be cloud-connected. See [Connecting your DataMiner System to the cloud](https://docs.dataminer.services/user-guide/Cloud_Platform/AboutCloudPlatform/Connecting_your_DataMiner_System_to_the_cloud.html).
+- The DataMiner System must be cloud-connected. See [Connecting your DataMiner System to the cloud](https://aka.dataminer.services/connect-to-the-cloud).
 
 - The CoreGateway module must be updated to at least version 2.11.0 (which is available since [Cloud Pack 2.8.0](https://community.dataminer.services/dataminer-cloud-pack/)). See [Upgrading nodes to the latest DxM versions](https://aka.dataminer.services/managing-cloud-connected-nodes).
 
@@ -61,9 +63,9 @@ See [Installing DataMiner Integration Studio](https://aka.dataminer.services/Dis
 
 - The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) must be allowed in your [Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-apps).
 
-- The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) must be installed in your team or chat. See [Installing the DataMiner Teams bot](https://docs.dataminer.services/user-guide/Cloud_Platform/TeamsBot/DataMiner_Teams_bot.html#dataminer-teams-bot-installation).
+- The [DataMiner bot](https://teams.microsoft.com/l/app/9a09d087-5d07-4481-b34f-cd053eab7925) must be installed in your team or chat. See [Installing the DataMiner Teams bot](https://aka.dataminer.services/TeamsBotDocs-install).
 
-- [Start a conversation with the DataMiner bot](https://docs.dataminer.services/user-guide/Cloud_Platform/TeamsBot/DataMiner_Teams_bot.html#starting-a-conversation-with-the-teams-bot) by logging in and setting your active DataMiner System. When you execute your first (custom) command to the active DMS, the DataMiner bot will ask you to link your DCP account to your DataMiner account if this has not been done yet.
+- Start a conversation with the DataMiner bot](https://aka.dataminer.services/TeamsBotDocs-startconvo) by logging in and setting your active DataMiner System. When you execute your first (custom) command to the active DMS, the DataMiner bot will ask you to link your dataminer.services account to your DataMiner account if this has not been done yet.
 
 - Only Automation scripts that are present in a (sub)folder with the name '*bot*' will be recognized as custom commands by the DataMiner bot. The examples below are automatically placed in such a folder.
 
